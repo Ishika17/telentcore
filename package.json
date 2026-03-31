@@ -13,12 +13,16 @@
     "@emotion/styled": "^11.14.1",
     "@faker-js/faker": "^10.4.0",
     "@mui/material": "^7.3.9",
+    "@prisma/adapter-pg": "^7.6.0",
     "@prisma/client": "^7.6.0",
+    "@prisma/client-runtime-utils": "^7.6.0",
     "@reduxjs/toolkit": "^2.11.2",
     "next": "16.2.1",
+    "pg": "^8.20.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-redux": "^9.2.0",
+    "react-virtualized-auto-sizer": "^2.0.3",
     "react-window": "^2.2.7"
   },
   "devDependencies": {
