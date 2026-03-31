@@ -1,7 +1,7 @@
-import Sidebar from "@/components/Sidebar";
-import JDPanel from "@/components/JDPanel";
-import CandidatePanel from "@/components/CandidatePanel";
-import DetailPanel from "@/components/DetailPanel";
+import Sidebar from "@/app/components/layout/Sidebar";
+import JDPanel from "@/app/components/jd/JDPanel";
+import CandidatePanel from "@/app/components/candidate/CandidatePanel";
+import DetailPanel from "@/app/components/detail/DetailPanel";
 
 export default function DashboardPage() {
   return (
