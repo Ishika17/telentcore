@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model applications {
+  jd_id        String     @db.Uuid
+  candidate_id String     @db.Uuid
+  candidates   candidates @relation(fields: [candidate_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  jds          jds        @relation(fields: [jd_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([jd_id, candidate_id])
+}
+
+model candidates {
+  id           String         @id @db.Uuid
+  name         String
+  total_exp    Int
+  skills       String[]
+  applications applications[]
+}
+
+model jds {
+  id           String         @id @db.Uuid
+  title        String
+  min_exp      Int
+  skills       String[]
+  applications applications[]
+}
