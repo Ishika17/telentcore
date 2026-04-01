@@ -15,21 +15,38 @@ export const SkillCloud = ({
       </span>
     </div>
     <div className="flex flex-wrap gap-2">
-      {skills.map((skill) => {
-        const isMatch = jdSkills.has(skill.toLowerCase());
-        return (
-          <span
-            key={skill}
-            className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition-all ${
-              isMatch
-                ? "bg-blue-600 border-blue-600 text-white shadow-md scale-105"
-                : "bg-white border-slate-200 text-slate-500"
-            }`}
-          >
-            {skill}
-          </span>
-        );
-      })}
+      {(() => {
+        // 1. Cast skills to handle both string and array shapes
+        const rawSkills = skills as unknown as string | string[] | null;
+
+        if (!rawSkills) return null;
+
+        // 2. Parse into a clean array
+        const skillsArray: string[] =
+          typeof rawSkills === "string"
+            ? rawSkills
+                .replace(/[{}]/g, "")
+                .split(",")
+                .map((s: string) => s.trim())
+            : (rawSkills as string[]);
+
+        // 3. Map over the safe array
+        return skillsArray.map((skill) => {
+          const isMatch = jdSkills.has(skill.toLowerCase());
+          return (
+            <span
+              key={skill}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition-all ${
+                isMatch
+                  ? "bg-blue-600 border-blue-600 text-white shadow-md scale-105"
+                  : "bg-white border-slate-200 text-slate-500"
+              }`}
+            >
+              {skill}
+            </span>
+          );
+        });
+      })()}
     </div>
   </section>
 );

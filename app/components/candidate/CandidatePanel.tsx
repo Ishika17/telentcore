@@ -12,6 +12,11 @@ const CandidatePanel = () => {
   const isClient = useIsClient();
   const dispatch = useAppDispatch();
 
+  // FIX 1: Moved hook inside the component where it belongs!
+  const selectedSkills = useAppSelector(
+    (state) => state.jds.filters.selectedSkills,
+  );
+
   // Requirement 5.2: The "Intelligent Mapping" list
   const candidates = useAppSelector(selectMatchedCandidates);
   const selectedId = useAppSelector(
@@ -89,32 +94,48 @@ const CandidatePanel = () => {
 
                   {/* Requirement 5.1 & 5.2: Skill Highlighting */}
                   <div className="flex flex-wrap gap-1.5 mt-4">
-                    {candidate.skills.slice(0, 4).map((skill) => {
-                      const isMatch = candidate.matchingSkills?.includes(skill);
-                      return (
-                        <span
-                          key={skill}
-                          className={`text-[9px] px-2 py-0.5 rounded-md font-black uppercase tracking-tighter border transition-colors ${
-                            isMatch
-                              ? "bg-blue-600 border-blue-600 text-white"
-                              : "bg-slate-50 border-slate-200 text-slate-400"
-                          }`}
-                        >
-                          {skill}
-                        </span>
-                      );
-                    })}
-                    {candidate.skills.length > 4 && (
-                      <span className="text-[9px] text-slate-300 font-bold self-center ml-1">
-                        +{candidate.skills.length - 4} MORE
-                      </span>
-                    )}
+                    {(() => {
+                      const rawSkills = candidate.skills as unknown as
+                        | string
+                        | string[]
+                        | null;
+
+                      if (!rawSkills) return null;
+
+                      const skillsArray: string[] =
+                        typeof rawSkills === "string"
+                          ? rawSkills
+                              .replace(/[{}]/g, "")
+                              .split(",")
+                              .map((s: string) => s.trim())
+                          : rawSkills;
+
+                      return skillsArray.slice(0, 4).map((skill: string) => {
+                        const isMatch =
+                          selectedSkills.length > 0
+                            ? selectedSkills
+                                .map((s) => s.toLowerCase())
+                                .includes(skill.toLowerCase())
+                            : candidate.matchingSkills?.includes(skill);
+                        return (
+                          <span
+                            key={skill}
+                            className={`text-[9px] px-2 py-0.5 rounded-md font-black uppercase tracking-tighter border transition-colors ${
+                              isMatch
+                                ? "bg-blue-600 border-blue-600 text-white"
+                                : "bg-slate-50 border-slate-200 text-slate-400"
+                            }`}
+                          >
+                            {skill}
+                          </span>
+                        );
+                      });
+                    })()}
                   </div>
                 </div>
               </div>
             );
           }}
-          // Requirement 13: Styling the scrollbar
           className="custom-scrollbar"
         />
       </div>

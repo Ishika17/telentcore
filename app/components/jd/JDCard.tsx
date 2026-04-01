@@ -2,10 +2,17 @@
 
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { selectJd } from "@/store/features/jdsSlice";
-import { jds } from "@/generated";
+
+// 1. Drop the generated type and use a custom interface with a real array
+export interface LocalJD {
+  id: string;
+  title: string;
+  skills: string[]; // <-- This guarantees it is an array!
+  min_exp: number;
+}
 
 interface JDCardProps {
-  jd: jds;
+  jd: LocalJD; // <-- Use our clean interface here
 }
 
 export function JDCard({ jd }: JDCardProps) {
@@ -13,6 +20,9 @@ export function JDCard({ jd }: JDCardProps) {
   const selectedJdId = useAppSelector((state) => state.jds.selectedJdId);
 
   const isSelected = selectedJdId === jd.id;
+
+  // Defensive fallback: If skills somehow comes in as undefined or null
+  const safeSkills = jd.skills || [];
 
   return (
     <div
@@ -39,7 +49,7 @@ export function JDCard({ jd }: JDCardProps) {
 
         {/* Skills Preview */}
         <div className="flex flex-wrap gap-1 mt-1">
-          {jd.skills.slice(0, 3).map((skill) => (
+          {safeSkills.slice(0, 3).map((skill) => (
             <span
               key={skill}
               className="text-[9px] px-2 py-0.5 bg-slate-50 border border-slate-100 rounded-full text-slate-400 font-medium"
@@ -47,9 +57,9 @@ export function JDCard({ jd }: JDCardProps) {
               {skill}
             </span>
           ))}
-          {jd.skills.length > 3 && (
+          {safeSkills.length > 3 && (
             <span className="text-[9px] text-slate-300 font-medium self-center">
-              +{jd.skills.length - 3} more
+              +{safeSkills.length - 3} more
             </span>
           )}
         </div>

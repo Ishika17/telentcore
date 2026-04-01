@@ -42,6 +42,9 @@ export const selectSelectedCandidateWithScore = createSelector(
 /**
  * 4. SELECTOR: selectCandidateHistory
  */
+/**
+ * 4. SELECTOR: selectCandidateHistory
+ */
 export const selectCandidateHistory = createSelector(
   [selectAllJDs, selectSelectedCandidate],
   (allJds, candidate) => {
@@ -52,8 +55,34 @@ export const selectCandidateHistory = createSelector(
       return allJds.filter((jd) => c.appliedJdIds?.includes(jd.id));
     }
 
+    // PASTE THE FIXED CODE HERE:
     return allJds
-      .filter((jd) => c.skills.some((skill) => jd.skills.includes(skill)))
+      .filter((jd) => {
+        // 1. Force candidate skills into an array to stop the crash
+        const rawSkills = c.skills as unknown as string | string[] | null;
+        const candidateSkillsArray: string[] =
+          typeof rawSkills === "string"
+            ? rawSkills
+                .replace(/[{}]/g, "")
+                .split(",")
+                .map((s: string) => s.trim())
+            : (rawSkills as string[]) || [];
+
+        // 2. Do the same for JD skills just in case Supabase passes strings there too!
+        const rawJdSkills = jd.skills as unknown as string | string[] | null;
+        const jdSkillsArray: string[] =
+          typeof rawJdSkills === "string"
+            ? rawJdSkills
+                .replace(/[{}]/g, "")
+                .split(",")
+                .map((s: string) => s.trim())
+            : (rawJdSkills as string[]) || [];
+
+        // 3. Now run the safe arrays through .some()
+        return candidateSkillsArray.some((skill) =>
+          jdSkillsArray.includes(skill),
+        );
+      })
       .slice(0, 3);
   },
 );

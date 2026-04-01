@@ -6,10 +6,29 @@ interface SummaryProps {
 }
 
 export const SummarySection = ({ candidate }: SummaryProps) => {
+  // 1. Safely parse skills to satisfy ESLint and prevent runtime crashes
+  const rawSkills = candidate.skills as unknown as string | string[] | null;
+
+  let topSkillsString = "relevant skills";
+
+  if (rawSkills) {
+    const skillsArray: string[] =
+      typeof rawSkills === "string"
+        ? rawSkills
+            .replace(/[{}]/g, "")
+            .split(",")
+            .map((s: string) => s.trim())
+        : (rawSkills as string[]);
+
+    if (skillsArray.length > 0) {
+      topSkillsString = skillsArray.slice(0, 3).join(", ");
+    }
+  }
+
   // TypeScript now recognizes 'description' because it's in MatchedCandidate
   const displayDescription =
     candidate.description ||
-    `Strategic professional with ${candidate.total_exp} years of specialized experience. Expert in ${candidate.skills.slice(0, 3).join(", ")}.`;
+    `Strategic professional with ${candidate.total_exp} years of specialized experience. Expert in ${topSkillsString}.`;
 
   return (
     <section className="mt-4">

@@ -4,7 +4,61 @@ import {
   createSelector,
   PayloadAction,
 } from "@reduxjs/toolkit";
+
 import { selectSelectedJd, JdsFeatureState } from "./jdsSlice";
+
+import { supabase } from "@/lib/supabaseClient";
+import { createAsyncThunk } from "@reduxjs/toolkit";
+
+export const fetchCandidatesFromSupabase = createAsyncThunk(
+  "candidates/fetchFromSupabase",
+  async (_, { rejectWithValue }) => {
+    const { data, error } = await supabase.from("candidates").select("*");
+
+    if (error) {
+      return rejectWithValue(error.message);
+    }
+
+    // 1. Define what the raw item from Supabase actually looks like
+    interface RawSupabaseCandidate {
+      id: string | number;
+      skills?: string | string[] | null;
+      full_name?: string;
+      total_experience_years?: number;
+      headline?: string;
+      email?: string;
+    }
+
+    // 2. Map the Supabase columns to match your Candidate interface
+    const mappedCandidates: Candidate[] = (
+      data as unknown as RawSupabaseCandidate[]
+    ).map((item) => {
+      const rawSkills = item.skills;
+
+      // Safely parse skills array from Supabase table payload
+      const skillsArray: string[] =
+        typeof rawSkills === "string"
+          ? rawSkills
+              .replace(/[{}]/g, "")
+              .split(",")
+              .map((s: string) => s.trim())
+          : (rawSkills as string[]) || [];
+
+      return {
+        id: String(item.id),
+        name: item.full_name || "Unknown Candidate",
+        skills: skillsArray,
+        total_exp: item.total_experience_years || 0,
+        appliedJdIds: [],
+        role: item.headline || "No Headline",
+        email: item.email || "",
+      };
+    });
+
+    // 3. Return it so the 'value is read' and the error clears!
+    return mappedCandidates;
+  },
+);
 
 /**
  * 1. INTERFACES & TYPES
@@ -71,6 +125,25 @@ const candidatesSlice = createSlice({
       });
     },
   },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchCandidatesFromSupabase.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(fetchCandidatesFromSupabase.fulfilled, (state, action) => {
+        state.loading = false;
+        const unique = Array.from(
+          new Map(action.payload.map((item) => [item.id, item])).values(),
+        );
+        candidatesAdapter.setAll(state, unique);
+      })
+      .addCase(fetchCandidatesFromSupabase.rejected, (state, action) => {
+        state.loading = false;
+        state.error =
+          (action.payload as string) || "Failed to fetch candidates";
+      });
+  },
 });
 
 export const {
@@ -89,9 +162,6 @@ export type CandidatesFeatureState = {
   candidates: ReturnType<typeof candidatesSlice.reducer>;
 };
 
-/**
- * Combine Candidates + JDs state correctly
- */
 type MappingState = CandidatesFeatureState & JdsFeatureState;
 
 /**
@@ -113,8 +183,12 @@ export const selectSelectedCandidate = (state: CandidatesFeatureState) => {
  * 6. MATCH ENGINE
  */
 export const selectMatchedCandidates = createSelector(
-  [selectAllCandidates, (state: MappingState) => selectSelectedJd(state)],
-  (allCandidates, selectedJd): MatchedCandidate[] => {
+  [
+    selectAllCandidates,
+    (state: MappingState) => selectSelectedJd(state),
+    (state: MappingState) => state.jds.filters.selectedSkills, // 👈 add this
+  ],
+  (allCandidates, selectedJd, selectedSkills): MatchedCandidate[] => {
     if (!selectedJd) {
       return allCandidates.map((c) => ({
         ...c,
@@ -123,19 +197,37 @@ export const selectMatchedCandidates = createSelector(
       }));
     }
 
-    const jdSkills = new Set(
-      selectedJd.skills.map((s: string) => s.toLowerCase()),
-    );
+    // Use selected skills as filter if any are active, otherwise use all JD skills
+    const activeSkills =
+      selectedSkills.length > 0 ? selectedSkills : selectedJd.skills;
+
+    const jdSkills = new Set(activeSkills.map((s: string) => s.toLowerCase()));
     const jdMinExp = selectedJd.min_exp;
 
-    const mapped = allCandidates.map((candidate) => {
-      const matchingSkills = candidate.skills.filter((s) =>
+    // ---> PASTE THE CODE HERE <---
+    const mapped: MatchedCandidate[] = allCandidates.map((candidate) => {
+      // 1. Tell TS to treat candidate as an unknown object first, then assert it has skills
+      const rawCandidate = candidate as unknown as {
+        skills?: string | string[] | null;
+      };
+      const rawSkills = rawCandidate.skills;
+
+      const skillsArray: string[] =
+        typeof rawSkills === "string"
+          ? rawSkills
+              .replace(/[{}]/g, "")
+              .split(",")
+              .map((s: string) => s.trim())
+          : (rawSkills as string[]) || [];
+
+      const matchingSkills = skillsArray.filter((s) =>
         jdSkills.has(s.toLowerCase()),
       );
 
+      // (Keep the rest of the file exactly as it was below this line!)
       const skillRatio =
-        selectedJd.skills.length > 0
-          ? matchingSkills.length / selectedJd.skills.length
+        activeSkills.length > 0
+          ? matchingSkills.length / activeSkills.length
           : 0;
 
       let score = skillRatio * 80;

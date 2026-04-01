@@ -4,19 +4,28 @@ import {
   createSelector,
   PayloadAction,
 } from "@reduxjs/toolkit";
-import { jds } from "@/generated";
 
 /**
- * 1. ADAPTER CONFIGURATION
+ * 1. MANUAL INTERFACE
+ * We bypass the strict generated type to force our clean arrays to pass through
+ */
+export interface Jd {
+  id: string;
+  title: string;
+  skills: string[];
+  min_exp: number;
+}
+
+/**
+ * 2. ADAPTER CONFIGURATION
  * Requirement 7: Normalized State Structure
  */
-const jdsAdapter = createEntityAdapter<jds>({
+const jdsAdapter = createEntityAdapter<Jd>({
   sortComparer: (a, b) => a.title.localeCompare(b.title),
 });
 
 /**
- * 2. STATE INTERFACE
- * FIX: Added 'export' so other slices can use this for MappingState
+ * 3. STATE INTERFACE
  */
 export interface JdState {
   selectedJdId: string | null;
@@ -32,7 +41,7 @@ export interface JdState {
 }
 
 /**
- * 3. THE SLICE
+ * 4. THE SLICE
  */
 const jdsSlice = createSlice({
   name: "jds",
@@ -49,7 +58,7 @@ const jdsSlice = createSlice({
     sortBy: "relevance",
   }),
   reducers: {
-    setJds: (state, action: PayloadAction<jds[]>) => {
+    setJds: (state, action: PayloadAction<Jd[]>) => {
       jdsAdapter.setAll(state, action.payload);
     },
     selectJd: (state, action: PayloadAction<string | null>) => {
@@ -98,8 +107,7 @@ export const {
 export default jdsSlice.reducer;
 
 /**
- * 4. SELECTORS (Feature State Pattern)
- * FIX: Added 'export' to the FeatureState type
+ * 5. SELECTORS (Feature State Pattern)
  */
 export type JdsFeatureState = {
   jds: ReturnType<typeof jdsSlice.reducer>;
@@ -116,7 +124,7 @@ export const {
 } = jdsSelectors;
 
 /**
- * 5. ADVANCED FILTER SELECTOR
+ * 6. ADVANCED FILTER SELECTOR
  */
 export const selectFilteredJDs = createSelector(
   [
@@ -132,14 +140,15 @@ export const selectFilteredJDs = createSelector(
       const matchesSearch =
         !search ||
         jd.title.toLowerCase().includes(search) ||
-        jd.skills.some((s) => s.toLowerCase().includes(search));
+        // Defensively check skills array to prevent filter crashes
+        (jd.skills && jd.skills.some((s) => s.toLowerCase().includes(search)));
 
       const matchesExp =
         jd.min_exp >= filters.minExp && jd.min_exp <= filters.maxExp;
 
       const matchesSkills =
         filters.selectedSkills.length === 0 ||
-        filters.selectedSkills.every((s) => jd.skills.includes(s));
+        filters.selectedSkills.every((s) => jd.skills && jd.skills.includes(s));
 
       return matchesSearch && matchesExp && matchesSkills;
     });
@@ -152,7 +161,7 @@ export const selectFilteredJDs = createSelector(
           const bBoost = b.title.toLowerCase().includes(search) ? 0 : 1;
           if (aBoost !== bBoost) return aBoost - bBoost;
         }
-        if (b.skills.length !== a.skills.length)
+        if (b.skills && a.skills && b.skills.length !== a.skills.length)
           return b.skills.length - a.skills.length;
         return b.min_exp - a.min_exp;
       }
