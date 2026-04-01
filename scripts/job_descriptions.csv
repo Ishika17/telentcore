@@ -1,0 +1,2101 @@
+id,title,department,required_skills,experience_level,min_experience_years
+1,"Backend Developer","Developer","{TensorFlow,Node.js,Framer,Data Bricks,React}",Junior,0
+2,"Data Scientist","Marketing","{Pandas,Next.js,After Effects,TypeScript,Redis}",Lead,10
+3,"Mobile Developer","Infrastructure","{Python,Affinity,Terraform,React}",Lead,11
+4,"Game Developer","Design","{AWS,Photoshop,Docker,Tailwind CSS,Affinity}",Senior,7
+5,"Tester","Engineering","{Figma,Vue.js,React,GSAP,Data Bricks}",Senior,5
+6,"Tester","Marketing","{After Effects,Photoshop,Docker,Vue.js,Sass}",Lead,10
+7,"Tester","Product","{GSAP,Docker,Blender,TypeScript,Next.js}",Lead,9
+8,"Backend Developer","Marketing","{Data Bricks,React,Vue.js,Docker,Pandas,Tailwind CSS}",Senior,6
+9,"Site Reliability Engineer","Data & AI","{Node.js,Python,Go,Next.js,AWS}",Lead,10
+10,"Backend Developer","Design","{TensorFlow,Docker,Tailwind CSS,React,Kubernetes,Redis}",Mid,4
+11,"Site Reliability Engineer","Data & AI","{After Effects,Kubernetes,Photoshop}",Lead,10
+12,"Backend Developer","Data & AI","{Next.js,PostgreSQL,Go,TypeScript}",Senior,5
+13,"Tester","Developer","{Python,Blender,GSAP,React,TypeScript}",Senior,7
+14,"Frontend Engineer","Engineering","{React,Docker,Vue.js,Kubernetes,TypeScript,Terraform}",Lead,11
+15,"Backend Developer","Data & AI","{Docker,GSAP,Blender,Sass,React}",Lead,11
+16,"Frontend Engineer","Data & AI","{React,Next.js,Docker,AWS}",Mid,2
+17,"UI/UX Designer","Infrastructure","{GraphQL,TypeScript,AWS,Figma,Vue.js,Blender}",Junior,1
+18,"Game Developer","Product","{Kubernetes,Framer,Terraform,Python,GraphQL,Data Bricks}",Senior,5
+19,"AI & ML Engineer","Design","{Docker,Next.js,Python,Affinity,TypeScript,Framer}",Mid,3
+20,"Full Stack Engineer","Infrastructure","{AWS,Kubernetes,Framer,Vue.js,Redis,Docker}",Senior,7
+21,"Frontend Engineer","Developer","{GraphQL,Affinity,Docker,Figma}",Senior,7
+22,"Mobile Developer","Engineering","{After Effects,Go,Next.js,Affinity,Photoshop,Blender}",Mid,3
+23,"AI & ML Engineer","Developer","{React,Next.js,Tailwind CSS,GraphQL,GSAP}",Junior,0
+24,"Game Developer","Infrastructure","{Sass,React,Figma,Data Bricks}",Junior,0
+25,"Game Developer","Data & AI","{Kubernetes,Blender,Photoshop,React,Tailwind CSS}",Senior,5
+26,"DevOps Specialist","Developer","{Blender,PostgreSQL,Redis}",Mid,3
+27,"DevOps Specialist","Infrastructure","{Blender,Tailwind CSS,Vue.js,Framer}",Mid,4
+28,"Mobile Developer","Product","{Pandas,Tailwind CSS,Photoshop,TensorFlow,Docker,TypeScript}",Junior,1
+29,"Backend Developer","Design","{Pandas,TensorFlow,Affinity,Photoshop,GSAP,Python}",Lead,9
+30,"AI & ML Engineer","Data & AI","{Data Bricks,TypeScript,Vue.js}",Lead,9
+31,"Frontend Engineer","Developer","{Python,Figma,Go,Node.js,Tailwind CSS}",Junior,0
+32,"Frontend Engineer","Data & AI","{Affinity,React,GraphQL}",Junior,1
+33,"Data Scientist","Infrastructure","{PostgreSQL,Go,React}",Mid,3
+34,"Full Stack Engineer","Engineering","{Node.js,Docker,GraphQL,Photoshop}",Lead,10
+35,"Game Developer","Developer","{Sass,Terraform,Vue.js,GraphQL,Framer}",Senior,7
+36,"Frontend Engineer","Infrastructure","{Vue.js,Tailwind CSS,Python,Docker,Framer}",Mid,2
+37,"Frontend Engineer","Marketing","{React,Next.js,After Effects,Go,Node.js}",Junior,1
+38,"DevOps Specialist","Marketing","{Terraform,Node.js,Sass,Redis,Tailwind CSS,Docker}",Lead,9
+39,"Full Stack Engineer","Engineering","{Vue.js,Next.js,Pandas,Terraform,Node.js,Redis}",Lead,8
+40,"Frontend Engineer","Engineering","{Kubernetes,GraphQL,Figma,Python,Tailwind CSS,Go}",Junior,0
+41,"Game Developer","Infrastructure","{Photoshop,Terraform,Go,GSAP,React}",Mid,3
+42,"DevOps Specialist","Marketing","{PostgreSQL,Photoshop,TensorFlow,Docker}",Senior,7
+43,"DevOps Specialist","Engineering","{Next.js,Blender,Figma}",Mid,2
+44,"Game Developer","Marketing","{Docker,PostgreSQL,React}",Lead,9
+45,"UI/UX Designer","Developer","{Figma,Python,Data Bricks,TypeScript,Tailwind CSS,AWS}",Senior,6
+46,"UI/UX Designer","Developer","{Terraform,TensorFlow,Blender,Figma}",Mid,2
+47,"AI & ML Engineer","Marketing","{Terraform,TypeScript,Pandas}",Mid,2
+48,"Full Stack Engineer","Product","{Framer,Blender,Tailwind CSS,Affinity}",Mid,2
+49,"Tester","Data & AI","{TypeScript,Blender,Node.js,Figma,Next.js}",Senior,7
+50,"DevOps Specialist","Design","{Vue.js,Python,Node.js,Figma,Tailwind CSS,Pandas}",Senior,6
+51,"AI & ML Engineer","Engineering","{React,Node.js,Go,Data Bricks,Next.js}",Lead,11
+52,"DevOps Specialist","Data & AI","{GSAP,Tailwind CSS,Go,Framer,Vue.js}",Senior,6
+53,"UI/UX Designer","Marketing","{React,Next.js,Blender,Go,TypeScript}",Lead,11
+54,"Frontend Engineer","Engineering","{After Effects,Photoshop,GSAP}",Lead,11
+55,"Backend Developer","Engineering","{GSAP,Affinity,Tailwind CSS,TypeScript,Photoshop}",Lead,11
+56,"Game Developer","Developer","{React,Kubernetes,Terraform,TensorFlow}",Junior,1
+57,"AI & ML Engineer","Infrastructure","{React,TypeScript,Sass,Docker,Terraform}",Junior,1
+58,"Site Reliability Engineer","Design","{Kubernetes,TensorFlow,GSAP}",Mid,4
+59,"Site Reliability Engineer","Marketing","{Node.js,Data Bricks,Pandas,Blender,Kubernetes}",Senior,6
+60,"Full Stack Engineer","Data & AI","{React,TypeScript,Next.js,Pandas,GSAP,Figma}",Mid,4
+61,"Data Scientist","Product","{Tailwind CSS,Framer,Photoshop}",Senior,6
+62,"Tester","Infrastructure","{Next.js,Pandas,TensorFlow}",Lead,11
+63,"AI & ML Engineer","Product","{React,Tailwind CSS,Go}",Mid,2
+64,"Game Developer","Infrastructure","{Pandas,Affinity,Framer,TypeScript,PostgreSQL}",Senior,6
+65,"Mobile Developer","Product","{AWS,React,Go,Affinity}",Lead,10
+66,"DevOps Specialist","Design","{Vue.js,Terraform,Photoshop,TensorFlow,Python}",Mid,4
+67,"Data Scientist","Marketing","{AWS,Python,TypeScript,Docker,Data Bricks}",Lead,9
+68,"Data Scientist","Developer","{Vue.js,Blender,GraphQL,Sass,Kubernetes,Figma}",Senior,7
+69,"Frontend Engineer","Infrastructure","{Python,Next.js,Tailwind CSS,Photoshop,React}",Lead,11
+70,"AI & ML Engineer","Engineering","{Python,Node.js,Docker}",Lead,9
+71,"Full Stack Engineer","Developer","{React,Next.js,Figma}",Senior,6
+72,"UI/UX Designer","Design","{GSAP,Pandas,After Effects}",Lead,10
+73,"Full Stack Engineer","Developer","{Docker,Vue.js,Kubernetes,Next.js,Python,Affinity}",Mid,4
+74,"Game Developer","Marketing","{Kubernetes,After Effects,GSAP,Framer,React}",Junior,1
+75,"Game Developer","Developer","{Blender,Data Bricks,Python,Terraform}",Junior,1
+76,"Tester","Marketing","{Framer,Pandas,Vue.js,React}",Lead,9
+77,"Tester","Marketing","{Vue.js,Data Bricks,Python,TypeScript,After Effects}",Junior,0
+78,"Game Developer","Data & AI","{Pandas,Figma,React}",Mid,4
+79,"AI & ML Engineer","Infrastructure","{Figma,React,Blender}",Senior,6
+80,"Frontend Engineer","Engineering","{Next.js,TypeScript,Data Bricks,Blender,Framer}",Senior,5
+81,"Mobile Developer","Product","{Docker,Tailwind CSS,Photoshop,Affinity}",Junior,1
+82,"Backend Developer","Design","{Affinity,Blender,Tailwind CSS,Framer}",Lead,11
+83,"Site Reliability Engineer","Engineering","{Python,Blender,Vue.js,Framer}",Senior,7
+84,"Tester","Developer","{After Effects,Blender,PostgreSQL,Affinity,GSAP}",Mid,4
+85,"Mobile Developer","Infrastructure","{GraphQL,Vue.js,React,Terraform}",Lead,9
+86,"Full Stack Engineer","Data & AI","{Vue.js,Python,Blender,Sass}",Mid,4
+87,"AI & ML Engineer","Data & AI","{Sass,Figma,React,Data Bricks}",Junior,1
+88,"UI/UX Designer","Developer","{Node.js,Terraform,Blender,Sass,TensorFlow,After Effects}",Lead,10
+89,"AI & ML Engineer","Data & AI","{Redis,Kubernetes,After Effects,Tailwind CSS,Docker,Framer}",Lead,11
+90,"Full Stack Engineer","Infrastructure","{Blender,Vue.js,After Effects,Python,Redis,Node.js}",Junior,0
+91,"Data Scientist","Design","{GSAP,Photoshop,GraphQL,Framer,After Effects}",Mid,3
+92,"Game Developer","Marketing","{Docker,Sass,GraphQL}",Junior,0
+93,"Frontend Engineer","Product","{After Effects,Docker,Next.js,Data Bricks,Figma,GraphQL}",Senior,6
+94,"Frontend Engineer","Product","{Python,Kubernetes,After Effects,Tailwind CSS}",Senior,5
+95,"DevOps Specialist","Infrastructure","{React,Next.js,Figma,Node.js,TensorFlow}",Senior,5
+96,"Backend Developer","Engineering","{React,Terraform,Photoshop,GSAP}",Senior,7
+97,"Frontend Engineer","Marketing","{Pandas,Docker,After Effects}",Senior,7
+98,"UI/UX Designer","Infrastructure","{GSAP,Python,Go,Node.js,Photoshop,After Effects}",Mid,2
+99,"UI/UX Designer","Marketing","{AWS,TypeScript,Kubernetes,Docker,Photoshop}",Junior,0
+100,"Full Stack Engineer","Design","{AWS,TypeScript,TensorFlow,Redis,Go}",Lead,11
+101,"Game Developer","Product","{Terraform,Vue.js,Docker,AWS,Go,Blender}",Junior,1
+102,"UI/UX Designer","Engineering","{Tailwind CSS,Framer,Affinity}",Senior,7
+103,"Full Stack Engineer","Design","{Node.js,Blender,Next.js,Docker}",Junior,0
+104,"Game Developer","Data & AI","{GSAP,Vue.js,TensorFlow}",Senior,7
+105,"Site Reliability Engineer","Infrastructure","{Next.js,Kubernetes,After Effects,React,Python,Sass}",Senior,6
+106,"Data Scientist","Data & AI","{TypeScript,Vue.js,GSAP,Sass}",Senior,6
+107,"UI/UX Designer","Developer","{Docker,TypeScript,Kubernetes}",Senior,6
+108,"Tester","Developer","{Data Bricks,Photoshop,GSAP,Tailwind CSS,Redis}",Junior,1
+109,"Mobile Developer","Developer","{Sass,Pandas,Framer,AWS}",Junior,0
+110,"AI & ML Engineer","Marketing","{GraphQL,Next.js,Framer,Tailwind CSS,GSAP}",Lead,11
+111,"Mobile Developer","Infrastructure","{Data Bricks,React,TensorFlow,Go,AWS}",Lead,8
+112,"Site Reliability Engineer","Infrastructure","{PostgreSQL,GraphQL,Python}",Junior,0
+113,"UI/UX Designer","Engineering","{Python,GSAP,Tailwind CSS,Node.js,Next.js}",Mid,2
+114,"UI/UX Designer","Engineering","{Python,Terraform,GraphQL,Docker}",Junior,0
+115,"Tester","Design","{Framer,Photoshop,Next.js,Pandas,Tailwind CSS}",Junior,0
+116,"Frontend Engineer","Marketing","{GraphQL,React,Pandas}",Mid,3
+117,"Tester","Developer","{AWS,Node.js,Pandas}",Lead,8
+118,"AI & ML Engineer","Data & AI","{React,Go,Redis,Next.js,Kubernetes}",Senior,6
+119,"Frontend Engineer","Marketing","{Figma,TypeScript,Node.js,Redis,Affinity,Sass}",Junior,1
+120,"Mobile Developer","Engineering","{GSAP,TypeScript,Affinity,Pandas,Docker}",Lead,8
+121,"Game Developer","Developer","{Affinity,Next.js,Redis,Tailwind CSS,Framer}",Junior,1
+122,"Site Reliability Engineer","Design","{Vue.js,React,TypeScript,GraphQL,Python}",Junior,0
+123,"Tester","Engineering","{Docker,TensorFlow,Vue.js,GSAP}",Lead,11
+124,"AI & ML Engineer","Developer","{Python,Vue.js,Photoshop,GraphQL,Terraform}",Senior,6
+125,"Tester","Developer","{Data Bricks,Python,TensorFlow,Kubernetes,PostgreSQL}",Lead,9
+126,"AI & ML Engineer","Design","{Framer,Node.js,Terraform}",Mid,2
+127,"Mobile Developer","Developer","{AWS,Kubernetes,Photoshop,Pandas,PostgreSQL,Python}",Lead,9
+128,"Tester","Marketing","{Blender,After Effects,React,Node.js,Sass,Tailwind CSS}",Junior,1
+129,"AI & ML Engineer","Marketing","{Photoshop,Terraform,AWS,Sass}",Lead,9
+130,"AI & ML Engineer","Engineering","{Python,PostgreSQL,GSAP,After Effects,Photoshop,Blender}",Lead,10
+131,"Backend Developer","Product","{Next.js,Blender,Vue.js,PostgreSQL}",Senior,7
+132,"Site Reliability Engineer","Developer","{Pandas,PostgreSQL,Vue.js,Terraform,Docker,Sass}",Senior,5
+133,"UI/UX Designer","Infrastructure","{React,Framer,Next.js,Data Bricks,Node.js}",Lead,9
+134,"Frontend Engineer","Data & AI","{GraphQL,Kubernetes,Sass,Photoshop,After Effects}",Lead,10
+135,"AI & ML Engineer","Product","{AWS,Sass,After Effects}",Junior,1
+136,"Site Reliability Engineer","Marketing","{Next.js,React,AWS}",Senior,7
+137,"Full Stack Engineer","Data & AI","{GSAP,Affinity,AWS,GraphQL,Terraform,Redis}",Junior,0
+138,"Full Stack Engineer","Infrastructure","{Pandas,Next.js,Tailwind CSS,Blender}",Lead,9
+139,"DevOps Specialist","Data & AI","{Framer,Sass,GraphQL,Next.js,Python,Kubernetes}",Junior,1
+140,"DevOps Specialist","Design","{Pandas,Node.js,Terraform,React,Tailwind CSS,Blender}",Lead,10
+141,"Backend Developer","Engineering","{Python,Pandas,Kubernetes,Docker}",Junior,1
+142,"DevOps Specialist","Product","{Kubernetes,Next.js,React}",Senior,5
+143,"Full Stack Engineer","Infrastructure","{Next.js,Vue.js,Framer,Sass}",Mid,4
+144,"Data Scientist","Product","{Photoshop,Node.js,Next.js}",Mid,2
+145,"Frontend Engineer","Engineering","{Docker,AWS,React,Go,Photoshop,PostgreSQL}",Junior,1
+146,"DevOps Specialist","Design","{Kubernetes,Blender,Pandas,React}",Senior,5
+147,"Tester","Product","{Next.js,Redis,After Effects,Figma}",Junior,1
+148,"Game Developer","Infrastructure","{Docker,Tailwind CSS,GSAP,React,Go,TensorFlow}",Junior,0
+149,"Site Reliability Engineer","Infrastructure","{Sass,Framer,Redis,AWS,Next.js,Go}",Junior,1
+150,"Full Stack Engineer","Infrastructure","{GraphQL,Photoshop,Next.js,Tailwind CSS,GSAP}",Senior,7
+151,"AI & ML Engineer","Engineering","{After Effects,Kubernetes,Vue.js,TensorFlow,Sass,Figma}",Lead,11
+152,"Frontend Engineer","Data & AI","{React,TypeScript,Docker,Python,Vue.js}",Junior,0
+153,"DevOps Specialist","Data & AI","{Data Bricks,Docker,Terraform,GraphQL,Figma}",Junior,0
+154,"Mobile Developer","Developer","{Docker,Python,Redis,Node.js}",Lead,11
+155,"Tester","Engineering","{Terraform,Framer,Pandas,Go,Redis}",Lead,8
+156,"DevOps Specialist","Engineering","{React,Next.js,Node.js}",Mid,4
+157,"Data Scientist","Engineering","{Vue.js,Sass,Data Bricks,After Effects,Next.js}",Senior,7
+158,"Game Developer","Design","{TypeScript,Docker,Redis}",Mid,3
+159,"UI/UX Designer","Infrastructure","{Node.js,Sass,After Effects,Kubernetes}",Junior,1
+160,"UI/UX Designer","Product","{Vue.js,GSAP,After Effects}",Senior,7
+161,"Data Scientist","Marketing","{TypeScript,Docker,Framer,Pandas,Redis,Photoshop}",Senior,6
+162,"Data Scientist","Marketing","{After Effects,Kubernetes,Vue.js,React}",Lead,11
+163,"AI & ML Engineer","Developer","{React,Next.js,TensorFlow,Pandas,Go}",Senior,5
+164,"Full Stack Engineer","Product","{Affinity,TypeScript,Kubernetes}",Junior,1
+165,"Frontend Engineer","Engineering","{PostgreSQL,Tailwind CSS,GraphQL,Sass}",Senior,5
+166,"Frontend Engineer","Infrastructure","{Kubernetes,Vue.js,Terraform,TensorFlow,React,Redis}",Junior,0
+167,"Full Stack Engineer","Data & AI","{After Effects,Next.js,GraphQL,Data Bricks,Python,Framer}",Mid,4
+168,"Data Scientist","Marketing","{AWS,React,After Effects,Blender,Next.js,Node.js}",Senior,7
+169,"Full Stack Engineer","Engineering","{TensorFlow,TypeScript,Terraform,Go,Framer}",Junior,1
+170,"Tester","Engineering","{Node.js,Framer,Affinity,GSAP,TypeScript}",Senior,5
+171,"Frontend Engineer","Infrastructure","{Data Bricks,Python,Docker,Next.js,Figma}",Senior,5
+172,"Backend Developer","Infrastructure","{GSAP,Kubernetes,TypeScript,Figma,PostgreSQL}",Lead,10
+173,"Frontend Engineer","Developer","{GraphQL,React,After Effects,Go}",Mid,2
+174,"Game Developer","Engineering","{Photoshop,Go,Python,React,Tailwind CSS}",Lead,10
+175,"UI/UX Designer","Design","{Kubernetes,Vue.js,Affinity,React,Next.js}",Lead,8
+176,"UI/UX Designer","Data & AI","{TensorFlow,Framer,TypeScript,React,Redis,Blender}",Lead,8
+177,"UI/UX Designer","Infrastructure","{Vue.js,Figma,After Effects,Sass,Docker,React}",Junior,0
+178,"Full Stack Engineer","Developer","{Data Bricks,Framer,Node.js,TypeScript,Docker,Next.js}",Junior,0
+179,"UI/UX Designer","Data & AI","{Vue.js,Go,Framer,Photoshop,AWS}",Junior,1
+180,"Data Scientist","Developer","{Docker,Node.js,AWS,GraphQL,Sass,Python}",Lead,9
+181,"Tester","Data & AI","{React,Blender,TensorFlow}",Lead,11
+182,"UI/UX Designer","Developer","{Vue.js,Terraform,After Effects}",Senior,7
+183,"Game Developer","Marketing","{TypeScript,Redis,Docker,Kubernetes}",Lead,8
+184,"Data Scientist","Infrastructure","{PostgreSQL,Redis,TypeScript}",Mid,3
+185,"Site Reliability Engineer","Design","{React,Tailwind CSS,AWS,Vue.js,Data Bricks,Redis}",Junior,1
+186,"Tester","Design","{Go,Data Bricks,React,Next.js,Tailwind CSS,Sass}",Senior,7
+187,"Mobile Developer","Infrastructure","{GSAP,Framer,After Effects,Affinity}",Senior,7
+188,"Tester","Data & AI","{Docker,Sass,Node.js,Kubernetes}",Mid,4
+189,"Mobile Developer","Infrastructure","{Go,Redis,Docker,After Effects,GSAP,TensorFlow}",Junior,0
+190,"AI & ML Engineer","Data & AI","{Kubernetes,Terraform,Tailwind CSS,Data Bricks,Next.js}",Mid,3
+191,"DevOps Specialist","Engineering","{TypeScript,Kubernetes,AWS,Pandas,Framer}",Lead,8
+192,"DevOps Specialist","Marketing","{AWS,GraphQL,After Effects,Python,Redis,Next.js}",Senior,7
+193,"Site Reliability Engineer","Data & AI","{PostgreSQL,Go,After Effects,GraphQL,Terraform,React}",Mid,2
+194,"UI/UX Designer","Developer","{Terraform,Node.js,Affinity,Blender,Data Bricks,Kubernetes}",Mid,4
+195,"Mobile Developer","Design","{Pandas,Go,Kubernetes,TypeScript}",Mid,4
+196,"Full Stack Engineer","Design","{Kubernetes,Pandas,AWS,Vue.js}",Junior,0
+197,"UI/UX Designer","Data & AI","{TypeScript,React,Pandas}",Lead,11
+198,"Backend Developer","Data & AI","{Python,TypeScript,Tailwind CSS,Node.js,React,After Effects}",Junior,1
+199,"Backend Developer","Data & AI","{Next.js,Python,Redis,Kubernetes,Data Bricks,AWS}",Lead,9
+200,"Frontend Engineer","Developer","{Tailwind CSS,Redis,React}",Lead,8
+201,"Game Developer","Engineering","{Python,Data Bricks,TypeScript,GSAP}",Lead,10
+202,"Backend Developer","Infrastructure","{Terraform,AWS,Redis,Framer,Python,TypeScript}",Senior,7
+203,"UI/UX Designer","Product","{Terraform,Node.js,GraphQL,Next.js}",Lead,11
+204,"Tester","Design","{Go,Python,Blender,Framer}",Junior,0
+205,"AI & ML Engineer","Design","{Docker,Node.js,After Effects,React,GraphQL,Terraform}",Senior,7
+206,"Data Scientist","Developer","{Kubernetes,TensorFlow,Python}",Mid,4
+207,"Frontend Engineer","Engineering","{Terraform,Docker,Node.js,Sass}",Junior,0
+208,"UI/UX Designer","Infrastructure","{Go,GraphQL,Photoshop,Data Bricks,Pandas,Terraform}",Lead,8
+209,"Full Stack Engineer","Design","{Blender,Python,Kubernetes}",Senior,6
+210,"Backend Developer","Engineering","{Tailwind CSS,AWS,Sass,React,Next.js,Kubernetes}",Mid,4
+211,"Mobile Developer","Marketing","{PostgreSQL,Photoshop,Terraform,Framer}",Junior,0
+212,"Mobile Developer","Product","{Go,React,Redis}",Junior,0
+213,"AI & ML Engineer","Engineering","{Go,Vue.js,TensorFlow,Sass,Redis,Docker}",Senior,5
+214,"Tester","Product","{TypeScript,Affinity,Docker,Next.js}",Senior,7
+215,"UI/UX Designer","Design","{GSAP,GraphQL,After Effects,React,PostgreSQL,Tailwind CSS}",Senior,7
+216,"Game Developer","Marketing","{Vue.js,TypeScript,Go,Sass,React}",Senior,7
+217,"DevOps Specialist","Marketing","{Figma,Docker,React,PostgreSQL,After Effects}",Senior,7
+218,"Site Reliability Engineer","Engineering","{Vue.js,Pandas,Redis}",Lead,8
+219,"Site Reliability Engineer","Marketing","{Node.js,Tailwind CSS,Next.js,Framer}",Junior,0
+220,"Game Developer","Data & AI","{Node.js,GSAP,Next.js,Redis}",Mid,2
+221,"Data Scientist","Infrastructure","{GSAP,React,Node.js,TypeScript,PostgreSQL}",Lead,10
+222,"UI/UX Designer","Engineering","{Affinity,Node.js,Sass,Next.js,React}",Mid,3
+223,"Backend Developer","Developer","{GraphQL,After Effects,TypeScript}",Senior,5
+224,"Game Developer","Marketing","{Kubernetes,Data Bricks,TypeScript,Docker,Figma}",Mid,2
+225,"UI/UX Designer","Developer","{GraphQL,Data Bricks,Terraform,Photoshop,Go,GSAP}",Lead,8
+226,"Site Reliability Engineer","Data & AI","{Pandas,GSAP,Python,Go}",Senior,7
+227,"Site Reliability Engineer","Infrastructure","{Pandas,TypeScript,Redis}",Mid,2
+228,"UI/UX Designer","Data & AI","{Next.js,Data Bricks,Python,Sass,After Effects,TypeScript}",Lead,9
+229,"Backend Developer","Developer","{Kubernetes,React,Next.js,GraphQL}",Mid,3
+230,"Site Reliability Engineer","Engineering","{Blender,Node.js,Next.js}",Senior,5
+231,"AI & ML Engineer","Design","{Blender,AWS,Terraform,Next.js,Framer,Node.js}",Junior,0
+232,"Game Developer","Product","{PostgreSQL,Tailwind CSS,Blender}",Lead,10
+233,"Data Scientist","Design","{Redis,Kubernetes,Python,After Effects,Node.js,Framer}",Junior,1
+234,"Full Stack Engineer","Developer","{Photoshop,Pandas,Node.js,Terraform,TensorFlow}",Junior,1
+235,"Site Reliability Engineer","Infrastructure","{Photoshop,TypeScript,Affinity,Vue.js,Go}",Senior,6
+236,"Backend Developer","Infrastructure","{Figma,Docker,Framer}",Lead,10
+237,"Data Scientist","Data & AI","{Docker,TypeScript,Python,Node.js,PostgreSQL}",Lead,8
+238,"Game Developer","Engineering","{Docker,Vue.js,TypeScript}",Mid,2
+239,"Data Scientist","Engineering","{PostgreSQL,React,Photoshop}",Junior,0
+240,"Frontend Engineer","Engineering","{TypeScript,AWS,Figma}",Lead,10
+241,"Frontend Engineer","Data & AI","{GraphQL,Terraform,After Effects,Blender}",Mid,4
+242,"Data Scientist","Engineering","{Terraform,AWS,React,Figma,Next.js}",Senior,5
+243,"Mobile Developer","Engineering","{PostgreSQL,Framer,Figma,Next.js,Python,Blender}",Senior,7
+244,"Game Developer","Design","{Python,TypeScript,Sass,Photoshop}",Mid,4
+245,"UI/UX Designer","Product","{Tailwind CSS,Python,TensorFlow,Blender,Figma}",Lead,8
+246,"Game Developer","Infrastructure","{Blender,Sass,Docker,Node.js,Terraform,Tailwind CSS}",Senior,5
+247,"Full Stack Engineer","Product","{Kubernetes,Python,GSAP}",Mid,2
+248,"Site Reliability Engineer","Design","{Terraform,Go,Python,React,After Effects}",Junior,1
+249,"Site Reliability Engineer","Infrastructure","{React,Next.js,TypeScript,Vue.js,After Effects}",Lead,10
+250,"Game Developer","Developer","{Framer,Figma,React,Tailwind CSS}",Lead,11
+251,"Full Stack Engineer","Design","{Pandas,Terraform,GraphQL,Redis,TensorFlow}",Mid,2
+252,"Backend Developer","Developer","{After Effects,Pandas,React}",Mid,3
+253,"Tester","Developer","{React,Node.js,Kubernetes,TypeScript,Pandas,Sass}",Mid,3
+254,"Backend Developer","Infrastructure","{TypeScript,Go,Photoshop,Vue.js,Python}",Mid,3
+255,"Full Stack Engineer","Design","{Go,Data Bricks,Figma,React,Sass}",Mid,3
+256,"Game Developer","Developer","{TypeScript,Python,GraphQL,Vue.js}",Senior,6
+257,"Tester","Developer","{Sass,Next.js,Node.js}",Junior,1
+258,"AI & ML Engineer","Design","{Sass,React,After Effects,Next.js,AWS,GSAP}",Senior,7
+259,"Data Scientist","Design","{Kubernetes,Tailwind CSS,Pandas,AWS,Go}",Junior,0
+260,"Site Reliability Engineer","Developer","{Affinity,After Effects,Vue.js,TensorFlow,Docker}",Lead,8
+261,"Site Reliability Engineer","Design","{Terraform,Redis,GraphQL,Python,TypeScript}",Junior,0
+262,"Site Reliability Engineer","Product","{GraphQL,Pandas,Tailwind CSS,PostgreSQL}",Mid,4
+263,"UI/UX Designer","Developer","{Go,Terraform,Pandas}",Mid,4
+264,"Data Scientist","Developer","{Blender,Pandas,After Effects,Tailwind CSS,Node.js}",Senior,7
+265,"UI/UX Designer","Engineering","{Data Bricks,GraphQL,Docker,Node.js}",Lead,11
+266,"Data Scientist","Marketing","{Pandas,Vue.js,React,Framer,Terraform}",Senior,6
+267,"Backend Developer","Infrastructure","{Python,Node.js,Sass}",Junior,1
+268,"Frontend Engineer","Product","{Tailwind CSS,Photoshop,GSAP,React}",Junior,1
+269,"Tester","Design","{Pandas,Docker,Blender}",Lead,11
+270,"Game Developer","Design","{Docker,GSAP,Blender,Kubernetes,Python,Terraform}",Senior,7
+271,"AI & ML Engineer","Product","{Sass,Docker,Framer,Kubernetes}",Lead,10
+272,"Tester","Developer","{TensorFlow,Redis,Next.js,PostgreSQL}",Junior,1
+273,"AI & ML Engineer","Engineering","{Photoshop,React,Framer,Affinity,TensorFlow}",Mid,2
+274,"DevOps Specialist","Marketing","{Terraform,Pandas,Python}",Junior,0
+275,"Frontend Engineer","Design","{Node.js,Next.js,Terraform,PostgreSQL}",Mid,4
+276,"Full Stack Engineer","Infrastructure","{TensorFlow,Sass,Kubernetes}",Mid,2
+277,"UI/UX Designer","Design","{Vue.js,React,Kubernetes,Next.js,Photoshop}",Lead,9
+278,"UI/UX Designer","Engineering","{GraphQL,Data Bricks,Node.js}",Lead,9
+279,"Frontend Engineer","Marketing","{AWS,Next.js,GraphQL}",Senior,5
+280,"Site Reliability Engineer","Design","{Figma,TensorFlow,Kubernetes,GraphQL}",Lead,11
+281,"Full Stack Engineer","Design","{Next.js,Kubernetes,After Effects,Pandas,Photoshop,Tailwind CSS}",Lead,11
+282,"Frontend Engineer","Data & AI","{Redis,Terraform,Blender,Affinity}",Junior,1
+283,"Frontend Engineer","Infrastructure","{GraphQL,Photoshop,Vue.js}",Junior,0
+284,"Backend Developer","Infrastructure","{PostgreSQL,TypeScript,After Effects,Redis,Affinity}",Mid,2
+285,"Game Developer","Marketing","{Framer,Blender,GSAP,Figma,Vue.js}",Mid,4
+286,"Frontend Engineer","Design","{Affinity,Data Bricks,GraphQL}",Junior,1
+287,"UI/UX Designer","Product","{Tailwind CSS,React,Docker}",Senior,6
+288,"Backend Developer","Developer","{GSAP,Kubernetes,React,Docker,Vue.js}",Lead,9
+289,"Frontend Engineer","Developer","{Redis,React,Affinity,Figma,Next.js,Pandas}",Mid,2
+290,"Mobile Developer","Infrastructure","{Kubernetes,Blender,Framer,Photoshop,React}",Lead,11
+291,"Game Developer","Design","{TypeScript,React,Pandas,PostgreSQL,Affinity}",Junior,1
+292,"Game Developer","Marketing","{TypeScript,Pandas,AWS}",Mid,2
+293,"Site Reliability Engineer","Infrastructure","{React,Pandas,Docker,Kubernetes,TypeScript,Framer}",Junior,1
+294,"Backend Developer","Data & AI","{React,Affinity,Next.js,Framer,Data Bricks}",Mid,3
+295,"Backend Developer","Design","{Node.js,Vue.js,Affinity,Figma,Python,Next.js}",Junior,1
+296,"UI/UX Designer","Developer","{React,Framer,GraphQL,Vue.js,Redis,Python}",Senior,6
+297,"Game Developer","Engineering","{Tailwind CSS,PostgreSQL,Next.js,Docker,Data Bricks}",Senior,6
+298,"Frontend Engineer","Developer","{Affinity,Data Bricks,Sass,Framer,PostgreSQL,Vue.js}",Lead,8
+299,"Mobile Developer","Product","{PostgreSQL,AWS,Redis,Vue.js}",Mid,3
+300,"Full Stack Engineer","Developer","{Go,TensorFlow,Next.js}",Junior,1
+301,"Mobile Developer","Data & AI","{Next.js,Blender,Node.js}",Senior,6
+302,"DevOps Specialist","Infrastructure","{Next.js,TensorFlow,Terraform,After Effects,Data Bricks,PostgreSQL}",Mid,2
+303,"Mobile Developer","Marketing","{Figma,Pandas,Photoshop,TypeScript}",Lead,8
+304,"Data Scientist","Infrastructure","{Pandas,GSAP,TypeScript}",Lead,8
+305,"Full Stack Engineer","Marketing","{Affinity,TypeScript,Pandas}",Senior,6
+306,"Game Developer","Marketing","{Python,React,GSAP}",Mid,2
+307,"Backend Developer","Infrastructure","{GSAP,Framer,Blender}",Mid,2
+308,"Tester","Infrastructure","{After Effects,React,Kubernetes,Redis}",Lead,11
+309,"UI/UX Designer","Developer","{TensorFlow,Docker,Kubernetes,Go,Terraform,AWS}",Lead,9
+310,"UI/UX Designer","Developer","{Next.js,React,Blender}",Lead,9
+311,"AI & ML Engineer","Product","{Terraform,AWS,PostgreSQL}",Senior,7
+312,"Game Developer","Marketing","{Vue.js,TypeScript,Python,PostgreSQL}",Lead,11
+313,"Game Developer","Design","{AWS,React,Blender,Kubernetes,Photoshop,Terraform}",Junior,1
+314,"Full Stack Engineer","Infrastructure","{Sass,React,Vue.js,Framer,Next.js}",Senior,7
+315,"Tester","Product","{GraphQL,Kubernetes,TensorFlow}",Senior,7
+316,"Frontend Engineer","Data & AI","{GraphQL,Framer,Photoshop,Kubernetes,Terraform}",Lead,10
+317,"AI & ML Engineer","Developer","{Affinity,Vue.js,Python}",Lead,9
+318,"AI & ML Engineer","Design","{TensorFlow,Affinity,Next.js,After Effects}",Lead,10
+319,"DevOps Specialist","Design","{GSAP,AWS,After Effects,Blender,Redis,Docker}",Lead,10
+320,"Backend Developer","Marketing","{Redis,Pandas,Next.js,AWS,Kubernetes,Sass}",Junior,1
+321,"DevOps Specialist","Developer","{Figma,Docker,Sass,Python,TypeScript,Terraform}",Senior,5
+322,"Tester","Engineering","{Next.js,Affinity,React}",Junior,1
+323,"UI/UX Designer","Infrastructure","{TypeScript,Blender,Data Bricks,Docker}",Senior,7
+324,"Tester","Product","{Vue.js,GSAP,Blender,Kubernetes}",Senior,7
+325,"Full Stack Engineer","Developer","{Go,TypeScript,Pandas,Framer,Python,Redis}",Junior,1
+326,"Backend Developer","Data & AI","{Blender,Redis,Photoshop}",Mid,4
+327,"AI & ML Engineer","Engineering","{Docker,Tailwind CSS,Sass}",Mid,2
+328,"Data Scientist","Engineering","{Redis,Terraform,React,GraphQL,TensorFlow,Figma}",Junior,1
+329,"Frontend Engineer","Engineering","{Pandas,PostgreSQL,Data Bricks,TypeScript,React}",Senior,6
+330,"Backend Developer","Marketing","{AWS,Figma,Affinity,Python,Redis,Tailwind CSS}",Mid,3
+331,"Data Scientist","Product","{Node.js,Affinity,Go}",Mid,4
+332,"DevOps Specialist","Marketing","{Node.js,React,After Effects,Terraform,AWS}",Junior,0
+333,"Tester","Engineering","{Go,Affinity,After Effects,React,Python}",Lead,9
+334,"AI & ML Engineer","Data & AI","{TypeScript,Redis,GSAP,TensorFlow}",Senior,5
+335,"Mobile Developer","Engineering","{React,TypeScript,Blender,Terraform,Framer}",Mid,3
+336,"Backend Developer","Design","{Node.js,Tailwind CSS,GSAP,Pandas}",Junior,0
+337,"Tester","Infrastructure","{Python,Kubernetes,Affinity,Next.js,TypeScript}",Junior,0
+338,"DevOps Specialist","Product","{Data Bricks,Docker,Sass,Redis,GraphQL}",Lead,10
+339,"Data Scientist","Developer","{Python,GSAP,Affinity,After Effects}",Mid,4
+340,"UI/UX Designer","Data & AI","{Docker,Kubernetes,Framer,Vue.js}",Senior,5
+341,"Mobile Developer","Marketing","{Node.js,Tailwind CSS,Blender}",Mid,2
+342,"Mobile Developer","Design","{Python,Node.js,Docker}",Lead,9
+343,"Backend Developer","Product","{Redis,TensorFlow,TypeScript,Figma,Blender,Node.js}",Senior,7
+344,"Game Developer","Design","{Python,Node.js,Next.js}",Lead,11
+345,"Game Developer","Infrastructure","{Pandas,React,Figma,Vue.js,Terraform,Photoshop}",Mid,2
+346,"Mobile Developer","Product","{Affinity,GSAP,Photoshop,Node.js,Redis,Kubernetes}",Junior,1
+347,"Backend Developer","Marketing","{Figma,GraphQL,Go}",Junior,0
+348,"UI/UX Designer","Data & AI","{AWS,Tailwind CSS,Python,GraphQL,Pandas}",Lead,8
+349,"Mobile Developer","Infrastructure","{GraphQL,Docker,Figma,React,Pandas,Data Bricks}",Junior,1
+350,"Full Stack Engineer","Product","{Photoshop,Node.js,Affinity,Framer,Python}",Lead,8
+351,"UI/UX Designer","Data & AI","{Figma,GSAP,Kubernetes}",Lead,8
+352,"AI & ML Engineer","Data & AI","{Docker,Framer,Photoshop,TensorFlow}",Senior,5
+353,"UI/UX Designer","Product","{Pandas,Kubernetes,Blender,Vue.js,Figma}",Lead,8
+354,"Tester","Engineering","{Sass,TensorFlow,Terraform}",Junior,1
+355,"Tester","Infrastructure","{Photoshop,Kubernetes,Docker}",Senior,5
+356,"Tester","Engineering","{Python,React,Data Bricks,Framer,Kubernetes}",Junior,1
+357,"Game Developer","Engineering","{Figma,Kubernetes,TypeScript,Tailwind CSS,GraphQL}",Lead,9
+358,"Backend Developer","Marketing","{Redis,Go,TypeScript,Python,After Effects,Terraform}",Junior,0
+359,"Frontend Engineer","Marketing","{TensorFlow,Next.js,Data Bricks,Vue.js,Affinity,Kubernetes}",Junior,0
+360,"Game Developer","Infrastructure","{Node.js,Kubernetes,TypeScript}",Lead,8
+361,"Full Stack Engineer","Marketing","{Figma,AWS,GSAP,Docker}",Mid,3
+362,"Full Stack Engineer","Engineering","{Blender,Redis,TensorFlow,React,Vue.js}",Mid,3
+363,"Frontend Engineer","Design","{After Effects,React,Python,TypeScript,AWS}",Junior,1
+364,"Mobile Developer","Design","{Pandas,Next.js,Affinity}",Lead,11
+365,"Data Scientist","Engineering","{Go,React,Next.js,Data Bricks,Terraform,Docker}",Lead,9
+366,"Mobile Developer","Product","{React,Redis,Terraform,Data Bricks,TypeScript}",Mid,2
+367,"DevOps Specialist","Developer","{PostgreSQL,Terraform,Framer}",Junior,1
+368,"Mobile Developer","Marketing","{Docker,Node.js,Vue.js}",Mid,2
+369,"Mobile Developer","Data & AI","{Next.js,Tailwind CSS,React,Vue.js}",Senior,5
+370,"Site Reliability Engineer","Marketing","{TensorFlow,AWS,Photoshop,Figma,GSAP,Python}",Mid,3
+371,"Data Scientist","Design","{Terraform,Node.js,GraphQL,Python,Go,Sass}",Senior,5
+372,"Full Stack Engineer","Engineering","{Pandas,Python,Affinity,Node.js}",Junior,1
+373,"Frontend Engineer","Infrastructure","{Docker,Node.js,GSAP,Go,PostgreSQL,TypeScript}",Senior,5
+374,"Full Stack Engineer","Data & AI","{React,Docker,Blender,GraphQL,Terraform,Python}",Lead,9
+375,"Game Developer","Infrastructure","{Blender,Terraform,Redis}",Senior,7
+376,"Frontend Engineer","Developer","{Vue.js,TypeScript,Python}",Lead,8
+377,"DevOps Specialist","Developer","{Kubernetes,Python,TensorFlow}",Junior,0
+378,"DevOps Specialist","Data & AI","{Pandas,TensorFlow,Next.js,AWS}",Junior,0
+379,"Mobile Developer","Data & AI","{Data Bricks,React,Python,Framer,Docker}",Lead,8
+380,"AI & ML Engineer","Engineering","{Terraform,React,Blender,Redis}",Mid,3
+381,"Frontend Engineer","Data & AI","{Kubernetes,Docker,GraphQL}",Junior,1
+382,"AI & ML Engineer","Product","{React,Next.js,Sass,Data Bricks,Photoshop}",Lead,10
+383,"AI & ML Engineer","Engineering","{Redis,Kubernetes,Sass,Vue.js}",Junior,0
+384,"Game Developer","Developer","{AWS,After Effects,React}",Senior,6
+385,"DevOps Specialist","Developer","{Kubernetes,Affinity,Vue.js,Photoshop}",Junior,0
+386,"Site Reliability Engineer","Design","{Go,GSAP,Pandas}",Mid,4
+387,"Frontend Engineer","Infrastructure","{AWS,GraphQL,React,Kubernetes,Vue.js}",Lead,10
+388,"Data Scientist","Developer","{React,Docker,GraphQL,AWS,Sass,Go}",Mid,3
+389,"Full Stack Engineer","Developer","{Terraform,PostgreSQL,Framer,TypeScript}",Mid,4
+390,"UI/UX Designer","Design","{Python,Framer,GraphQL,Affinity,Vue.js}",Lead,8
+391,"UI/UX Designer","Marketing","{Pandas,TensorFlow,Docker,Redis}",Lead,9
+392,"Game Developer","Marketing","{Docker,Python,React,Photoshop}",Mid,3
+393,"Game Developer","Design","{After Effects,Node.js,Go,Sass,Kubernetes}",Lead,10
+394,"Site Reliability Engineer","Engineering","{Docker,TypeScript,Figma}",Lead,9
+395,"UI/UX Designer","Data & AI","{Kubernetes,Blender,Data Bricks}",Senior,5
+396,"Data Scientist","Data & AI","{AWS,Affinity,Redis,React}",Lead,11
+397,"AI & ML Engineer","Design","{Docker,Pandas,Affinity,Vue.js,TypeScript}",Senior,7
+398,"Game Developer","Data & AI","{GraphQL,After Effects,Photoshop,PostgreSQL,Figma,Redis}",Lead,9
+399,"Game Developer","Marketing","{Vue.js,Blender,Affinity,Data Bricks,TypeScript}",Junior,0
+400,"Full Stack Engineer","Marketing","{Affinity,Kubernetes,Photoshop,Framer,GraphQL}",Lead,8
+401,"Data Scientist","Design","{Pandas,Python,Framer,Figma}",Junior,1
+402,"Frontend Engineer","Marketing","{Go,GraphQL,React,Terraform}",Senior,7
+403,"Backend Developer","Engineering","{Next.js,Python,AWS,React,Terraform,Docker}",Lead,9
+404,"Full Stack Engineer","Marketing","{TypeScript,Pandas,PostgreSQL,Vue.js,Node.js,Blender}",Junior,1
+405,"UI/UX Designer","Developer","{Python,AWS,GraphQL,Blender}",Mid,3
+406,"Game Developer","Data & AI","{Redis,React,Go,Pandas,Docker,Data Bricks}",Junior,0
+407,"DevOps Specialist","Developer","{GraphQL,Sass,Next.js,Pandas}",Lead,10
+408,"Backend Developer","Developer","{Docker,TypeScript,After Effects,Go}",Mid,4
+409,"Tester","Product","{Photoshop,React,Docker,Framer,Tailwind CSS,Affinity}",Junior,0
+410,"Site Reliability Engineer","Infrastructure","{Framer,TensorFlow,After Effects}",Mid,2
+411,"Backend Developer","Developer","{Blender,Tailwind CSS,React,Next.js}",Mid,3
+412,"Tester","Marketing","{Photoshop,Vue.js,Next.js,TypeScript}",Lead,11
+413,"Backend Developer","Design","{Python,Terraform,Node.js,Kubernetes}",Junior,1
+414,"Mobile Developer","Product","{Next.js,Framer,React}",Lead,11
+415,"Data Scientist","Infrastructure","{React,Terraform,Redis}",Senior,6
+416,"Data Scientist","Developer","{Blender,Framer,AWS,Photoshop}",Mid,2
+417,"Backend Developer","Marketing","{Data Bricks,Docker,React,Tailwind CSS,Figma}",Mid,4
+418,"AI & ML Engineer","Infrastructure","{Pandas,Next.js,AWS}",Lead,11
+419,"Mobile Developer","Marketing","{Pandas,GraphQL,Python,GSAP,Redis}",Lead,10
+420,"Data Scientist","Marketing","{TensorFlow,GraphQL,React,After Effects}",Senior,6
+421,"Site Reliability Engineer","Design","{Data Bricks,Pandas,Affinity,Node.js,Sass,Go}",Lead,11
+422,"AI & ML Engineer","Marketing","{Python,Next.js,Pandas,Redis,After Effects}",Senior,5
+423,"DevOps Specialist","Product","{GraphQL,React,Go,TypeScript,Redis}",Mid,2
+424,"Data Scientist","Design","{Python,Pandas,GraphQL,Framer,TensorFlow}",Mid,3
+425,"UI/UX Designer","Product","{GSAP,After Effects,Kubernetes}",Senior,6
+426,"Game Developer","Data & AI","{React,Blender,Next.js}",Senior,7
+427,"Data Scientist","Design","{GraphQL,TypeScript,Photoshop,Vue.js,React,Blender}",Senior,6
+428,"Tester","Infrastructure","{TensorFlow,Figma,Docker,Kubernetes,Redis}",Mid,2
+429,"Frontend Engineer","Marketing","{Affinity,Kubernetes,Python}",Senior,7
+430,"AI & ML Engineer","Developer","{After Effects,Vue.js,GSAP}",Mid,4
+431,"Full Stack Engineer","Product","{GraphQL,React,PostgreSQL,Sass,Kubernetes}",Senior,7
+432,"AI & ML Engineer","Marketing","{Go,Redis,Python}",Lead,11
+433,"Mobile Developer","Marketing","{Python,AWS,Figma,Sass}",Senior,7
+434,"AI & ML Engineer","Design","{GraphQL,Tailwind CSS,Node.js,Terraform,Next.js}",Senior,6
+435,"DevOps Specialist","Developer","{Photoshop,Sass,React,Next.js,Node.js,Tailwind CSS}",Senior,7
+436,"Mobile Developer","Infrastructure","{React,Blender,GraphQL,TypeScript}",Lead,9
+437,"Data Scientist","Engineering","{GSAP,Tailwind CSS,Vue.js}",Mid,3
+438,"Frontend Engineer","Marketing","{After Effects,Docker,Python,AWS}",Junior,1
+439,"UI/UX Designer","Developer","{PostgreSQL,Redis,Node.js,Blender,Go}",Senior,6
+440,"Backend Developer","Data & AI","{GraphQL,React,Next.js,Vue.js,Tailwind CSS}",Mid,3
+441,"AI & ML Engineer","Engineering","{Figma,Pandas,Python,Node.js}",Lead,11
+442,"Backend Developer","Engineering","{Vue.js,After Effects,React,Tailwind CSS,Figma}",Senior,7
+443,"UI/UX Designer","Engineering","{AWS,Vue.js,Redis,Figma,GSAP}",Mid,2
+444,"Frontend Engineer","Marketing","{After Effects,Framer,TensorFlow,Terraform,Vue.js,React}",Junior,0
+445,"UI/UX Designer","Developer","{Affinity,Figma,Docker,React,Tailwind CSS}",Lead,9
+446,"Data Scientist","Product","{Figma,Tailwind CSS,GraphQL,AWS,Next.js,PostgreSQL}",Senior,5
+447,"Mobile Developer","Engineering","{React,Tailwind CSS,Blender,TensorFlow,Affinity,GraphQL}",Lead,8
+448,"Site Reliability Engineer","Marketing","{Vue.js,Redis,GraphQL}",Lead,8
+449,"Frontend Engineer","Infrastructure","{Vue.js,Node.js,Redis,React,Go,Tailwind CSS}",Senior,5
+450,"AI & ML Engineer","Engineering","{React,Terraform,After Effects,Python}",Junior,1
+451,"Backend Developer","Design","{Go,TypeScript,Figma}",Mid,2
+452,"Full Stack Engineer","Marketing","{Pandas,After Effects,Python,TensorFlow}",Lead,8
+453,"Frontend Engineer","Product","{Redis,Go,Blender,Terraform,AWS}",Mid,4
+454,"Mobile Developer","Data & AI","{Blender,After Effects,Tailwind CSS}",Lead,8
+455,"Frontend Engineer","Data & AI","{AWS,React,Kubernetes,Redis}",Mid,4
+456,"Full Stack Engineer","Product","{PostgreSQL,Data Bricks,Vue.js,Framer}",Junior,0
+457,"DevOps Specialist","Developer","{Photoshop,AWS,Vue.js}",Lead,11
+458,"Tester","Product","{Docker,Framer,Python,GraphQL}",Lead,10
+459,"Game Developer","Design","{Python,Affinity,After Effects,GraphQL,Redis}",Lead,9
+460,"Mobile Developer","Engineering","{GraphQL,Next.js,Affinity,Python,Blender,Sass}",Junior,0
+461,"Data Scientist","Data & AI","{Kubernetes,Vue.js,TensorFlow}",Senior,7
+462,"Tester","Data & AI","{TensorFlow,Python,After Effects,Vue.js,Node.js}",Junior,1
+463,"DevOps Specialist","Design","{Tailwind CSS,GraphQL,Vue.js,Affinity,After Effects,Blender}",Lead,10
+464,"Frontend Engineer","Design","{Data Bricks,After Effects,Python,Kubernetes,Sass,Go}",Senior,7
+465,"Site Reliability Engineer","Data & AI","{Vue.js,Terraform,Blender}",Senior,6
+466,"UI/UX Designer","Data & AI","{Figma,Kubernetes,Blender,Sass}",Lead,10
+467,"UI/UX Designer","Marketing","{TypeScript,GSAP,AWS,Framer,Redis,Affinity}",Lead,10
+468,"Mobile Developer","Marketing","{React,Sass,TypeScript}",Junior,1
+469,"Backend Developer","Developer","{Sass,TensorFlow,Python,Framer}",Lead,9
+470,"Game Developer","Infrastructure","{GraphQL,Kubernetes,After Effects}",Junior,0
+471,"Site Reliability Engineer","Data & AI","{Node.js,React,Terraform,Python,TypeScript}",Lead,10
+472,"Site Reliability Engineer","Data & AI","{TypeScript,Tailwind CSS,Photoshop}",Senior,7
+473,"Tester","Engineering","{Photoshop,TypeScript,Node.js,GraphQL,PostgreSQL,Tailwind CSS}",Mid,4
+474,"DevOps Specialist","Data & AI","{Framer,After Effects,Vue.js,Kubernetes,GSAP}",Senior,5
+475,"UI/UX Designer","Marketing","{Next.js,GraphQL,Sass}",Senior,7
+476,"DevOps Specialist","Product","{Python,React,Redis,After Effects,Tailwind CSS}",Junior,1
+477,"Full Stack Engineer","Developer","{React,Kubernetes,Sass}",Senior,5
+478,"AI & ML Engineer","Marketing","{Sass,Terraform,PostgreSQL,Python,Kubernetes}",Senior,7
+479,"AI & ML Engineer","Marketing","{Pandas,Go,Data Bricks}",Senior,5
+480,"Mobile Developer","Infrastructure","{Blender,Figma,Python,Affinity}",Lead,9
+481,"DevOps Specialist","Marketing","{Photoshop,PostgreSQL,React,GraphQL,Go,Affinity}",Mid,2
+482,"Game Developer","Engineering","{Affinity,After Effects,Next.js,GraphQL,Python,Sass}",Junior,0
+483,"Site Reliability Engineer","Engineering","{PostgreSQL,React,Figma,Docker}",Mid,3
+484,"Game Developer","Design","{PostgreSQL,Go,Data Bricks,Vue.js}",Junior,0
+485,"AI & ML Engineer","Product","{Tailwind CSS,PostgreSQL,AWS,React,Node.js,Photoshop}",Lead,11
+486,"Data Scientist","Data & AI","{Terraform,TensorFlow,Node.js,Vue.js,Framer,Docker}",Mid,3
+487,"UI/UX Designer","Developer","{Go,Figma,Terraform,TensorFlow,Redis}",Lead,11
+488,"UI/UX Designer","Product","{Framer,Pandas,Python,TypeScript}",Mid,2
+489,"Data Scientist","Developer","{React,GraphQL,Next.js,Tailwind CSS,After Effects,Redis}",Lead,10
+490,"Game Developer","Product","{Node.js,Python,AWS,Blender}",Senior,6
+491,"UI/UX Designer","Data & AI","{PostgreSQL,Kubernetes,Redis,Python,After Effects,Pandas}",Senior,5
+492,"Data Scientist","Design","{TensorFlow,React,Python,Photoshop}",Senior,6
+493,"Backend Developer","Product","{Docker,PostgreSQL,Affinity,Figma,Framer}",Junior,1
+494,"Game Developer","Infrastructure","{Node.js,Kubernetes,Pandas,Vue.js}",Junior,0
+495,"Frontend Engineer","Data & AI","{Pandas,Blender,Node.js}",Lead,9
+496,"DevOps Specialist","Design","{Pandas,After Effects,Affinity}",Lead,8
+497,"Site Reliability Engineer","Design","{Tailwind CSS,React,Blender}",Lead,11
+498,"Backend Developer","Infrastructure","{Node.js,Python,Redis,Figma,Kubernetes,Pandas}",Senior,5
+499,"UI/UX Designer","Engineering","{Redis,Tailwind CSS,Photoshop,GSAP,Next.js}",Senior,6
+500,"Mobile Developer","Product","{PostgreSQL,Next.js,Kubernetes}",Junior,1
+501,"Mobile Developer","Developer","{Vue.js,React,Python}",Senior,7
+502,"Backend Developer","Design","{React,Data Bricks,Sass,GraphQL,Blender}",Mid,3
+503,"Backend Developer","Product","{Photoshop,GSAP,AWS,React}",Mid,2
+504,"AI & ML Engineer","Design","{Kubernetes,Figma,PostgreSQL,Docker}",Junior,1
+505,"Data Scientist","Engineering","{AWS,TypeScript,TensorFlow,Go}",Junior,1
+506,"Game Developer","Design","{Figma,Node.js,Kubernetes,Docker}",Junior,0
+507,"Full Stack Engineer","Product","{Pandas,GSAP,Go,AWS,Redis,After Effects}",Senior,6
+508,"Mobile Developer","Data & AI","{Redis,React,TypeScript,Pandas}",Mid,2
+509,"Site Reliability Engineer","Infrastructure","{Tailwind CSS,GSAP,Sass}",Senior,5
+510,"UI/UX Designer","Marketing","{Python,React,Affinity}",Lead,10
+511,"UI/UX Designer","Design","{Python,React,Terraform,Go,Blender,AWS}",Lead,9
+512,"UI/UX Designer","Data & AI","{Kubernetes,React,Blender,Figma,After Effects}",Mid,3
+513,"Backend Developer","Infrastructure","{Vue.js,GSAP,Pandas,Framer,Go,Figma}",Senior,6
+514,"Game Developer","Data & AI","{React,Docker,GSAP,Terraform,Next.js}",Mid,4
+515,"Tester","Infrastructure","{React,Vue.js,Docker,Terraform,Next.js,Photoshop}",Junior,1
+516,"UI/UX Designer","Engineering","{GraphQL,Node.js,TensorFlow}",Junior,0
+517,"Mobile Developer","Product","{Docker,TensorFlow,Framer,Node.js,Go,After Effects}",Mid,3
+518,"Data Scientist","Product","{Node.js,Vue.js,Go,Kubernetes,Sass}",Senior,5
+519,"UI/UX Designer","Marketing","{Vue.js,TensorFlow,Docker,Framer,Tailwind CSS,Next.js}",Lead,8
+520,"UI/UX Designer","Marketing","{Go,Kubernetes,TypeScript}",Senior,5
+521,"Full Stack Engineer","Marketing","{Affinity,React,Next.js}",Mid,2
+522,"Full Stack Engineer","Design","{Affinity,Vue.js,React,Tailwind CSS,Framer}",Lead,10
+523,"Game Developer","Infrastructure","{Node.js,Data Bricks,GraphQL,Affinity}",Lead,8
+524,"UI/UX Designer","Product","{Python,PostgreSQL,GraphQL}",Mid,3
+525,"Mobile Developer","Infrastructure","{Node.js,Affinity,Docker,Data Bricks,Terraform}",Lead,11
+526,"DevOps Specialist","Data & AI","{Go,Node.js,Tailwind CSS}",Junior,0
+527,"Game Developer","Marketing","{AWS,PostgreSQL,Redis,TensorFlow}",Senior,6
+528,"Data Scientist","Engineering","{Node.js,Data Bricks,TypeScript,React}",Lead,11
+529,"Data Scientist","Infrastructure","{Node.js,Data Bricks,Vue.js}",Lead,11
+530,"Tester","Engineering","{Redis,Python,Pandas,Go,Blender,Framer}",Mid,3
+531,"UI/UX Designer","Marketing","{Sass,Python,Affinity,Node.js}",Senior,6
+532,"Data Scientist","Data & AI","{Vue.js,GSAP,Photoshop,Node.js,Affinity}",Lead,11
+533,"Site Reliability Engineer","Marketing","{GSAP,Figma,GraphQL}",Mid,3
+534,"AI & ML Engineer","Design","{Node.js,PostgreSQL,After Effects}",Mid,2
+535,"UI/UX Designer","Developer","{AWS,Vue.js,Node.js,Sass,GSAP,Blender}",Junior,0
+536,"Mobile Developer","Developer","{Affinity,GraphQL,Python}",Junior,1
+537,"Full Stack Engineer","Marketing","{React,Vue.js,Terraform,Pandas,Figma,Docker}",Mid,3
+538,"Backend Developer","Developer","{Next.js,Kubernetes,Python,PostgreSQL,AWS}",Junior,0
+539,"Mobile Developer","Product","{GraphQL,Python,Blender,Terraform,TensorFlow,Go}",Lead,10
+540,"Frontend Engineer","Infrastructure","{Sass,Python,Vue.js,Figma,GraphQL}",Senior,7
+541,"Frontend Engineer","Marketing","{Python,Tailwind CSS,React,PostgreSQL,Figma,Photoshop}",Junior,1
+542,"Tester","Product","{Blender,Data Bricks,GSAP}",Senior,5
+543,"Tester","Marketing","{Vue.js,Framer,TypeScript,PostgreSQL,Pandas}",Mid,3
+544,"Game Developer","Developer","{AWS,GraphQL,Sass,Vue.js,Docker,GSAP}",Junior,0
+545,"Data Scientist","Design","{Data Bricks,PostgreSQL,Figma,Affinity}",Senior,5
+546,"Data Scientist","Product","{React,Vue.js,Sass,Framer}",Senior,7
+547,"Tester","Infrastructure","{PostgreSQL,Docker,GSAP,TypeScript}",Senior,5
+548,"Data Scientist","Product","{Data Bricks,Affinity,Python,Figma,Pandas}",Mid,3
+549,"Game Developer","Infrastructure","{Pandas,PostgreSQL,Data Bricks}",Mid,3
+550,"Site Reliability Engineer","Marketing","{TypeScript,Pandas,Vue.js,Data Bricks}",Lead,8
+551,"Site Reliability Engineer","Data & AI","{Tailwind CSS,Figma,React,GSAP}",Mid,3
+552,"Mobile Developer","Product","{Node.js,Next.js,GraphQL,Data Bricks}",Lead,11
+553,"Data Scientist","Product","{Docker,Sass,Blender,Go,Vue.js}",Mid,3
+554,"AI & ML Engineer","Product","{TypeScript,PostgreSQL,Figma,Redis}",Mid,2
+555,"Backend Developer","Engineering","{Next.js,Vue.js,GraphQL,After Effects,AWS}",Senior,7
+556,"Game Developer","Marketing","{After Effects,Sass,Photoshop}",Junior,1
+557,"Tester","Marketing","{Python,Pandas,Kubernetes,After Effects,Node.js,Photoshop}",Lead,11
+558,"AI & ML Engineer","Infrastructure","{Tailwind CSS,React,Docker,Go}",Mid,2
+559,"UI/UX Designer","Design","{TypeScript,Pandas,Framer,Terraform}",Lead,8
+560,"Site Reliability Engineer","Design","{React,TypeScript,Vue.js}",Lead,8
+561,"Game Developer","Infrastructure","{Vue.js,Figma,TypeScript}",Junior,1
+562,"DevOps Specialist","Infrastructure","{Next.js,React,Photoshop,Go}",Junior,1
+563,"UI/UX Designer","Engineering","{Terraform,Docker,Affinity,Python,Tailwind CSS,Node.js}",Lead,10
+564,"Backend Developer","Developer","{TypeScript,Tailwind CSS,Kubernetes,PostgreSQL}",Lead,9
+565,"UI/UX Designer","Design","{Framer,Figma,Kubernetes}",Mid,3
+566,"Game Developer","Product","{Kubernetes,TypeScript,Figma,Framer}",Junior,0
+567,"DevOps Specialist","Engineering","{Affinity,React,After Effects}",Lead,11
+568,"Frontend Engineer","Marketing","{React,PostgreSQL,Figma}",Junior,0
+569,"Full Stack Engineer","Design","{Python,React,TypeScript}",Senior,7
+570,"Frontend Engineer","Engineering","{PostgreSQL,Figma,Docker,Next.js}",Senior,5
+571,"Frontend Engineer","Infrastructure","{Kubernetes,Framer,After Effects}",Lead,9
+572,"Frontend Engineer","Developer","{Vue.js,Kubernetes,Photoshop,Framer}",Mid,3
+573,"DevOps Specialist","Product","{React,Photoshop,PostgreSQL}",Junior,0
+574,"DevOps Specialist","Marketing","{Kubernetes,Node.js,Docker,After Effects,React}",Senior,5
+575,"DevOps Specialist","Marketing","{Node.js,Blender,Next.js,Photoshop}",Lead,10
+576,"Tester","Product","{After Effects,Photoshop,Affinity,Terraform,GraphQL,Next.js}",Lead,8
+577,"Data Scientist","Engineering","{GSAP,Pandas,Redis,Blender}",Junior,0
+578,"Game Developer","Product","{GSAP,After Effects,TypeScript,Node.js,Sass}",Senior,6
+579,"Full Stack Engineer","Design","{Data Bricks,Vue.js,GraphQL,Terraform}",Lead,10
+580,"Mobile Developer","Data & AI","{GraphQL,AWS,React}",Lead,10
+581,"Game Developer","Engineering","{Vue.js,Blender,Terraform}",Senior,6
+582,"Data Scientist","Product","{GraphQL,Affinity,Figma,Photoshop}",Senior,7
+583,"DevOps Specialist","Infrastructure","{Node.js,Docker,Tailwind CSS,Python,AWS,Blender}",Senior,6
+584,"UI/UX Designer","Infrastructure","{React,Vue.js,TensorFlow}",Senior,5
+585,"Full Stack Engineer","Data & AI","{React,Photoshop,Sass}",Junior,0
+586,"AI & ML Engineer","Data & AI","{Python,Figma,After Effects,Go}",Junior,1
+587,"AI & ML Engineer","Engineering","{Next.js,GSAP,Node.js,Tailwind CSS,Terraform,Blender}",Lead,9
+588,"Game Developer","Data & AI","{Python,Node.js,PostgreSQL,TensorFlow,Sass,Pandas}",Junior,0
+589,"Data Scientist","Developer","{Terraform,Python,After Effects,Docker,AWS}",Lead,9
+590,"AI & ML Engineer","Infrastructure","{Pandas,TensorFlow,Framer,React,PostgreSQL}",Senior,6
+591,"Tester","Engineering","{GSAP,Affinity,Python}",Senior,7
+592,"Mobile Developer","Engineering","{React,Figma,Redis,Photoshop}",Lead,11
+593,"DevOps Specialist","Data & AI","{Kubernetes,Docker,Framer,Go,GraphQL}",Junior,1
+594,"AI & ML Engineer","Design","{Data Bricks,Framer,Kubernetes,Sass}",Mid,4
+595,"Mobile Developer","Product","{Figma,Go,Data Bricks,Vue.js}",Senior,7
+596,"Site Reliability Engineer","Infrastructure","{PostgreSQL,Pandas,Node.js,Redis,Blender}",Mid,4
+597,"Frontend Engineer","Data & AI","{React,Kubernetes,Framer,Next.js,TypeScript}",Lead,9
+598,"Data Scientist","Product","{TypeScript,PostgreSQL,Node.js}",Junior,1
+599,"Frontend Engineer","Developer","{Python,Node.js,TypeScript}",Junior,1
+600,"Game Developer","Engineering","{Figma,React,Framer}",Mid,4
+601,"AI & ML Engineer","Product","{After Effects,Photoshop,Data Bricks}",Senior,7
+602,"Game Developer","Infrastructure","{Docker,Go,Redis,Terraform,Node.js}",Senior,6
+603,"Frontend Engineer","Infrastructure","{Terraform,GraphQL,AWS}",Lead,11
+604,"Full Stack Engineer","Engineering","{Docker,Python,Data Bricks,Terraform}",Junior,1
+605,"DevOps Specialist","Design","{Tailwind CSS,After Effects,PostgreSQL,Affinity,Data Bricks}",Mid,4
+606,"Backend Developer","Data & AI","{Next.js,Terraform,After Effects,Vue.js}",Mid,2
+607,"Full Stack Engineer","Marketing","{TypeScript,GSAP,Vue.js}",Lead,9
+608,"AI & ML Engineer","Engineering","{Data Bricks,Photoshop,Tailwind CSS,After Effects,Pandas}",Junior,0
+609,"Data Scientist","Product","{Photoshop,Python,Go,Pandas,Redis}",Senior,6
+610,"Frontend Engineer","Engineering","{React,Blender,Next.js,Figma}",Senior,7
+611,"Data Scientist","Marketing","{AWS,Photoshop,Data Bricks,Affinity}",Mid,3
+612,"Site Reliability Engineer","Product","{Affinity,Photoshop,Sass,Go,Next.js}",Junior,1
+613,"Frontend Engineer","Developer","{After Effects,Terraform,Next.js}",Junior,1
+614,"Tester","Product","{Vue.js,Next.js,AWS,React,TypeScript}",Junior,0
+615,"Full Stack Engineer","Design","{Terraform,Figma,Kubernetes,Docker,After Effects,Tailwind CSS}",Lead,9
+616,"Full Stack Engineer","Infrastructure","{Python,Node.js,TypeScript,Blender,Terraform}",Lead,8
+617,"DevOps Specialist","Engineering","{Figma,Affinity,Redis}",Lead,8
+618,"Game Developer","Infrastructure","{Data Bricks,GraphQL,TensorFlow,Kubernetes,Docker}",Senior,7
+619,"Game Developer","Marketing","{Docker,TypeScript,Photoshop,React,After Effects}",Senior,6
+620,"UI/UX Designer","Engineering","{Docker,TypeScript,Framer}",Senior,5
+621,"Backend Developer","Data & AI","{AWS,Affinity,React,TensorFlow}",Mid,4
+622,"Mobile Developer","Marketing","{Photoshop,Redis,After Effects}",Mid,4
+623,"AI & ML Engineer","Design","{Blender,Node.js,Pandas}",Junior,1
+624,"Data Scientist","Infrastructure","{Node.js,Python,AWS,Next.js,Sass}",Senior,5
+625,"Tester","Infrastructure","{Sass,Node.js,After Effects,Terraform,Next.js}",Junior,0
+626,"UI/UX Designer","Infrastructure","{Next.js,Go,Python,Tailwind CSS,Blender}",Lead,11
+627,"Frontend Engineer","Developer","{Photoshop,Figma,Docker}",Junior,1
+628,"DevOps Specialist","Design","{React,Next.js,Framer}",Mid,3
+629,"Data Scientist","Engineering","{After Effects,Python,Node.js}",Junior,0
+630,"AI & ML Engineer","Data & AI","{AWS,React,Kubernetes}",Senior,5
+631,"Full Stack Engineer","Infrastructure","{Terraform,Data Bricks,React,TensorFlow}",Lead,8
+632,"Game Developer","Engineering","{Pandas,Terraform,Python,Data Bricks,Go,React}",Lead,9
+633,"AI & ML Engineer","Developer","{Vue.js,AWS,Sass,Kubernetes,Tailwind CSS,GraphQL}",Lead,10
+634,"Game Developer","Developer","{Terraform,Python,Pandas,Tailwind CSS,Photoshop}",Junior,1
+635,"Game Developer","Marketing","{Data Bricks,PostgreSQL,TensorFlow}",Mid,3
+636,"Site Reliability Engineer","Infrastructure","{After Effects,Tailwind CSS,TypeScript,Framer}",Junior,1
+637,"Game Developer","Engineering","{TypeScript,Pandas,Redis,Docker}",Mid,4
+638,"Data Scientist","Developer","{Kubernetes,Photoshop,React,Tailwind CSS,GSAP,TypeScript}",Junior,0
+639,"Mobile Developer","Engineering","{GraphQL,Affinity,Vue.js}",Lead,8
+640,"Frontend Engineer","Marketing","{TensorFlow,Vue.js,Framer,AWS,Go}",Senior,6
+641,"UI/UX Designer","Data & AI","{GraphQL,Pandas,Python,PostgreSQL}",Senior,5
+642,"Backend Developer","Marketing","{GraphQL,Terraform,Redis,Kubernetes,React,Affinity}",Junior,0
+643,"Tester","Developer","{React,After Effects,Sass,PostgreSQL,Redis}",Mid,3
+644,"Game Developer","Engineering","{Terraform,React,Blender}",Senior,7
+645,"Frontend Engineer","Marketing","{Node.js,PostgreSQL,TensorFlow}",Junior,1
+646,"Site Reliability Engineer","Product","{Next.js,React,TypeScript,Framer,Blender,Sass}",Junior,0
+647,"AI & ML Engineer","Engineering","{Node.js,Kubernetes,Affinity,Figma,Blender}",Lead,10
+648,"Game Developer","Data & AI","{GSAP,Next.js,Figma}",Junior,1
+649,"AI & ML Engineer","Marketing","{React,Next.js,AWS,Figma,Affinity}",Lead,9
+650,"UI/UX Designer","Engineering","{Photoshop,Framer,Node.js,Next.js}",Senior,6
+651,"Site Reliability Engineer","Developer","{React,TypeScript,Photoshop,Vue.js,Next.js}",Mid,4
+652,"AI & ML Engineer","Marketing","{GSAP,Python,Affinity}",Junior,0
+653,"Backend Developer","Infrastructure","{Kubernetes,GraphQL,PostgreSQL}",Junior,0
+654,"Frontend Engineer","Design","{Redis,TensorFlow,React,Docker}",Mid,3
+655,"Full Stack Engineer","Marketing","{After Effects,Node.js,Docker,Framer,Tailwind CSS,Python}",Senior,7
+656,"Tester","Engineering","{Node.js,Docker,Pandas,Photoshop,Kubernetes,Python}",Junior,0
+657,"DevOps Specialist","Developer","{Docker,Framer,Sass}",Junior,1
+658,"AI & ML Engineer","Infrastructure","{AWS,Vue.js,Sass,React}",Mid,3
+659,"Full Stack Engineer","Product","{Photoshop,Figma,PostgreSQL,Kubernetes}",Junior,0
+660,"UI/UX Designer","Marketing","{Next.js,After Effects,Data Bricks,Framer,Pandas,Python}",Senior,5
+661,"Game Developer","Developer","{Affinity,Kubernetes,AWS}",Junior,0
+662,"Full Stack Engineer","Developer","{After Effects,Python,Terraform,Kubernetes,Figma,Node.js}",Lead,9
+663,"Tester","Engineering","{Next.js,Sass,Redis}",Junior,1
+664,"Site Reliability Engineer","Developer","{Docker,Sass,React,Tailwind CSS,Figma}",Lead,11
+665,"Full Stack Engineer","Engineering","{Kubernetes,Figma,After Effects}",Junior,1
+666,"Full Stack Engineer","Engineering","{Affinity,Framer,After Effects,Figma,Docker,Blender}",Junior,1
+667,"Mobile Developer","Design","{React,Terraform,Tailwind CSS,Next.js,GraphQL}",Junior,1
+668,"DevOps Specialist","Engineering","{Vue.js,Photoshop,React}",Senior,5
+669,"Full Stack Engineer","Data & AI","{After Effects,AWS,Blender,Go,Terraform}",Senior,7
+670,"Full Stack Engineer","Engineering","{Node.js,GSAP,Redis,After Effects,Python}",Lead,10
+671,"Game Developer","Marketing","{Blender,Docker,Python,After Effects}",Lead,10
+672,"Full Stack Engineer","Marketing","{TypeScript,Terraform,Vue.js,GraphQL,Pandas,Photoshop}",Mid,2
+673,"DevOps Specialist","Data & AI","{Node.js,Docker,Framer,Kubernetes,After Effects,Tailwind CSS}",Lead,11
+674,"Mobile Developer","Marketing","{TensorFlow,Redis,Blender,Tailwind CSS}",Lead,9
+675,"Mobile Developer","Engineering","{Affinity,Docker,Node.js,Redis,Sass,Figma}",Mid,2
+676,"Backend Developer","Infrastructure","{Go,TensorFlow,Python,Data Bricks,GraphQL,Node.js}",Mid,2
+677,"Backend Developer","Engineering","{Pandas,TypeScript,PostgreSQL,Affinity}",Lead,10
+678,"UI/UX Designer","Infrastructure","{Framer,Tailwind CSS,Docker}",Junior,0
+679,"Full Stack Engineer","Marketing","{Kubernetes,Figma,Data Bricks}",Lead,9
+680,"Tester","Data & AI","{Docker,Python,Sass,Kubernetes,Data Bricks}",Senior,6
+681,"Mobile Developer","Marketing","{Figma,Kubernetes,Affinity,Pandas}",Lead,9
+682,"Mobile Developer","Data & AI","{Kubernetes,Docker,PostgreSQL}",Senior,6
+683,"Game Developer","Product","{Next.js,Node.js,Photoshop,Figma,PostgreSQL}",Lead,9
+684,"Mobile Developer","Data & AI","{Affinity,Kubernetes,Node.js,Pandas,Next.js}",Lead,9
+685,"Backend Developer","Engineering","{Pandas,Python,After Effects}",Junior,0
+686,"Backend Developer","Product","{Vue.js,React,TensorFlow,Next.js}",Senior,6
+687,"Tester","Infrastructure","{TypeScript,Docker,Python,Framer,GraphQL,PostgreSQL}",Lead,8
+688,"UI/UX Designer","Product","{Kubernetes,Data Bricks,After Effects,PostgreSQL,Redis}",Mid,4
+689,"Full Stack Engineer","Developer","{Next.js,GraphQL,GSAP,TypeScript}",Lead,11
+690,"Tester","Engineering","{Figma,Redis,Pandas}",Lead,9
+691,"UI/UX Designer","Product","{AWS,Docker,Framer,TensorFlow,Vue.js,GraphQL}",Lead,9
+692,"UI/UX Designer","Design","{Framer,Sass,Python,TypeScript,Kubernetes}",Mid,3
+693,"Game Developer","Developer","{Redis,TensorFlow,AWS,React,Figma}",Junior,0
+694,"Full Stack Engineer","Data & AI","{React,Vue.js,Go,TypeScript}",Lead,11
+695,"Data Scientist","Infrastructure","{React,After Effects,GSAP,Docker,TensorFlow}",Mid,3
+696,"Full Stack Engineer","Developer","{React,Affinity,AWS,Redis,Next.js}",Junior,0
+697,"Game Developer","Developer","{Terraform,TypeScript,Data Bricks}",Junior,1
+698,"DevOps Specialist","Product","{Figma,TypeScript,Terraform}",Mid,2
+699,"DevOps Specialist","Product","{Go,React,Next.js,Node.js,After Effects}",Junior,0
+700,"Game Developer","Marketing","{Python,React,Docker,Framer,Terraform,TypeScript}",Senior,7
+701,"Data Scientist","Infrastructure","{Kubernetes,Blender,Go,Terraform,Vue.js}",Junior,0
+702,"Data Scientist","Data & AI","{Pandas,AWS,Affinity,PostgreSQL,Vue.js,GSAP}",Lead,8
+703,"Mobile Developer","Product","{Photoshop,TypeScript,React,Go,After Effects}",Junior,0
+704,"Backend Developer","Design","{Next.js,Framer,GSAP,Pandas,TypeScript,React}",Senior,7
+705,"Mobile Developer","Developer","{GSAP,Kubernetes,Tailwind CSS,Sass,Framer,Blender}",Lead,8
+706,"Site Reliability Engineer","Design","{Node.js,After Effects,TensorFlow,GraphQL,Pandas,TypeScript}",Junior,0
+707,"Frontend Engineer","Product","{Tailwind CSS,Terraform,Node.js,Photoshop,Framer}",Senior,6
+708,"Site Reliability Engineer","Design","{Pandas,Docker,Kubernetes,Node.js,TypeScript}",Lead,8
+709,"DevOps Specialist","Design","{TypeScript,Docker,Photoshop,After Effects,Pandas}",Senior,6
+710,"AI & ML Engineer","Infrastructure","{Sass,React,Framer,Figma,Docker,Kubernetes}",Junior,1
+711,"Mobile Developer","Infrastructure","{Terraform,React,GraphQL,Next.js}",Junior,0
+712,"Data Scientist","Data & AI","{Data Bricks,Kubernetes,GraphQL}",Mid,3
+713,"Site Reliability Engineer","Data & AI","{Pandas,Python,Data Bricks,Kubernetes,Docker,Sass}",Junior,1
+714,"Tester","Developer","{React,Framer,TypeScript,AWS}",Senior,6
+715,"Tester","Marketing","{Terraform,After Effects,Framer}",Junior,0
+716,"Site Reliability Engineer","Developer","{Sass,Pandas,Next.js}",Junior,1
+717,"Data Scientist","Engineering","{Python,Vue.js,GSAP,TensorFlow}",Senior,5
+718,"Game Developer","Data & AI","{Figma,Docker,Photoshop,Terraform,Vue.js,React}",Junior,0
+719,"Frontend Engineer","Engineering","{TypeScript,Data Bricks,Affinity,Next.js}",Senior,6
+720,"Mobile Developer","Infrastructure","{Redis,Next.js,TypeScript,TensorFlow}",Junior,1
+721,"Mobile Developer","Marketing","{AWS,React,Redis}",Junior,1
+722,"DevOps Specialist","Data & AI","{Framer,Photoshop,PostgreSQL}",Junior,0
+723,"Frontend Engineer","Product","{Node.js,After Effects,GSAP}",Junior,1
+724,"Full Stack Engineer","Product","{Figma,Pandas,After Effects,Docker}",Junior,1
+725,"Frontend Engineer","Design","{Affinity,PostgreSQL,Vue.js,Sass,Next.js,Framer}",Junior,1
+726,"Full Stack Engineer","Product","{TypeScript,Python,Node.js,PostgreSQL,Next.js,Blender}",Lead,8
+727,"Tester","Design","{Python,Figma,React,Data Bricks}",Lead,9
+728,"Backend Developer","Marketing","{Figma,Python,Blender,Vue.js,After Effects,Next.js}",Junior,1
+729,"Full Stack Engineer","Infrastructure","{Sass,React,Framer}",Lead,9
+730,"AI & ML Engineer","Product","{Redis,Node.js,Pandas}",Senior,6
+731,"Tester","Infrastructure","{Data Bricks,Python,Node.js}",Mid,2
+732,"UI/UX Designer","Data & AI","{Vue.js,Tailwind CSS,React,Blender,Figma}",Mid,4
+733,"UI/UX Designer","Developer","{Python,Docker,Blender}",Senior,7
+734,"Mobile Developer","Infrastructure","{Affinity,Blender,Vue.js}",Junior,0
+735,"Mobile Developer","Developer","{GSAP,Python,After Effects}",Lead,8
+736,"Site Reliability Engineer","Developer","{Framer,Sass,Blender,GSAP}",Mid,2
+737,"Mobile Developer","Marketing","{GraphQL,React,Blender,Redis,Framer}",Junior,1
+738,"UI/UX Designer","Engineering","{GSAP,After Effects,React,Redis,Data Bricks}",Senior,6
+739,"Data Scientist","Developer","{TypeScript,After Effects,PostgreSQL,GSAP,Pandas,TensorFlow}",Mid,4
+740,"Game Developer","Developer","{React,Docker,Vue.js,Next.js,PostgreSQL,AWS}",Lead,8
+741,"Mobile Developer","Marketing","{Terraform,Kubernetes,After Effects}",Mid,2
+742,"AI & ML Engineer","Product","{Photoshop,Sass,After Effects,Figma,Kubernetes,Python}",Mid,3
+743,"Site Reliability Engineer","Developer","{Python,Node.js,Blender,After Effects,Photoshop,Terraform}",Senior,6
+744,"Site Reliability Engineer","Design","{PostgreSQL,Sass,After Effects,Node.js,GSAP,Framer}",Lead,10
+745,"Backend Developer","Infrastructure","{Framer,Go,Kubernetes,TypeScript,React,Vue.js}",Senior,5
+746,"Backend Developer","Developer","{Next.js,Blender,Vue.js}",Lead,11
+747,"Full Stack Engineer","Product","{TensorFlow,Vue.js,React,Affinity,GraphQL}",Mid,4
+748,"Full Stack Engineer","Developer","{React,AWS,After Effects,Terraform,Next.js,Docker}",Senior,7
+749,"AI & ML Engineer","Developer","{React,Figma,Sass,Data Bricks,Node.js,GSAP}",Senior,5
+750,"Game Developer","Engineering","{Framer,Tailwind CSS,Redis,Node.js}",Junior,0
+751,"Tester","Data & AI","{Data Bricks,Blender,PostgreSQL,Terraform,Photoshop}",Junior,0
+752,"Full Stack Engineer","Engineering","{Vue.js,PostgreSQL,TypeScript,Docker,Sass}",Senior,5
+753,"AI & ML Engineer","Marketing","{Affinity,Vue.js,React,Kubernetes}",Mid,4
+754,"Mobile Developer","Marketing","{Next.js,Sass,Node.js}",Mid,3
+755,"Frontend Engineer","Developer","{Node.js,After Effects,Next.js,Affinity,AWS,GraphQL}",Junior,1
+756,"Game Developer","Data & AI","{Framer,Figma,Photoshop,Python}",Senior,6
+757,"Mobile Developer","Engineering","{Blender,Python,AWS,Terraform,Sass}",Lead,8
+758,"DevOps Specialist","Design","{React,Framer,Redis,Vue.js,Python}",Mid,2
+759,"Data Scientist","Engineering","{GraphQL,Sass,React,Affinity,Docker}",Junior,1
+760,"DevOps Specialist","Developer","{Redis,AWS,Terraform}",Junior,1
+761,"Mobile Developer","Marketing","{Python,GSAP,Next.js,Go,Vue.js,Sass}",Lead,11
+762,"Frontend Engineer","Design","{TensorFlow,React,TypeScript,Vue.js,Data Bricks,Redis}",Junior,1
+763,"AI & ML Engineer","Marketing","{Photoshop,Pandas,Python,GSAP}",Lead,8
+764,"Data Scientist","Infrastructure","{GSAP,Framer,TensorFlow,React,Docker}",Junior,1
+765,"Data Scientist","Infrastructure","{Sass,PostgreSQL,Blender,React,Redis,Framer}",Lead,8
+766,"Tester","Design","{Photoshop,React,Next.js}",Junior,1
+767,"Tester","Engineering","{Redis,Python,Blender,Node.js}",Junior,0
+768,"Site Reliability Engineer","Engineering","{Node.js,Python,After Effects,TypeScript}",Mid,2
+769,"Tester","Infrastructure","{GSAP,React,Photoshop,Figma,Blender,Tailwind CSS}",Junior,0
+770,"Tester","Data & AI","{Framer,Docker,GSAP}",Mid,2
+771,"UI/UX Designer","Marketing","{Next.js,Node.js,Pandas,Vue.js,After Effects,PostgreSQL}",Mid,3
+772,"Tester","Infrastructure","{Docker,TypeScript,React,AWS,Python}",Mid,3
+773,"UI/UX Designer","Product","{Kubernetes,TensorFlow,Photoshop}",Junior,1
+774,"Game Developer","Marketing","{Photoshop,Node.js,Vue.js}",Senior,7
+775,"Mobile Developer","Design","{Docker,Python,Node.js,GSAP,GraphQL,Sass}",Lead,11
+776,"Frontend Engineer","Marketing","{Framer,Data Bricks,Vue.js,React,Next.js}",Junior,0
+777,"Frontend Engineer","Product","{React,Go,Next.js,Node.js}",Senior,6
+778,"Game Developer","Design","{AWS,Docker,Kubernetes,Data Bricks}",Junior,0
+779,"Backend Developer","Data & AI","{Terraform,Docker,Data Bricks,Tailwind CSS}",Senior,5
+780,"UI/UX Designer","Data & AI","{Python,GSAP,React}",Junior,0
+781,"Game Developer","Engineering","{TypeScript,Framer,TensorFlow}",Mid,3
+782,"UI/UX Designer","Data & AI","{Node.js,Affinity,Terraform,Framer,Vue.js}",Mid,3
+783,"Mobile Developer","Developer","{Python,Photoshop,React,Figma}",Senior,6
+784,"Data Scientist","Infrastructure","{Node.js,Tailwind CSS,Kubernetes,Photoshop,Pandas}",Senior,6
+785,"Full Stack Engineer","Developer","{Sass,Photoshop,Next.js,Pandas,Blender,Redis}",Senior,6
+786,"AI & ML Engineer","Developer","{Data Bricks,React,Docker,Figma,Kubernetes}",Mid,3
+787,"AI & ML Engineer","Marketing","{Next.js,Framer,Blender,Tailwind CSS}",Junior,0
+788,"Game Developer","Design","{GSAP,TensorFlow,TypeScript}",Mid,2
+789,"UI/UX Designer","Product","{After Effects,Vue.js,Terraform,GSAP,Go}",Senior,5
+790,"Data Scientist","Infrastructure","{Sass,Python,Node.js,Data Bricks,Vue.js,After Effects}",Mid,3
+791,"Game Developer","Infrastructure","{Sass,Redis,GraphQL}",Lead,10
+792,"UI/UX Designer","Design","{React,Vue.js,Tailwind CSS,Redis,Blender}",Junior,1
+793,"Game Developer","Marketing","{Node.js,Sass,Go,Pandas,After Effects,Terraform}",Lead,10
+794,"Frontend Engineer","Engineering","{Vue.js,TensorFlow,Figma,React,Framer,GraphQL}",Lead,11
+795,"Frontend Engineer","Product","{React,Kubernetes,GSAP}",Senior,6
+796,"Tester","Design","{Docker,Next.js,Python}",Junior,0
+797,"Frontend Engineer","Design","{Blender,PostgreSQL,TypeScript,Framer}",Mid,4
+798,"UI/UX Designer","Infrastructure","{Terraform,Kubernetes,React,TensorFlow}",Mid,3
+799,"DevOps Specialist","Product","{Tailwind CSS,React,Go,Framer,GSAP}",Senior,6
+800,"Full Stack Engineer","Design","{Affinity,Blender,Framer,Data Bricks,After Effects}",Mid,4
+801,"UI/UX Designer","Engineering","{Framer,Blender,Vue.js}",Senior,7
+802,"Frontend Engineer","Marketing","{Docker,TypeScript,Affinity}",Mid,3
+803,"Game Developer","Infrastructure","{Python,Pandas,Framer,Blender,Kubernetes,TensorFlow}",Lead,9
+804,"Game Developer","Infrastructure","{Framer,Affinity,Terraform,Data Bricks,React}",Mid,4
+805,"Backend Developer","Developer","{GraphQL,Python,Framer}",Junior,0
+806,"UI/UX Designer","Developer","{React,Tailwind CSS,TypeScript}",Lead,9
+807,"DevOps Specialist","Marketing","{Tailwind CSS,Docker,Kubernetes,After Effects,Python}",Mid,3
+808,"Data Scientist","Data & AI","{Framer,Terraform,React,Figma,Blender}",Junior,0
+809,"UI/UX Designer","Design","{Docker,GraphQL,Framer,Affinity,Blender}",Lead,9
+810,"Data Scientist","Infrastructure","{AWS,GSAP,Figma,Node.js}",Lead,10
+811,"Tester","Design","{Affinity,Data Bricks,Redis,React}",Junior,1
+812,"UI/UX Designer","Marketing","{Python,Docker,Kubernetes}",Senior,5
+813,"DevOps Specialist","Design","{Figma,TypeScript,Redis,Tailwind CSS}",Senior,6
+814,"Site Reliability Engineer","Developer","{Python,Figma,Node.js,Affinity}",Lead,10
+815,"UI/UX Designer","Infrastructure","{Go,Blender,Next.js}",Lead,8
+816,"Tester","Infrastructure","{Data Bricks,Tailwind CSS,Redis}",Lead,10
+817,"Frontend Engineer","Design","{Kubernetes,After Effects,Vue.js,Terraform}",Lead,9
+818,"Tester","Infrastructure","{Vue.js,Pandas,Python}",Junior,1
+819,"Full Stack Engineer","Product","{TypeScript,Tailwind CSS,Affinity}",Lead,10
+820,"UI/UX Designer","Infrastructure","{GraphQL,Go,Python,React}",Lead,10
+821,"Full Stack Engineer","Infrastructure","{Python,Next.js,Vue.js,TypeScript,Framer,Tailwind CSS}",Mid,4
+822,"Game Developer","Infrastructure","{GSAP,React,TensorFlow,Next.js,Affinity}",Lead,11
+823,"DevOps Specialist","Developer","{Kubernetes,Figma,Terraform}",Senior,7
+824,"Tester","Developer","{TensorFlow,Framer,Go,React,Next.js}",Junior,1
+825,"Tester","Engineering","{Node.js,TypeScript,Figma,PostgreSQL,Vue.js,AWS}",Senior,7
+826,"Site Reliability Engineer","Infrastructure","{Vue.js,AWS,After Effects}",Senior,5
+827,"Tester","Engineering","{TypeScript,React,GSAP}",Junior,1
+828,"Data Scientist","Design","{Node.js,Next.js,Terraform}",Mid,2
+829,"Data Scientist","Developer","{React,Vue.js,Next.js,Tailwind CSS}",Mid,2
+830,"Frontend Engineer","Design","{Photoshop,Terraform,React}",Senior,6
+831,"Frontend Engineer","Marketing","{AWS,Photoshop,Affinity,Kubernetes,React,Data Bricks}",Junior,0
+832,"Full Stack Engineer","Engineering","{Sass,GraphQL,Blender}",Senior,6
+833,"Mobile Developer","Marketing","{TypeScript,AWS,Node.js}",Lead,11
+834,"Frontend Engineer","Data & AI","{Kubernetes,Affinity,GSAP,Framer,Sass,Python}",Mid,2
+835,"Tester","Design","{Next.js,Node.js,Blender,Redis,Data Bricks,TypeScript}",Senior,5
+836,"Tester","Developer","{Affinity,TensorFlow,React,Blender,Redis,Vue.js}",Lead,10
+837,"Game Developer","Product","{React,Next.js,Go,Affinity,GraphQL,PostgreSQL}",Junior,0
+838,"Full Stack Engineer","Infrastructure","{Kubernetes,Go,Photoshop}",Mid,2
+839,"Data Scientist","Product","{Python,Blender,Data Bricks,React,Affinity}",Junior,1
+840,"Frontend Engineer","Infrastructure","{Kubernetes,Pandas,Python,Sass}",Senior,6
+841,"Tester","Marketing","{Terraform,Docker,GSAP,Sass}",Junior,1
+842,"DevOps Specialist","Engineering","{GraphQL,Tailwind CSS,Kubernetes}",Senior,5
+843,"Game Developer","Design","{AWS,React,Blender,GraphQL,Kubernetes,Next.js}",Mid,3
+844,"Data Scientist","Marketing","{React,Pandas,Sass}",Mid,3
+845,"DevOps Specialist","Developer","{Blender,Docker,TypeScript,TensorFlow,Node.js,Python}",Mid,3
+846,"UI/UX Designer","Developer","{Python,GraphQL,React}",Mid,2
+847,"Game Developer","Infrastructure","{TypeScript,Python,Affinity,PostgreSQL,Go,After Effects}",Senior,5
+848,"Site Reliability Engineer","Developer","{GraphQL,Figma,Data Bricks,Framer}",Junior,1
+849,"AI & ML Engineer","Design","{Pandas,Redis,Framer,TypeScript,Sass,PostgreSQL}",Lead,10
+850,"Full Stack Engineer","Engineering","{Vue.js,GraphQL,Framer,Redis,Next.js}",Mid,3
+851,"Mobile Developer","Marketing","{Kubernetes,Data Bricks,AWS,After Effects,Terraform,Vue.js}",Mid,3
+852,"DevOps Specialist","Product","{Pandas,Kubernetes,TensorFlow}",Mid,2
+853,"Game Developer","Data & AI","{Docker,Tailwind CSS,TypeScript,Figma,AWS}",Lead,11
+854,"Frontend Engineer","Product","{Pandas,Node.js,TensorFlow,GraphQL,React,PostgreSQL}",Mid,2
+855,"Frontend Engineer","Developer","{Data Bricks,Kubernetes,Photoshop,Python}",Mid,4
+856,"Site Reliability Engineer","Product","{Figma,Data Bricks,TensorFlow}",Senior,5
+857,"Data Scientist","Marketing","{PostgreSQL,After Effects,Node.js,AWS,Photoshop}",Senior,5
+858,"Game Developer","Design","{TypeScript,Redis,Node.js}",Senior,6
+859,"Tester","Engineering","{Data Bricks,PostgreSQL,Node.js,Python,Docker,Sass}",Junior,0
+860,"UI/UX Designer","Data & AI","{TensorFlow,React,GraphQL,Sass,Terraform}",Mid,4
+861,"Mobile Developer","Design","{Vue.js,GraphQL,Framer,Go}",Mid,3
+862,"Mobile Developer","Marketing","{Vue.js,Framer,Docker}",Lead,8
+863,"Tester","Engineering","{Go,Vue.js,Kubernetes,Node.js}",Senior,5
+864,"Site Reliability Engineer","Developer","{Next.js,Python,React,Photoshop,Framer,Terraform}",Lead,10
+865,"Mobile Developer","Engineering","{TypeScript,Node.js,Figma,AWS,Next.js,Tailwind CSS}",Lead,9
+866,"Site Reliability Engineer","Infrastructure","{Node.js,Kubernetes,Redis,AWS}",Lead,11
+867,"Game Developer","Design","{Affinity,Node.js,Python}",Mid,3
+868,"Game Developer","Engineering","{Go,Vue.js,Blender}",Junior,1
+869,"Frontend Engineer","Engineering","{PostgreSQL,AWS,React,Go,Tailwind CSS,Sass}",Junior,1
+870,"AI & ML Engineer","Marketing","{React,Next.js,Node.js,Go}",Junior,0
+871,"Tester","Product","{Docker,Sass,Framer,Redis}",Lead,10
+872,"Tester","Developer","{Next.js,Python,Go,Vue.js,Pandas}",Lead,11
+873,"DevOps Specialist","Developer","{Docker,PostgreSQL,Go,GraphQL,Vue.js}",Junior,1
+874,"Full Stack Engineer","Design","{TypeScript,Framer,Pandas}",Senior,5
+875,"Frontend Engineer","Design","{Kubernetes,After Effects,Python,Next.js,Framer,PostgreSQL}",Lead,11
+876,"Tester","Developer","{Figma,React,Affinity,Next.js,Data Bricks,Docker}",Lead,9
+877,"Site Reliability Engineer","Infrastructure","{After Effects,Node.js,Terraform,Python,PostgreSQL}",Junior,1
+878,"UI/UX Designer","Data & AI","{Pandas,Node.js,Blender,Photoshop,Vue.js}",Mid,4
+879,"Tester","Product","{TensorFlow,Python,Docker,React,Figma,GraphQL}",Senior,7
+880,"Game Developer","Data & AI","{Blender,After Effects,Vue.js,Tailwind CSS,Node.js}",Mid,3
+881,"Site Reliability Engineer","Product","{React,Pandas,Framer,PostgreSQL,GSAP}",Lead,11
+882,"Full Stack Engineer","Developer","{AWS,Next.js,React,Tailwind CSS,Framer}",Lead,8
+883,"Full Stack Engineer","Marketing","{Sass,Kubernetes,Docker,TypeScript,Terraform,Photoshop}",Lead,8
+884,"Backend Developer","Infrastructure","{Python,Tailwind CSS,Docker,AWS}",Junior,0
+885,"Site Reliability Engineer","Engineering","{Python,Framer,PostgreSQL,Docker}",Lead,11
+886,"DevOps Specialist","Infrastructure","{GSAP,Node.js,Figma,Framer,Python,Vue.js}",Junior,1
+887,"Data Scientist","Design","{GraphQL,Tailwind CSS,React}",Junior,1
+888,"UI/UX Designer","Developer","{After Effects,AWS,Python,Blender,Sass,PostgreSQL}",Junior,1
+889,"Backend Developer","Developer","{TensorFlow,React,Kubernetes,Terraform}",Senior,5
+890,"Mobile Developer","Engineering","{Figma,GraphQL,Kubernetes,React,Pandas}",Senior,6
+891,"UI/UX Designer","Developer","{TypeScript,Figma,React,Blender,AWS,Data Bricks}",Lead,10
+892,"Game Developer","Marketing","{Node.js,Blender,GraphQL,Next.js,After Effects,Photoshop}",Mid,3
+893,"Site Reliability Engineer","Marketing","{After Effects,Pandas,Docker}",Junior,1
+894,"UI/UX Designer","Marketing","{Python,React,Figma,TypeScript,Affinity,Vue.js}",Junior,1
+895,"AI & ML Engineer","Data & AI","{Docker,After Effects,React,Redis}",Junior,0
+896,"Site Reliability Engineer","Infrastructure","{TypeScript,PostgreSQL,AWS,Data Bricks,Framer}",Lead,11
+897,"Backend Developer","Engineering","{Python,Sass,Pandas}",Junior,1
+898,"Frontend Engineer","Infrastructure","{PostgreSQL,Vue.js,Redis,Framer,TensorFlow,Next.js}",Senior,7
+899,"Game Developer","Marketing","{Blender,Node.js,Go,Next.js,Data Bricks,Python}",Junior,0
+900,"Full Stack Engineer","Data & AI","{Affinity,Python,Data Bricks,Tailwind CSS}",Lead,9
+901,"DevOps Specialist","Developer","{Go,Terraform,Sass,Node.js,GSAP}",Mid,2
+902,"Backend Developer","Data & AI","{GraphQL,Next.js,AWS}",Junior,1
+903,"AI & ML Engineer","Developer","{React,Redis,Data Bricks,Docker}",Junior,1
+904,"UI/UX Designer","Data & AI","{Python,React,AWS}",Junior,0
+905,"Full Stack Engineer","Developer","{GraphQL,Python,TypeScript,Sass,After Effects}",Junior,1
+906,"Data Scientist","Product","{GraphQL,Python,Go,Kubernetes,Framer,TypeScript}",Junior,1
+907,"Backend Developer","Design","{GraphQL,GSAP,Docker,Redis}",Mid,3
+908,"Game Developer","Data & AI","{Data Bricks,AWS,Photoshop,Sass,Figma}",Mid,2
+909,"Frontend Engineer","Developer","{Figma,Tailwind CSS,GraphQL,Sass,Vue.js}",Junior,0
+910,"Mobile Developer","Developer","{Photoshop,AWS,Affinity,Node.js,PostgreSQL,Go}",Junior,1
+911,"DevOps Specialist","Product","{Node.js,Python,Blender,Vue.js}",Mid,2
+912,"AI & ML Engineer","Developer","{React,Figma,Photoshop,PostgreSQL,Python,After Effects}",Junior,0
+913,"Tester","Developer","{React,Blender,Framer,Terraform}",Junior,1
+914,"AI & ML Engineer","Infrastructure","{Docker,Node.js,Framer,TypeScript,Go}",Junior,1
+915,"UI/UX Designer","Developer","{TensorFlow,Framer,Python,Tailwind CSS}",Junior,1
+916,"Data Scientist","Data & AI","{Pandas,TypeScript,Figma,Python,Node.js,Affinity}",Senior,7
+917,"Backend Developer","Developer","{Next.js,Node.js,Affinity,Go}",Lead,8
+918,"Backend Developer","Developer","{TensorFlow,TypeScript,Docker}",Lead,8
+919,"DevOps Specialist","Marketing","{Next.js,Node.js,Photoshop,TypeScript,Tailwind CSS}",Junior,0
+920,"Game Developer","Data & AI","{Affinity,Docker,Data Bricks,Pandas,Sass}",Mid,2
+921,"Game Developer","Product","{Node.js,Pandas,TypeScript}",Mid,3
+922,"Site Reliability Engineer","Developer","{Framer,GSAP,React,Go,Docker}",Senior,7
+923,"AI & ML Engineer","Developer","{Terraform,TypeScript,GSAP,Redis,Affinity}",Junior,0
+924,"Full Stack Engineer","Product","{GraphQL,Next.js,React,PostgreSQL}",Lead,11
+925,"Mobile Developer","Design","{Node.js,Photoshop,Kubernetes,Data Bricks}",Junior,0
+926,"Site Reliability Engineer","Developer","{After Effects,TypeScript,Sass,Node.js}",Junior,1
+927,"DevOps Specialist","Design","{Docker,React,After Effects,GSAP}",Senior,7
+928,"AI & ML Engineer","Developer","{Kubernetes,Sass,GSAP,React}",Mid,4
+929,"Frontend Engineer","Product","{TensorFlow,PostgreSQL,React,Figma,Next.js,AWS}",Junior,1
+930,"Site Reliability Engineer","Infrastructure","{Python,React,GSAP,GraphQL,Vue.js,Go}",Senior,7
+931,"Full Stack Engineer","Design","{Affinity,TypeScript,After Effects,PostgreSQL}",Junior,1
+932,"UI/UX Designer","Design","{React,After Effects,TensorFlow}",Junior,0
+933,"AI & ML Engineer","Developer","{Docker,Node.js,AWS,Blender,GraphQL,Vue.js}",Mid,4
+934,"Backend Developer","Design","{Vue.js,React,Kubernetes,Photoshop}",Lead,8
+935,"Backend Developer","Marketing","{Data Bricks,GraphQL,Node.js,GSAP,Vue.js,Figma}",Senior,7
+936,"Mobile Developer","Infrastructure","{Blender,Vue.js,Pandas}",Junior,1
+937,"Site Reliability Engineer","Infrastructure","{React,Next.js,PostgreSQL}",Mid,4
+938,"DevOps Specialist","Data & AI","{PostgreSQL,AWS,Kubernetes,Sass}",Mid,3
+939,"Mobile Developer","Design","{Vue.js,React,Sass,TensorFlow}",Lead,9
+940,"UI/UX Designer","Infrastructure","{GSAP,TypeScript,Tailwind CSS,React,Go}",Junior,0
+941,"Site Reliability Engineer","Marketing","{Terraform,GraphQL,Kubernetes,Vue.js,Go}",Junior,1
+942,"UI/UX Designer","Marketing","{Photoshop,Redis,React,Vue.js,Next.js}",Mid,4
+943,"Full Stack Engineer","Product","{Affinity,TypeScript,React,Python}",Mid,2
+944,"Tester","Marketing","{React,Next.js,AWS,GSAP,PostgreSQL,Redis}",Mid,4
+945,"DevOps Specialist","Data & AI","{Data Bricks,Affinity,Next.js,AWS,Tailwind CSS}",Lead,11
+946,"Tester","Product","{Node.js,Figma,AWS,PostgreSQL}",Lead,11
+947,"Frontend Engineer","Developer","{Python,After Effects,Next.js,React,GraphQL,PostgreSQL}",Senior,7
+948,"UI/UX Designer","Marketing","{Data Bricks,Pandas,Python,Framer}",Lead,9
+949,"Frontend Engineer","Marketing","{Python,Photoshop,Vue.js,After Effects}",Lead,9
+950,"Site Reliability Engineer","Marketing","{Node.js,After Effects,GSAP}",Lead,11
+951,"AI & ML Engineer","Infrastructure","{Figma,GSAP,Affinity,Vue.js,Terraform,After Effects}",Mid,2
+952,"DevOps Specialist","Data & AI","{Kubernetes,Docker,Figma}",Mid,4
+953,"Site Reliability Engineer","Data & AI","{Figma,GraphQL,Photoshop,Docker,Vue.js}",Senior,7
+954,"Full Stack Engineer","Infrastructure","{Framer,Docker,Node.js,GSAP}",Junior,1
+955,"AI & ML Engineer","Product","{React,Blender,GSAP,Python,Tailwind CSS,Pandas}",Mid,4
+956,"Game Developer","Developer","{Affinity,Tailwind CSS,Docker,React,AWS}",Lead,10
+957,"Game Developer","Marketing","{Next.js,Redis,Python,Data Bricks}",Mid,4
+958,"DevOps Specialist","Design","{Affinity,React,Node.js}",Junior,1
+959,"DevOps Specialist","Product","{GraphQL,Vue.js,React,Next.js,Kubernetes}",Mid,3
+960,"UI/UX Designer","Engineering","{React,Python,Docker}",Senior,6
+961,"Data Scientist","Product","{Python,GraphQL,React}",Mid,3
+962,"Site Reliability Engineer","Marketing","{GraphQL,Pandas,GSAP,Affinity,Kubernetes,Vue.js}",Senior,7
+963,"DevOps Specialist","Product","{Photoshop,After Effects,Blender,Framer,GraphQL,GSAP}",Mid,4
+964,"Site Reliability Engineer","Data & AI","{Framer,Redis,Python,Kubernetes,Tailwind CSS}",Lead,11
+965,"Site Reliability Engineer","Data & AI","{Tailwind CSS,Docker,React,TensorFlow,Blender,Sass}",Lead,11
+966,"DevOps Specialist","Engineering","{Python,React,Photoshop,PostgreSQL}",Mid,2
+967,"Tester","Data & AI","{Node.js,TypeScript,AWS,Redis}",Mid,2
+968,"Full Stack Engineer","Marketing","{Data Bricks,Kubernetes,Blender,Python,Node.js}",Senior,5
+969,"Site Reliability Engineer","Infrastructure","{TensorFlow,React,Next.js,Data Bricks}",Senior,7
+970,"Frontend Engineer","Data & AI","{Sass,AWS,Pandas,Python,TensorFlow,React}",Lead,8
+971,"UI/UX Designer","Design","{Python,Node.js,Figma,Terraform,Pandas,TensorFlow}",Junior,0
+972,"UI/UX Designer","Marketing","{GraphQL,Python,TensorFlow}",Junior,0
+973,"UI/UX Designer","Engineering","{Data Bricks,Docker,React,AWS,Kubernetes}",Mid,2
+974,"Backend Developer","Data & AI","{Kubernetes,PostgreSQL,Photoshop}",Mid,3
+975,"Mobile Developer","Design","{Vue.js,Blender,Kubernetes}",Mid,3
+976,"Backend Developer","Product","{Figma,Redis,AWS,Pandas,Vue.js}",Mid,2
+977,"Tester","Developer","{React,Python,TensorFlow,Blender}",Senior,6
+978,"DevOps Specialist","Engineering","{AWS,Node.js,GSAP,Redis,TensorFlow}",Senior,7
+979,"Backend Developer","Developer","{Data Bricks,Kubernetes,Pandas,Photoshop}",Junior,0
+980,"Frontend Engineer","Marketing","{Sass,Affinity,TypeScript,Next.js,Vue.js,Tailwind CSS}",Lead,10
+981,"Game Developer","Developer","{Next.js,Docker,Redis}",Lead,11
+982,"UI/UX Designer","Data & AI","{TypeScript,Framer,Tailwind CSS}",Mid,2
+983,"AI & ML Engineer","Marketing","{GSAP,Go,React,Tailwind CSS,Vue.js,TensorFlow}",Mid,4
+984,"Game Developer","Engineering","{Redis,Affinity,Python}",Lead,8
+985,"Frontend Engineer","Marketing","{After Effects,GSAP,Photoshop,Pandas}",Junior,0
+986,"DevOps Specialist","Infrastructure","{GSAP,After Effects,Sass,Kubernetes,Python}",Senior,6
+987,"Tester","Product","{Node.js,Next.js,Figma}",Senior,7
+988,"Mobile Developer","Product","{Terraform,AWS,Figma,Vue.js}",Mid,2
+989,"Full Stack Engineer","Infrastructure","{Tailwind CSS,React,Redis}",Junior,0
+990,"Frontend Engineer","Product","{GraphQL,Framer,React}",Junior,0
+991,"Game Developer","Data & AI","{Go,Vue.js,Framer,Data Bricks,GraphQL,Kubernetes}",Senior,6
+992,"Mobile Developer","Data & AI","{GraphQL,Docker,Python}",Lead,8
+993,"Frontend Engineer","Product","{React,Next.js,TensorFlow,Blender,Affinity,Redis}",Mid,3
+994,"Full Stack Engineer","Engineering","{Framer,Vue.js,Python,Next.js,Docker}",Junior,0
+995,"Full Stack Engineer","Engineering","{Pandas,GSAP,Terraform,Framer,Photoshop}",Mid,3
+996,"Site Reliability Engineer","Marketing","{Kubernetes,Redis,React,Go,Pandas,After Effects}",Senior,7
+997,"Tester","Data & AI","{Data Bricks,After Effects,Figma,Terraform}",Lead,10
+998,"UI/UX Designer","Product","{GSAP,React,AWS,Terraform,Vue.js,After Effects}",Mid,2
+999,"Data Scientist","Product","{Python,Next.js,Terraform,Framer,React,Kubernetes}",Lead,11
+1000,"Frontend Engineer","Engineering","{Pandas,PostgreSQL,Python,TensorFlow,Kubernetes,TypeScript}",Junior,1
+1001,"Mobile Developer","Developer","{Docker,Go,After Effects}",Mid,3
+1002,"Tester","Infrastructure","{Next.js,Docker,Blender}",Junior,0
+1003,"AI & ML Engineer","Product","{Node.js,GraphQL,AWS}",Senior,6
+1004,"Full Stack Engineer","Developer","{Figma,Blender,React,Next.js,Vue.js}",Junior,0
+1005,"Data Scientist","Developer","{React,Node.js,GraphQL,Affinity}",Lead,9
+1006,"DevOps Specialist","Data & AI","{Terraform,Tailwind CSS,Photoshop,Redis,React,Figma}",Junior,0
+1007,"Full Stack Engineer","Product","{Docker,PostgreSQL,Blender,Framer,Data Bricks,Redis}",Lead,11
+1008,"DevOps Specialist","Data & AI","{AWS,Sass,Next.js,GSAP}",Mid,3
+1009,"DevOps Specialist","Developer","{Pandas,Affinity,GraphQL,React,Terraform,Next.js}",Mid,4
+1010,"Backend Developer","Design","{Photoshop,Pandas,Python,After Effects,Node.js,Kubernetes}",Senior,7
+1011,"DevOps Specialist","Engineering","{Figma,Sass,TensorFlow,Framer,Redis,Python}",Lead,11
+1012,"Mobile Developer","Developer","{Pandas,Next.js,Affinity,Figma,Vue.js}",Senior,6
+1013,"Backend Developer","Engineering","{Docker,TypeScript,Photoshop,Pandas,Python,AWS}",Senior,7
+1014,"Backend Developer","Product","{React,PostgreSQL,Tailwind CSS}",Lead,11
+1015,"Tester","Engineering","{Data Bricks,TypeScript,Kubernetes,Next.js,PostgreSQL}",Junior,1
+1016,"Mobile Developer","Engineering","{Node.js,Blender,Kubernetes,TypeScript}",Mid,3
+1017,"AI & ML Engineer","Product","{Pandas,Vue.js,Sass}",Mid,3
+1018,"Data Scientist","Design","{After Effects,Pandas,AWS,PostgreSQL,Blender}",Junior,0
+1019,"Mobile Developer","Product","{GraphQL,Vue.js,Terraform,Go}",Mid,2
+1020,"Backend Developer","Data & AI","{TypeScript,Go,After Effects,GraphQL,React,AWS}",Junior,0
+1021,"AI & ML Engineer","Data & AI","{React,Vue.js,Next.js,Framer,Node.js,TensorFlow}",Mid,3
+1022,"Mobile Developer","Developer","{TensorFlow,Vue.js,Terraform,GraphQL}",Lead,8
+1023,"UI/UX Designer","Marketing","{Tailwind CSS,Kubernetes,GraphQL,Go}",Senior,7
+1024,"Full Stack Engineer","Marketing","{Node.js,GSAP,Kubernetes,Figma,GraphQL,Sass}",Mid,4
+1025,"AI & ML Engineer","Marketing","{Next.js,Python,Tailwind CSS,Terraform}",Mid,4
+1026,"Mobile Developer","Developer","{Sass,Go,GSAP,Node.js,Docker,Blender}",Lead,11
+1027,"AI & ML Engineer","Developer","{React,Sass,Photoshop}",Lead,11
+1028,"Mobile Developer","Data & AI","{Redis,Node.js,Next.js}",Lead,11
+1029,"Frontend Engineer","Design","{AWS,After Effects,Terraform,Next.js,Sass,GraphQL}",Senior,7
+1030,"Site Reliability Engineer","Design","{Tailwind CSS,Vue.js,PostgreSQL,Framer,AWS}",Senior,7
+1031,"DevOps Specialist","Design","{Pandas,Photoshop,Python,Node.js,Docker,Kubernetes}",Lead,11
+1032,"Frontend Engineer","Data & AI","{Node.js,Kubernetes,Affinity,PostgreSQL,Redis,Go}",Senior,5
+1033,"Mobile Developer","Infrastructure","{TensorFlow,TypeScript,Docker,Sass}",Mid,3
+1034,"Backend Developer","Marketing","{Python,Figma,Affinity}",Mid,3
+1035,"Mobile Developer","Engineering","{Python,Tailwind CSS,Node.js,Docker,Framer}",Junior,0
+1036,"AI & ML Engineer","Engineering","{Node.js,TensorFlow,Next.js,Terraform}",Mid,2
+1037,"AI & ML Engineer","Design","{AWS,Sass,GraphQL,Figma,TypeScript,After Effects}",Lead,10
+1038,"Site Reliability Engineer","Design","{Vue.js,Terraform,Pandas,After Effects}",Junior,1
+1039,"Tester","Product","{Redis,Next.js,Docker,Tailwind CSS,After Effects,GSAP}",Junior,1
+1040,"Backend Developer","Marketing","{Tailwind CSS,Pandas,Figma,GraphQL,TensorFlow}",Junior,0
+1041,"DevOps Specialist","Engineering","{Next.js,Node.js,Vue.js}",Senior,5
+1042,"Data Scientist","Data & AI","{Terraform,Vue.js,React,Go,Framer}",Lead,11
+1043,"Game Developer","Infrastructure","{GSAP,Blender,Docker,PostgreSQL,TypeScript}",Mid,2
+1044,"Backend Developer","Engineering","{Pandas,Affinity,Node.js,Photoshop,Next.js}",Junior,1
+1045,"Site Reliability Engineer","Developer","{Pandas,TensorFlow,Kubernetes}",Lead,11
+1046,"Full Stack Engineer","Design","{After Effects,GraphQL,Node.js,Figma}",Junior,0
+1047,"AI & ML Engineer","Infrastructure","{Terraform,Pandas,Next.js,Blender,TensorFlow}",Mid,3
+1048,"Game Developer","Infrastructure","{Sass,Framer,Terraform,AWS,Vue.js,Photoshop}",Lead,8
+1049,"Game Developer","Marketing","{Python,Vue.js,Figma,Data Bricks,TypeScript,PostgreSQL}",Lead,8
+1050,"Game Developer","Design","{GSAP,TensorFlow,Node.js,Sass,Figma,Pandas}",Mid,4
+1051,"Tester","Design","{TypeScript,Kubernetes,Redis,GSAP,Sass}",Mid,4
+1052,"Game Developer","Marketing","{Python,React,Figma,Tailwind CSS}",Mid,3
+1053,"DevOps Specialist","Marketing","{TensorFlow,After Effects,Redis,Photoshop,GSAP,Docker}",Senior,6
+1054,"UI/UX Designer","Infrastructure","{Framer,React,Next.js,Vue.js}",Mid,4
+1055,"UI/UX Designer","Infrastructure","{TensorFlow,Sass,GSAP}",Mid,2
+1056,"Mobile Developer","Infrastructure","{GSAP,Pandas,React,PostgreSQL,Photoshop,Terraform}",Junior,1
+1057,"UI/UX Designer","Marketing","{Photoshop,GraphQL,After Effects,Redis,PostgreSQL,Docker}",Junior,1
+1058,"Tester","Design","{Framer,Blender,Affinity}",Senior,7
+1059,"Game Developer","Developer","{Affinity,AWS,Pandas,Framer}",Lead,9
+1060,"DevOps Specialist","Design","{PostgreSQL,TensorFlow,React,Go,Redis}",Lead,11
+1061,"AI & ML Engineer","Data & AI","{React,Python,Affinity,Data Bricks}",Mid,2
+1062,"Backend Developer","Data & AI","{GSAP,Go,Framer,Node.js,Tailwind CSS,Pandas}",Senior,6
+1063,"Data Scientist","Marketing","{Next.js,Kubernetes,TensorFlow,React,Redis}",Mid,2
+1064,"UI/UX Designer","Design","{Kubernetes,GraphQL,Go}",Senior,6
+1065,"Mobile Developer","Engineering","{Node.js,Python,Kubernetes,Redis,Photoshop,Affinity}",Senior,5
+1066,"Mobile Developer","Engineering","{GraphQL,Pandas,Go,Tailwind CSS,Data Bricks,Python}",Junior,1
+1067,"Full Stack Engineer","Engineering","{Vue.js,Figma,Docker}",Lead,8
+1068,"AI & ML Engineer","Infrastructure","{GraphQL,Kubernetes,Go,TypeScript,Redis,Blender}",Mid,4
+1069,"UI/UX Designer","Design","{GraphQL,Docker,Vue.js}",Senior,5
+1070,"AI & ML Engineer","Marketing","{Data Bricks,Node.js,Photoshop,Sass,Python}",Junior,1
+1071,"UI/UX Designer","Marketing","{Affinity,Kubernetes,Sass,Data Bricks,AWS}",Senior,7
+1072,"Full Stack Engineer","Developer","{Blender,Data Bricks,Go}",Lead,10
+1073,"AI & ML Engineer","Marketing","{Next.js,Affinity,React,TypeScript}",Junior,1
+1074,"Site Reliability Engineer","Data & AI","{Go,After Effects,Vue.js,React}",Mid,3
+1075,"AI & ML Engineer","Marketing","{Go,Photoshop,GSAP,Kubernetes,React,Data Bricks}",Mid,2
+1076,"UI/UX Designer","Infrastructure","{Affinity,Blender,GraphQL,Vue.js,After Effects}",Mid,4
+1077,"AI & ML Engineer","Marketing","{Next.js,GraphQL,After Effects}",Mid,4
+1078,"AI & ML Engineer","Marketing","{TensorFlow,Photoshop,Blender,PostgreSQL,AWS}",Junior,1
+1079,"Tester","Developer","{GSAP,Data Bricks,Terraform,Go}",Mid,2
+1080,"Data Scientist","Data & AI","{AWS,Redis,Framer,PostgreSQL}",Senior,7
+1081,"Frontend Engineer","Engineering","{React,Blender,TensorFlow,Affinity,Python,Vue.js}",Junior,0
+1082,"Tester","Marketing","{Figma,AWS,Blender,Terraform,After Effects}",Junior,0
+1083,"Tester","Data & AI","{Python,PostgreSQL,Figma,GSAP,Vue.js}",Mid,3
+1084,"Tester","Data & AI","{React,Photoshop,Redis}",Mid,3
+1085,"Site Reliability Engineer","Engineering","{React,Tailwind CSS,Next.js,Go,Sass}",Junior,0
+1086,"Game Developer","Data & AI","{Node.js,Figma,TensorFlow,After Effects,Terraform,GraphQL}",Mid,4
+1087,"Site Reliability Engineer","Developer","{Terraform,Docker,Vue.js,Framer}",Lead,10
+1088,"AI & ML Engineer","Developer","{Node.js,Python,Photoshop}",Mid,4
+1089,"Site Reliability Engineer","Engineering","{TypeScript,After Effects,GraphQL,Blender,Pandas}",Lead,9
+1090,"Full Stack Engineer","Engineering","{Framer,TensorFlow,Terraform,React}",Senior,7
+1091,"Tester","Developer","{Python,Docker,Tailwind CSS}",Lead,8
+1092,"Tester","Data & AI","{Pandas,Redis,GraphQL}",Lead,11
+1093,"DevOps Specialist","Engineering","{After Effects,Vue.js,Python}",Mid,4
+1094,"Site Reliability Engineer","Developer","{Tailwind CSS,GraphQL,Vue.js}",Lead,9
+1095,"UI/UX Designer","Data & AI","{AWS,Python,Redis,Kubernetes,After Effects}",Mid,2
+1096,"Game Developer","Infrastructure","{Pandas,Docker,PostgreSQL,React}",Senior,5
+1097,"Full Stack Engineer","Data & AI","{Sass,Data Bricks,TypeScript}",Mid,2
+1098,"Data Scientist","Developer","{React,Framer,Python}",Junior,1
+1099,"Frontend Engineer","Product","{React,Pandas,Vue.js,Framer,GraphQL,After Effects}",Lead,10
+1100,"UI/UX Designer","Infrastructure","{PostgreSQL,Node.js,Figma,Redis}",Junior,1
+1101,"Frontend Engineer","Marketing","{Node.js,Blender,Docker,Tailwind CSS,Go}",Junior,1
+1102,"Mobile Developer","Developer","{GraphQL,TypeScript,Go}",Lead,11
+1103,"UI/UX Designer","Engineering","{Data Bricks,Figma,Terraform,AWS}",Junior,0
+1104,"Frontend Engineer","Developer","{GSAP,Kubernetes,Docker}",Lead,10
+1105,"Data Scientist","Data & AI","{Data Bricks,GraphQL,GSAP,Pandas,TypeScript,PostgreSQL}",Senior,7
+1106,"Mobile Developer","Design","{Pandas,After Effects,Node.js,Figma}",Mid,3
+1107,"Full Stack Engineer","Developer","{Kubernetes,Data Bricks,Go,Redis,Next.js}",Mid,2
+1108,"Mobile Developer","Engineering","{Affinity,PostgreSQL,Docker,Python}",Mid,3
+1109,"UI/UX Designer","Infrastructure","{AWS,TensorFlow,Affinity}",Senior,6
+1110,"AI & ML Engineer","Design","{After Effects,GSAP,Kubernetes}",Junior,0
+1111,"Data Scientist","Developer","{Python,Node.js,Data Bricks,Framer,Docker}",Mid,2
+1112,"Data Scientist","Product","{React,Next.js,Figma,Go,Vue.js,Blender}",Mid,3
+1113,"Full Stack Engineer","Engineering","{GraphQL,Data Bricks,Kubernetes,React}",Senior,6
+1114,"AI & ML Engineer","Infrastructure","{React,Affinity,Kubernetes}",Lead,11
+1115,"UI/UX Designer","Developer","{AWS,GSAP,Photoshop,Go}",Lead,10
+1116,"Frontend Engineer","Developer","{TypeScript,Node.js,AWS,Redis}",Mid,3
+1117,"Backend Developer","Infrastructure","{Vue.js,Python,Node.js,Affinity,Go,Blender}",Mid,2
+1118,"Data Scientist","Engineering","{Node.js,Go,Vue.js,GSAP,AWS,React}",Mid,2
+1119,"Site Reliability Engineer","Infrastructure","{React,After Effects,Next.js,TypeScript,Node.js}",Mid,4
+1120,"Frontend Engineer","Engineering","{Next.js,After Effects,Vue.js,Affinity,Kubernetes,AWS}",Senior,7
+1121,"Site Reliability Engineer","Product","{Python,Kubernetes,Data Bricks,TensorFlow}",Mid,4
+1122,"Frontend Engineer","Engineering","{GraphQL,Sass,GSAP,Redis}",Mid,4
+1123,"Mobile Developer","Product","{Photoshop,GraphQL,Figma}",Lead,9
+1124,"Full Stack Engineer","Infrastructure","{GSAP,Tailwind CSS,Python,GraphQL}",Senior,5
+1125,"Backend Developer","Design","{React,Framer,After Effects,Python,Photoshop}",Mid,4
+1126,"AI & ML Engineer","Design","{Docker,Tailwind CSS,TensorFlow,After Effects,Vue.js}",Junior,1
+1127,"UI/UX Designer","Data & AI","{React,Terraform,Blender,Go}",Lead,10
+1128,"Site Reliability Engineer","Infrastructure","{Kubernetes,GraphQL,Node.js}",Junior,0
+1129,"AI & ML Engineer","Data & AI","{PostgreSQL,React,Kubernetes,Redis,Vue.js,Affinity}",Senior,6
+1130,"Site Reliability Engineer","Product","{TypeScript,Blender,GraphQL,Affinity,Terraform}",Lead,10
+1131,"Tester","Engineering","{Terraform,Kubernetes,AWS,Next.js,Go,Docker}",Junior,1
+1132,"Game Developer","Marketing","{Next.js,React,Figma,Node.js,Data Bricks}",Lead,9
+1133,"DevOps Specialist","Engineering","{Node.js,React,After Effects,Sass,Framer,Figma}",Lead,11
+1134,"Backend Developer","Infrastructure","{Vue.js,Kubernetes,Affinity,Photoshop}",Mid,3
+1135,"Backend Developer","Product","{Vue.js,Sass,After Effects}",Mid,3
+1136,"Frontend Engineer","Engineering","{React,PostgreSQL,Affinity}",Lead,8
+1137,"UI/UX Designer","Developer","{Photoshop,Python,Node.js,PostgreSQL}",Mid,3
+1138,"AI & ML Engineer","Product","{TensorFlow,Go,Sass,After Effects}",Mid,3
+1139,"DevOps Specialist","Design","{Tailwind CSS,Blender,PostgreSQL,Sass,TensorFlow,Figma}",Mid,3
+1140,"AI & ML Engineer","Design","{Python,Docker,TensorFlow,Terraform,React,Framer}",Junior,0
+1141,"UI/UX Designer","Engineering","{GSAP,Node.js,Kubernetes,Vue.js,Redis}",Mid,4
+1142,"DevOps Specialist","Engineering","{Terraform,AWS,React,Next.js}",Senior,6
+1143,"Tester","Product","{Vue.js,Terraform,Next.js,Kubernetes,Photoshop,Blender}",Junior,1
+1144,"Game Developer","Marketing","{Python,Blender,React,AWS,Figma,TensorFlow}",Mid,2
+1145,"Backend Developer","Data & AI","{Next.js,GSAP,Framer}",Senior,5
+1146,"Tester","Developer","{Data Bricks,GSAP,TypeScript,Affinity}",Lead,11
+1147,"Frontend Engineer","Design","{Data Bricks,Go,GraphQL,TypeScript}",Lead,10
+1148,"Site Reliability Engineer","Developer","{Pandas,React,Framer,PostgreSQL}",Mid,3
+1149,"Full Stack Engineer","Data & AI","{Redis,Go,React,Python,Next.js,Node.js}",Lead,8
+1150,"UI/UX Designer","Developer","{Node.js,AWS,TypeScript}",Mid,2
+1151,"AI & ML Engineer","Marketing","{Sass,GraphQL,Photoshop,PostgreSQL,Data Bricks}",Mid,3
+1152,"DevOps Specialist","Product","{Node.js,Next.js,After Effects,Pandas,Sass}",Mid,3
+1153,"Full Stack Engineer","Data & AI","{TensorFlow,Kubernetes,TypeScript,Figma,React,Next.js}",Junior,1
+1154,"UI/UX Designer","Data & AI","{React,Kubernetes,Affinity,Sass}",Lead,8
+1155,"AI & ML Engineer","Data & AI","{Redis,React,PostgreSQL,Python}",Mid,3
+1156,"Data Scientist","Marketing","{AWS,GSAP,React,Terraform}",Mid,2
+1157,"DevOps Specialist","Product","{Node.js,Vue.js,TypeScript}",Mid,3
+1158,"Data Scientist","Product","{GSAP,Docker,After Effects}",Junior,1
+1159,"Tester","Infrastructure","{GraphQL,React,TypeScript}",Junior,0
+1160,"Full Stack Engineer","Infrastructure","{Blender,Tailwind CSS,Go}",Lead,8
+1161,"Game Developer","Developer","{Redis,TensorFlow,Framer}",Mid,2
+1162,"UI/UX Designer","Engineering","{PostgreSQL,Kubernetes,Docker,Sass}",Junior,1
+1163,"Mobile Developer","Data & AI","{Sass,TensorFlow,Kubernetes,Python}",Junior,1
+1164,"Backend Developer","Engineering","{Blender,Tailwind CSS,Next.js,React,Kubernetes}",Mid,3
+1165,"Tester","Design","{Kubernetes,Figma,Redis,Python,Vue.js,Node.js}",Senior,7
+1166,"Mobile Developer","Marketing","{Redis,Python,Tailwind CSS,AWS,Vue.js,Node.js}",Junior,0
+1167,"DevOps Specialist","Product","{Kubernetes,Blender,Affinity}",Junior,0
+1168,"UI/UX Designer","Infrastructure","{Kubernetes,TensorFlow,Data Bricks,After Effects,Blender}",Lead,8
+1169,"Full Stack Engineer","Infrastructure","{Kubernetes,TypeScript,Affinity,Tailwind CSS}",Junior,0
+1170,"DevOps Specialist","Product","{Pandas,After Effects,Redis,GSAP}",Lead,10
+1171,"UI/UX Designer","Infrastructure","{Figma,Next.js,Vue.js,Sass,Kubernetes,Python}",Mid,2
+1172,"UI/UX Designer","Product","{React,GraphQL,Figma,Data Bricks}",Senior,5
+1173,"Data Scientist","Data & AI","{React,Blender,GSAP}",Junior,1
+1174,"Game Developer","Infrastructure","{React,Docker,Terraform,Tailwind CSS,Sass,Blender}",Senior,6
+1175,"Site Reliability Engineer","Data & AI","{After Effects,Vue.js,AWS}",Lead,9
+1176,"Mobile Developer","Developer","{Photoshop,Blender,Next.js}",Lead,11
+1177,"Mobile Developer","Design","{TypeScript,Node.js,Figma,TensorFlow,Pandas}",Mid,4
+1178,"Frontend Engineer","Data & AI","{GraphQL,Python,After Effects,Photoshop,Framer}",Senior,6
+1179,"Game Developer","Marketing","{Docker,Kubernetes,GraphQL}",Junior,1
+1180,"Tester","Infrastructure","{TypeScript,Pandas,GraphQL,Python,Kubernetes}",Senior,6
+1181,"Game Developer","Engineering","{Blender,Sass,Figma,Photoshop,AWS}",Junior,1
+1182,"Mobile Developer","Data & AI","{Kubernetes,PostgreSQL,Photoshop,GSAP}",Mid,2
+1183,"Frontend Engineer","Infrastructure","{Kubernetes,React,TypeScript,AWS,Tailwind CSS}",Junior,0
+1184,"UI/UX Designer","Design","{Kubernetes,Data Bricks,TensorFlow}",Mid,3
+1185,"Tester","Engineering","{React,TypeScript,Blender,PostgreSQL}",Mid,3
+1186,"Site Reliability Engineer","Engineering","{Pandas,Kubernetes,Next.js,Sass,Redis}",Lead,11
+1187,"Mobile Developer","Data & AI","{TensorFlow,React,Kubernetes,AWS,Sass,Figma}",Junior,1
+1188,"Site Reliability Engineer","Data & AI","{TensorFlow,Go,Data Bricks,Redis}",Senior,6
+1189,"Data Scientist","Infrastructure","{Go,Kubernetes,Affinity,AWS}",Senior,6
+1190,"Backend Developer","Product","{Terraform,After Effects,Node.js}",Lead,9
+1191,"Full Stack Engineer","Developer","{Vue.js,Framer,React}",Junior,0
+1192,"UI/UX Designer","Engineering","{Kubernetes,Photoshop,Next.js,Figma,Terraform,TensorFlow}",Mid,4
+1193,"DevOps Specialist","Data & AI","{Node.js,Go,Next.js,TypeScript,Python,Photoshop}",Lead,8
+1194,"Data Scientist","Data & AI","{Docker,Kubernetes,Data Bricks,Next.js,React,TypeScript}",Junior,1
+1195,"Game Developer","Engineering","{Docker,Kubernetes,Redis,Next.js,Vue.js}",Senior,5
+1196,"Site Reliability Engineer","Developer","{GraphQL,Go,GSAP,Node.js}",Junior,0
+1197,"Tester","Marketing","{React,Next.js,Figma,Blender}",Mid,2
+1198,"UI/UX Designer","Marketing","{GSAP,PostgreSQL,React,Kubernetes,Node.js,Tailwind CSS}",Lead,9
+1199,"Backend Developer","Infrastructure","{Kubernetes,Sass,Vue.js,Affinity,Go}",Lead,9
+1200,"Site Reliability Engineer","Design","{Terraform,React,Blender,TypeScript,Tailwind CSS,Redis}",Junior,1
+1201,"Mobile Developer","Engineering","{Vue.js,Docker,TypeScript,Figma,PostgreSQL,React}",Mid,3
+1202,"Frontend Engineer","Developer","{Node.js,Vue.js,Python,Tailwind CSS,After Effects}",Senior,7
+1203,"AI & ML Engineer","Design","{GSAP,Framer,After Effects,Terraform}",Senior,6
+1204,"Site Reliability Engineer","Data & AI","{Terraform,Docker,Figma,Framer,PostgreSQL}",Senior,5
+1205,"Mobile Developer","Data & AI","{Figma,Python,Affinity,Data Bricks,Redis,React}",Mid,2
+1206,"Backend Developer","Infrastructure","{Next.js,TypeScript,Photoshop,Blender,Kubernetes,Framer}",Lead,10
+1207,"Game Developer","Developer","{React,Python,Tailwind CSS,Kubernetes}",Mid,2
+1208,"Game Developer","Data & AI","{AWS,Framer,Pandas,Python,Sass,TypeScript}",Mid,2
+1209,"Mobile Developer","Infrastructure","{Framer,Tailwind CSS,After Effects,Next.js,TypeScript}",Senior,5
+1210,"Frontend Engineer","Product","{Vue.js,Next.js,Kubernetes,Redis,Framer,Blender}",Senior,7
+1211,"Full Stack Engineer","Engineering","{Figma,Framer,Python}",Mid,3
+1212,"AI & ML Engineer","Marketing","{React,GraphQL,Redis,Vue.js,Photoshop}",Senior,6
+1213,"AI & ML Engineer","Marketing","{React,Figma,PostgreSQL,AWS,GSAP}",Senior,7
+1214,"Mobile Developer","Data & AI","{Next.js,Vue.js,PostgreSQL,After Effects,Node.js,Kubernetes}",Senior,5
+1215,"Full Stack Engineer","Developer","{Data Bricks,Terraform,PostgreSQL,Redis,TensorFlow,Python}",Lead,11
+1216,"DevOps Specialist","Marketing","{React,GraphQL,Next.js}",Mid,2
+1217,"Site Reliability Engineer","Developer","{Python,React,Framer,Next.js,Go,Redis}",Mid,3
+1218,"Site Reliability Engineer","Product","{Vue.js,Data Bricks,TypeScript}",Junior,0
+1219,"Site Reliability Engineer","Engineering","{Tailwind CSS,Node.js,TypeScript,Pandas,Blender,After Effects}",Mid,3
+1220,"Game Developer","Product","{TensorFlow,Next.js,Affinity,Python}",Lead,9
+1221,"Game Developer","Engineering","{Tailwind CSS,Pandas,PostgreSQL}",Senior,5
+1222,"UI/UX Designer","Design","{React,Figma,Photoshop,Kubernetes,Vue.js}",Mid,4
+1223,"AI & ML Engineer","Product","{Figma,React,Next.js,Tailwind CSS}",Lead,8
+1224,"Site Reliability Engineer","Developer","{Python,TypeScript,Vue.js,Go,Blender,Docker}",Senior,6
+1225,"Backend Developer","Infrastructure","{PostgreSQL,React,Redis,Next.js,Figma}",Lead,11
+1226,"Backend Developer","Developer","{Figma,Next.js,Sass}",Junior,1
+1227,"Backend Developer","Product","{Sass,Go,Blender,Docker}",Lead,9
+1228,"AI & ML Engineer","Engineering","{AWS,Pandas,Redis,Kubernetes,Blender}",Mid,4
+1229,"Mobile Developer","Data & AI","{Data Bricks,Go,React,TypeScript,Figma,Blender}",Junior,0
+1230,"Frontend Engineer","Developer","{Photoshop,Sass,React}",Lead,11
+1231,"Frontend Engineer","Infrastructure","{Redis,Terraform,Vue.js,Affinity,React}",Mid,2
+1232,"Frontend Engineer","Design","{Framer,PostgreSQL,AWS,Kubernetes}",Mid,4
+1233,"Full Stack Engineer","Product","{Docker,React,Photoshop,Next.js,TypeScript,Pandas}",Lead,8
+1234,"Frontend Engineer","Product","{Photoshop,React,Data Bricks,TensorFlow,GraphQL,Next.js}",Senior,5
+1235,"Tester","Data & AI","{Terraform,Vue.js,React,Affinity}",Junior,0
+1236,"Backend Developer","Infrastructure","{GSAP,AWS,Node.js,GraphQL,Next.js,Blender}",Junior,0
+1237,"Site Reliability Engineer","Design","{React,Next.js,Data Bricks}",Mid,2
+1238,"Site Reliability Engineer","Data & AI","{React,Vue.js,Node.js}",Lead,9
+1239,"DevOps Specialist","Developer","{Photoshop,Go,Node.js}",Senior,6
+1240,"AI & ML Engineer","Developer","{AWS,Kubernetes,Photoshop,Node.js,Next.js}",Lead,10
+1241,"DevOps Specialist","Engineering","{Python,GSAP,Docker,Tailwind CSS,Go}",Senior,7
+1242,"Site Reliability Engineer","Engineering","{Node.js,Docker,Data Bricks,Python,Figma,Pandas}",Mid,3
+1243,"Site Reliability Engineer","Design","{React,GSAP,Sass,Go,Node.js,Data Bricks}",Senior,7
+1244,"DevOps Specialist","Developer","{TypeScript,Node.js,After Effects,Tailwind CSS,GSAP,TensorFlow}",Senior,7
+1245,"Data Scientist","Engineering","{Go,Framer,TensorFlow,After Effects,Vue.js}",Junior,0
+1246,"Mobile Developer","Marketing","{GSAP,After Effects,GraphQL,Python,Go}",Senior,6
+1247,"Tester","Data & AI","{Terraform,Affinity,Go,React}",Senior,6
+1248,"Game Developer","Data & AI","{Pandas,Python,Terraform,Sass}",Lead,9
+1249,"Data Scientist","Marketing","{GSAP,React,PostgreSQL}",Senior,7
+1250,"Mobile Developer","Engineering","{AWS,Vue.js,Next.js,TensorFlow,GraphQL}",Lead,9
+1251,"Data Scientist","Engineering","{TypeScript,Figma,Terraform,Kubernetes,Tailwind CSS,Python}",Mid,4
+1252,"Mobile Developer","Product","{Docker,TensorFlow,After Effects,AWS}",Senior,7
+1253,"Full Stack Engineer","Marketing","{GSAP,TensorFlow,Tailwind CSS,TypeScript}",Mid,3
+1254,"AI & ML Engineer","Infrastructure","{Terraform,TensorFlow,Kubernetes,Affinity}",Senior,6
+1255,"Game Developer","Product","{Tailwind CSS,React,Kubernetes}",Lead,8
+1256,"Full Stack Engineer","Marketing","{Next.js,GSAP,TypeScript}",Lead,8
+1257,"AI & ML Engineer","Data & AI","{AWS,Data Bricks,Vue.js,Blender,Affinity}",Lead,8
+1258,"AI & ML Engineer","Design","{GSAP,Blender,Python,Node.js,Vue.js}",Mid,3
+1259,"Mobile Developer","Developer","{Docker,TypeScript,Sass}",Mid,4
+1260,"DevOps Specialist","Design","{Kubernetes,Python,Pandas,Node.js,Go}",Lead,8
+1261,"AI & ML Engineer","Engineering","{Data Bricks,Docker,Pandas,Tailwind CSS}",Lead,9
+1262,"Backend Developer","Data & AI","{Affinity,Kubernetes,GSAP,Photoshop}",Senior,6
+1263,"Backend Developer","Infrastructure","{After Effects,Kubernetes,AWS,TensorFlow,PostgreSQL,GraphQL}",Mid,4
+1264,"DevOps Specialist","Data & AI","{React,Kubernetes,TensorFlow,Next.js,Go}",Junior,0
+1265,"Full Stack Engineer","Developer","{React,Vue.js,Sass,Redis,Node.js,Kubernetes}",Mid,4
+1266,"Data Scientist","Marketing","{Terraform,React,AWS}",Senior,7
+1267,"DevOps Specialist","Engineering","{Kubernetes,GraphQL,React}",Junior,0
+1268,"Backend Developer","Design","{Blender,TypeScript,Python}",Lead,11
+1269,"Tester","Developer","{Node.js,Next.js,Sass,Vue.js}",Lead,8
+1270,"Game Developer","Data & AI","{Pandas,Python,GraphQL}",Senior,7
+1271,"Data Scientist","Engineering","{TensorFlow,Pandas,Python}",Mid,2
+1272,"Backend Developer","Design","{React,Vue.js,Python,Next.js}",Junior,1
+1273,"Game Developer","Developer","{React,Kubernetes,Next.js,AWS,Node.js,Tailwind CSS}",Lead,10
+1274,"Mobile Developer","Design","{Next.js,Pandas,Photoshop,GraphQL,Docker}",Lead,10
+1275,"Game Developer","Product","{Vue.js,Framer,Next.js}",Junior,0
+1276,"Site Reliability Engineer","Data & AI","{Data Bricks,Node.js,Python}",Senior,5
+1277,"Site Reliability Engineer","Engineering","{Docker,Affinity,Data Bricks,Figma,Kubernetes,Vue.js}",Mid,4
+1278,"Backend Developer","Data & AI","{Docker,Kubernetes,Node.js,Pandas,AWS}",Lead,11
+1279,"Full Stack Engineer","Engineering","{React,Terraform,Vue.js,Next.js}",Lead,8
+1280,"UI/UX Designer","Engineering","{Docker,Framer,Kubernetes}",Mid,4
+1281,"AI & ML Engineer","Design","{Pandas,Node.js,Next.js,Docker,Vue.js}",Mid,2
+1282,"Tester","Design","{PostgreSQL,React,Node.js}",Lead,9
+1283,"DevOps Specialist","Infrastructure","{GraphQL,React,GSAP,Data Bricks}",Lead,11
+1284,"AI & ML Engineer","Infrastructure","{React,TypeScript,Docker,AWS}",Junior,1
+1285,"DevOps Specialist","Marketing","{Photoshop,Docker,React}",Junior,1
+1286,"Full Stack Engineer","Marketing","{TensorFlow,Go,React,Blender,TypeScript}",Senior,7
+1287,"Site Reliability Engineer","Data & AI","{Blender,Terraform,Kubernetes,GSAP}",Mid,2
+1288,"Tester","Design","{Docker,Terraform,Data Bricks,TensorFlow,Vue.js}",Lead,8
+1289,"Tester","Marketing","{PostgreSQL,Pandas,TensorFlow}",Mid,2
+1290,"UI/UX Designer","Infrastructure","{AWS,After Effects,Pandas}",Senior,5
+1291,"Frontend Engineer","Product","{Docker,Photoshop,Next.js,AWS}",Mid,4
+1292,"Full Stack Engineer","Design","{GraphQL,GSAP,Python}",Senior,5
+1293,"Frontend Engineer","Design","{Affinity,TypeScript,Tailwind CSS}",Lead,8
+1294,"AI & ML Engineer","Data & AI","{AWS,TypeScript,TensorFlow,GraphQL}",Junior,1
+1295,"UI/UX Designer","Marketing","{Blender,React,Next.js,GSAP}",Lead,8
+1296,"Mobile Developer","Product","{Next.js,Framer,Node.js,TypeScript,Terraform}",Mid,4
+1297,"Site Reliability Engineer","Product","{Redis,Figma,React,Blender,Kubernetes,GSAP}",Junior,1
+1298,"Data Scientist","Marketing","{Framer,React,Docker,Tailwind CSS,Sass,AWS}",Lead,10
+1299,"Data Scientist","Engineering","{GraphQL,Go,Blender,Affinity}",Mid,2
+1300,"AI & ML Engineer","Engineering","{Node.js,Kubernetes,Docker}",Senior,5
+1301,"Backend Developer","Product","{Sass,Tailwind CSS,Affinity,Framer,After Effects}",Lead,9
+1302,"Data Scientist","Marketing","{Redis,Pandas,Python,Docker,TypeScript}",Mid,3
+1303,"Data Scientist","Design","{TensorFlow,Sass,AWS}",Lead,8
+1304,"AI & ML Engineer","Infrastructure","{Pandas,Node.js,Tailwind CSS,Affinity,Kubernetes,Vue.js}",Mid,4
+1305,"UI/UX Designer","Engineering","{Node.js,After Effects,TypeScript,Pandas,Data Bricks}",Lead,9
+1306,"UI/UX Designer","Product","{AWS,Kubernetes,Sass,Data Bricks,Tailwind CSS,Terraform}",Junior,1
+1307,"Data Scientist","Design","{Figma,Vue.js,Kubernetes,Python,TypeScript}",Junior,1
+1308,"Tester","Design","{Node.js,Pandas,Python}",Mid,3
+1309,"AI & ML Engineer","Engineering","{Framer,TypeScript,Photoshop,Pandas}",Lead,10
+1310,"Backend Developer","Data & AI","{PostgreSQL,React,Figma,Terraform,Go}",Mid,3
+1311,"UI/UX Designer","Product","{Sass,Docker,After Effects,GSAP}",Mid,2
+1312,"AI & ML Engineer","Engineering","{Go,React,Blender}",Junior,0
+1313,"AI & ML Engineer","Engineering","{Node.js,Kubernetes,TypeScript,Photoshop}",Senior,5
+1314,"Data Scientist","Design","{Sass,Docker,TypeScript}",Mid,4
+1315,"Backend Developer","Marketing","{After Effects,React,Vue.js}",Junior,1
+1316,"AI & ML Engineer","Design","{TypeScript,Framer,Pandas,Affinity,Data Bricks}",Lead,10
+1317,"DevOps Specialist","Engineering","{TypeScript,Next.js,Vue.js,GraphQL,TensorFlow,Node.js}",Junior,0
+1318,"Tester","Engineering","{Kubernetes,Redis,Photoshop,Pandas,Blender,Data Bricks}",Lead,10
+1319,"Game Developer","Design","{Redis,Vue.js,Node.js,Affinity}",Senior,5
+1320,"Site Reliability Engineer","Infrastructure","{AWS,Terraform,Blender,Docker}",Senior,5
+1321,"Tester","Engineering","{Node.js,Framer,Affinity,Kubernetes,Go}",Senior,5
+1322,"Data Scientist","Data & AI","{Next.js,Redis,Affinity,Pandas}",Junior,1
+1323,"Mobile Developer","Data & AI","{GraphQL,Vue.js,GSAP}",Junior,1
+1324,"Full Stack Engineer","Engineering","{Kubernetes,AWS,GraphQL,Pandas}",Lead,10
+1325,"Mobile Developer","Engineering","{Tailwind CSS,Blender,PostgreSQL}",Lead,10
+1326,"AI & ML Engineer","Engineering","{GraphQL,GSAP,AWS,Affinity,Data Bricks,Photoshop}",Junior,0
+1327,"AI & ML Engineer","Data & AI","{Python,Terraform,Node.js,Figma,GSAP}",Mid,3
+1328,"Tester","Developer","{Python,Kubernetes,After Effects,Node.js,Affinity}",Mid,3
+1329,"Game Developer","Developer","{Tailwind CSS,Docker,After Effects,AWS,React,GraphQL}",Junior,1
+1330,"Full Stack Engineer","Data & AI","{Terraform,Next.js,Python,GSAP,TensorFlow,React}",Lead,9
+1331,"DevOps Specialist","Product","{Figma,React,Blender,Pandas,Sass,Terraform}",Mid,2
+1332,"Data Scientist","Infrastructure","{GraphQL,Figma,Tailwind CSS,React,Pandas}",Mid,3
+1333,"Game Developer","Marketing","{Figma,Kubernetes,After Effects}",Mid,4
+1334,"AI & ML Engineer","Data & AI","{Photoshop,Docker,Terraform,Redis,TypeScript}",Mid,4
+1335,"AI & ML Engineer","Design","{Python,Pandas,Affinity,Go,Tailwind CSS,After Effects}",Junior,1
+1336,"DevOps Specialist","Design","{GraphQL,Data Bricks,Docker,Figma}",Senior,5
+1337,"AI & ML Engineer","Engineering","{TensorFlow,Kubernetes,Photoshop,Affinity,TypeScript,Redis}",Senior,6
+1338,"Full Stack Engineer","Infrastructure","{React,Redis,Affinity,Kubernetes}",Lead,10
+1339,"UI/UX Designer","Infrastructure","{GraphQL,Python,Redis}",Lead,11
+1340,"Data Scientist","Infrastructure","{GraphQL,Terraform,Data Bricks,React}",Mid,3
+1341,"Full Stack Engineer","Design","{Python,Affinity,After Effects,TypeScript}",Junior,0
+1342,"Backend Developer","Product","{Framer,Vue.js,Next.js,Affinity,Python,Redis}",Senior,6
+1343,"Tester","Developer","{Docker,TensorFlow,React}",Mid,3
+1344,"Data Scientist","Infrastructure","{Blender,React,GSAP,AWS,After Effects}",Junior,0
+1345,"Game Developer","Product","{TypeScript,After Effects,Go,React,Figma}",Junior,1
+1346,"Game Developer","Data & AI","{Affinity,Photoshop,GSAP,PostgreSQL,Go,Vue.js}",Lead,10
+1347,"Data Scientist","Product","{Blender,Terraform,Docker,Figma}",Senior,7
+1348,"UI/UX Designer","Marketing","{Python,AWS,Docker}",Lead,11
+1349,"AI & ML Engineer","Marketing","{Terraform,React,GraphQL,Next.js,Photoshop,PostgreSQL}",Junior,0
+1350,"Data Scientist","Data & AI","{Kubernetes,Tailwind CSS,Terraform}",Junior,1
+1351,"DevOps Specialist","Developer","{TensorFlow,Figma,React,Photoshop,Affinity,Pandas}",Junior,0
+1352,"Frontend Engineer","Product","{React,Blender,Affinity,Node.js,Pandas,AWS}",Senior,6
+1353,"Game Developer","Marketing","{Node.js,TypeScript,PostgreSQL}",Lead,10
+1354,"UI/UX Designer","Engineering","{Python,Sass,TensorFlow,React,Redis,Figma}",Junior,0
+1355,"Mobile Developer","Marketing","{Redis,Kubernetes,Pandas,Next.js,GraphQL,Python}",Mid,3
+1356,"Site Reliability Engineer","Infrastructure","{Vue.js,Pandas,Blender,Tailwind CSS,React}",Mid,2
+1357,"Backend Developer","Product","{Redis,Docker,GraphQL,Node.js,Blender,GSAP}",Mid,4
+1358,"Site Reliability Engineer","Developer","{Pandas,Python,Terraform}",Lead,11
+1359,"Game Developer","Design","{Next.js,GraphQL,Photoshop,Framer,Terraform,React}",Mid,2
+1360,"Tester","Developer","{Blender,TypeScript,GraphQL,Docker}",Junior,0
+1361,"Mobile Developer","Product","{Vue.js,Go,Node.js,After Effects,Docker,Redis}",Mid,2
+1362,"DevOps Specialist","Design","{Go,React,Next.js,GraphQL,Figma,Node.js}",Lead,11
+1363,"AI & ML Engineer","Developer","{Python,After Effects,Kubernetes,Go,PostgreSQL}",Lead,11
+1364,"AI & ML Engineer","Product","{Blender,Figma,React,Vue.js}",Senior,6
+1365,"Backend Developer","Infrastructure","{Tailwind CSS,Next.js,TensorFlow}",Mid,4
+1366,"Tester","Infrastructure","{Pandas,AWS,React}",Junior,0
+1367,"UI/UX Designer","Developer","{PostgreSQL,TensorFlow,Kubernetes,GSAP}",Junior,1
+1368,"Frontend Engineer","Data & AI","{PostgreSQL,Next.js,React,Docker,Sass}",Senior,7
+1369,"Data Scientist","Infrastructure","{TypeScript,Python,Node.js,Framer,Redis}",Lead,9
+1370,"Full Stack Engineer","Marketing","{Kubernetes,Affinity,Pandas,Docker,Redis,Tailwind CSS}",Mid,4
+1371,"Tester","Product","{Affinity,Next.js,Kubernetes,GraphQL}",Senior,5
+1372,"DevOps Specialist","Engineering","{After Effects,Kubernetes,Python,Pandas,React}",Senior,7
+1373,"Mobile Developer","Data & AI","{Docker,Terraform,After Effects,Pandas,Vue.js}",Junior,0
+1374,"Tester","Developer","{Data Bricks,Sass,Figma}",Senior,5
+1375,"AI & ML Engineer","Developer","{Next.js,GSAP,Kubernetes,Framer}",Mid,2
+1376,"DevOps Specialist","Marketing","{Vue.js,Kubernetes,GSAP,Affinity}",Junior,1
+1377,"UI/UX Designer","Product","{GraphQL,PostgreSQL,Photoshop,GSAP}",Lead,11
+1378,"Site Reliability Engineer","Marketing","{Node.js,PostgreSQL,TypeScript,Tailwind CSS,Pandas,Python}",Junior,0
+1379,"Site Reliability Engineer","Design","{Kubernetes,Go,Tailwind CSS,Figma,PostgreSQL}",Lead,11
+1380,"UI/UX Designer","Engineering","{PostgreSQL,React,Kubernetes,GSAP}",Junior,0
+1381,"Frontend Engineer","Product","{Figma,React,Sass,Vue.js}",Senior,7
+1382,"Mobile Developer","Infrastructure","{AWS,After Effects,Kubernetes,TensorFlow}",Senior,5
+1383,"Site Reliability Engineer","Infrastructure","{Python,Blender,After Effects,Vue.js,Kubernetes}",Mid,4
+1384,"Full Stack Engineer","Product","{Next.js,Python,TypeScript,Affinity,PostgreSQL,GSAP}",Mid,4
+1385,"Backend Developer","Developer","{Node.js,Docker,Affinity,TensorFlow,After Effects,Figma}",Junior,0
+1386,"Data Scientist","Engineering","{Python,Vue.js,After Effects,PostgreSQL,Tailwind CSS,Kubernetes}",Senior,5
+1387,"Data Scientist","Design","{Vue.js,Terraform,After Effects,Affinity,Next.js,AWS}",Senior,7
+1388,"Frontend Engineer","Product","{Next.js,Tailwind CSS,Docker,Terraform,Figma}",Lead,9
+1389,"Site Reliability Engineer","Developer","{Terraform,Affinity,Kubernetes,PostgreSQL}",Mid,4
+1390,"Site Reliability Engineer","Design","{Blender,Sass,PostgreSQL,TypeScript,Data Bricks}",Senior,5
+1391,"Full Stack Engineer","Design","{Next.js,Blender,TensorFlow,Vue.js}",Senior,6
+1392,"Site Reliability Engineer","Design","{React,Vue.js,Next.js,Redis,Photoshop}",Junior,1
+1393,"Backend Developer","Design","{Node.js,Pandas,Go,TypeScript,GSAP,Next.js}",Lead,10
+1394,"Game Developer","Developer","{TypeScript,React,Blender}",Senior,6
+1395,"Backend Developer","Product","{AWS,Terraform,Photoshop}",Lead,8
+1396,"Mobile Developer","Infrastructure","{Tailwind CSS,Kubernetes,Docker}",Mid,2
+1397,"Game Developer","Developer","{Photoshop,Next.js,Go,Framer,React}",Junior,1
+1398,"Tester","Infrastructure","{Node.js,Vue.js,After Effects,Blender,Figma,Kubernetes}",Senior,7
+1399,"DevOps Specialist","Data & AI","{GraphQL,Node.js,Docker,Vue.js}",Junior,0
+1400,"Mobile Developer","Infrastructure","{Node.js,Photoshop,Vue.js,Redis}",Mid,2
+1401,"Data Scientist","Product","{Figma,PostgreSQL,React,AWS,Framer,Next.js}",Senior,5
+1402,"UI/UX Designer","Marketing","{Go,Redis,GraphQL,Python,Node.js}",Mid,4
+1403,"UI/UX Designer","Engineering","{Vue.js,Terraform,Kubernetes,Python,After Effects}",Mid,2
+1404,"Frontend Engineer","Marketing","{React,GSAP,TensorFlow,Figma,AWS,After Effects}",Lead,11
+1405,"DevOps Specialist","Marketing","{GraphQL,Python,Tailwind CSS,React,Blender}",Lead,8
+1406,"UI/UX Designer","Marketing","{Kubernetes,TypeScript,After Effects,Framer}",Senior,6
+1407,"Mobile Developer","Marketing","{Pandas,Kubernetes,TypeScript,Redis}",Junior,0
+1408,"UI/UX Designer","Developer","{Node.js,Affinity,Vue.js,Go,Docker,Next.js}",Junior,0
+1409,"Game Developer","Data & AI","{Vue.js,Kubernetes,Blender}",Mid,4
+1410,"Backend Developer","Infrastructure","{Blender,TypeScript,Framer}",Mid,3
+1411,"Data Scientist","Infrastructure","{Photoshop,PostgreSQL,GraphQL,Terraform,AWS,Go}",Mid,3
+1412,"DevOps Specialist","Data & AI","{GraphQL,Terraform,After Effects,Framer,Redis,Next.js}",Lead,10
+1413,"UI/UX Designer","Design","{Docker,Redis,Tailwind CSS}",Mid,3
+1414,"Mobile Developer","Design","{GraphQL,Vue.js,After Effects,Node.js}",Lead,9
+1415,"AI & ML Engineer","Design","{Photoshop,Framer,Go,Kubernetes,Tailwind CSS,Node.js}",Senior,5
+1416,"Full Stack Engineer","Design","{AWS,Data Bricks,React,Blender,Node.js}",Junior,1
+1417,"UI/UX Designer","Infrastructure","{Affinity,AWS,Framer,Kubernetes,GraphQL}",Senior,6
+1418,"Game Developer","Data & AI","{Node.js,Next.js,TensorFlow,Photoshop}",Lead,11
+1419,"Tester","Engineering","{Kubernetes,Pandas,Photoshop}",Lead,8
+1420,"UI/UX Designer","Marketing","{Docker,After Effects,Python}",Mid,3
+1421,"Tester","Product","{Photoshop,Framer,Vue.js,TensorFlow}",Senior,5
+1422,"Tester","Product","{Tailwind CSS,Pandas,Redis,React,Vue.js}",Junior,0
+1423,"DevOps Specialist","Data & AI","{GSAP,Photoshop,Sass}",Junior,0
+1424,"Tester","Product","{Docker,TensorFlow,Next.js,React}",Senior,6
+1425,"UI/UX Designer","Design","{Tailwind CSS,Terraform,Sass}",Senior,6
+1426,"Data Scientist","Marketing","{React,GSAP,PostgreSQL,Next.js,Sass,Node.js}",Senior,7
+1427,"Game Developer","Data & AI","{Figma,React,Next.js,Redis,Tailwind CSS,Node.js}",Senior,6
+1428,"AI & ML Engineer","Developer","{Docker,TypeScript,Pandas}",Junior,0
+1429,"Site Reliability Engineer","Engineering","{Terraform,Blender,PostgreSQL,TensorFlow}",Mid,2
+1430,"Mobile Developer","Design","{Kubernetes,Data Bricks,Affinity,After Effects,Photoshop,Framer}",Lead,10
+1431,"Data Scientist","Product","{Node.js,Docker,Terraform,TensorFlow,Tailwind CSS}",Junior,1
+1432,"Full Stack Engineer","Infrastructure","{Blender,Node.js,Next.js}",Junior,1
+1433,"Site Reliability Engineer","Marketing","{Pandas,GSAP,Next.js,Figma,Redis}",Junior,1
+1434,"Full Stack Engineer","Design","{Node.js,Blender,GSAP,Pandas}",Senior,6
+1435,"Site Reliability Engineer","Developer","{Next.js,GraphQL,Python,Figma}",Senior,6
+1436,"DevOps Specialist","Infrastructure","{Figma,TypeScript,Go,Vue.js}",Senior,6
+1437,"Site Reliability Engineer","Infrastructure","{Python,TensorFlow,Data Bricks}",Senior,7
+1438,"Data Scientist","Product","{GSAP,Go,Docker,Sass,Terraform,Blender}",Junior,1
+1439,"Backend Developer","Engineering","{Pandas,Affinity,Vue.js}",Senior,7
+1440,"Mobile Developer","Engineering","{GSAP,Sass,Go,React,GraphQL}",Mid,3
+1441,"Site Reliability Engineer","Infrastructure","{React,TypeScript,GraphQL,Pandas}",Lead,10
+1442,"Site Reliability Engineer","Data & AI","{Docker,Pandas,Python}",Lead,8
+1443,"Frontend Engineer","Infrastructure","{TensorFlow,React,GraphQL,Kubernetes,Tailwind CSS,PostgreSQL}",Junior,1
+1444,"Site Reliability Engineer","Design","{TypeScript,Affinity,Python,Figma,Redis,Tailwind CSS}",Lead,8
+1445,"AI & ML Engineer","Infrastructure","{Figma,Affinity,Python}",Senior,6
+1446,"UI/UX Designer","Marketing","{Figma,Docker,After Effects,Pandas}",Mid,3
+1447,"Full Stack Engineer","Data & AI","{TypeScript,Python,Go,Redis,Node.js,Kubernetes}",Lead,10
+1448,"Frontend Engineer","Data & AI","{Photoshop,Docker,GraphQL,Go,TensorFlow,Terraform}",Senior,6
+1449,"Backend Developer","Developer","{Kubernetes,Node.js,Framer}",Lead,9
+1450,"UI/UX Designer","Infrastructure","{Next.js,GSAP,Tailwind CSS}",Lead,9
+1451,"Site Reliability Engineer","Product","{Affinity,Kubernetes,Docker,Figma,Vue.js}",Junior,0
+1452,"Game Developer","Data & AI","{Affinity,AWS,React,Tailwind CSS,Docker}",Senior,7
+1453,"DevOps Specialist","Engineering","{Python,Photoshop,Tailwind CSS,AWS,Node.js,Framer}",Mid,3
+1454,"Tester","Developer","{Redis,Kubernetes,Python,Go,Framer}",Junior,0
+1455,"AI & ML Engineer","Design","{Figma,Photoshop,Redis,TypeScript,Tailwind CSS}",Senior,6
+1456,"Data Scientist","Design","{GSAP,Kubernetes,Docker,Data Bricks}",Mid,3
+1457,"Backend Developer","Marketing","{Next.js,React,Pandas,PostgreSQL,TensorFlow,Blender}",Mid,3
+1458,"Backend Developer","Data & AI","{Node.js,Kubernetes,Python}",Lead,8
+1459,"Tester","Design","{Photoshop,After Effects,React,GraphQL,Framer}",Mid,4
+1460,"DevOps Specialist","Product","{After Effects,React,Docker}",Junior,0
+1461,"Full Stack Engineer","Design","{Terraform,Redis,Kubernetes,Tailwind CSS}",Senior,7
+1462,"Mobile Developer","Engineering","{Framer,Tailwind CSS,Docker,GraphQL,After Effects,Figma}",Lead,11
+1463,"Data Scientist","Developer","{Vue.js,React,After Effects,Sass,Python,Go}",Senior,7
+1464,"Site Reliability Engineer","Developer","{TypeScript,React,Framer,Affinity}",Junior,0
+1465,"Frontend Engineer","Data & AI","{TensorFlow,Vue.js,Photoshop,Kubernetes,Docker}",Junior,1
+1466,"Data Scientist","Product","{Affinity,Python,Sass,After Effects,PostgreSQL}",Senior,5
+1467,"Data Scientist","Developer","{Figma,Next.js,Photoshop,React,Kubernetes}",Senior,5
+1468,"Data Scientist","Data & AI","{Data Bricks,Go,Redis,Blender,PostgreSQL,TypeScript}",Junior,0
+1469,"Tester","Developer","{GSAP,GraphQL,After Effects,Photoshop,Affinity,TensorFlow}",Lead,8
+1470,"Site Reliability Engineer","Developer","{Photoshop,Tailwind CSS,TensorFlow}",Junior,1
+1471,"Site Reliability Engineer","Developer","{Docker,React,Tailwind CSS,TensorFlow}",Junior,1
+1472,"Backend Developer","Infrastructure","{Node.js,Photoshop,PostgreSQL,Tailwind CSS,Vue.js}",Lead,8
+1473,"DevOps Specialist","Developer","{Python,Kubernetes,Pandas,Node.js,GraphQL,Terraform}",Lead,11
+1474,"Mobile Developer","Marketing","{Node.js,TensorFlow,PostgreSQL,Sass,Python}",Mid,2
+1475,"Mobile Developer","Marketing","{Figma,Sass,Redis}",Junior,0
+1476,"Tester","Infrastructure","{Kubernetes,React,Tailwind CSS,GraphQL}",Lead,10
+1477,"Site Reliability Engineer","Product","{After Effects,Tailwind CSS,React,Python,Redis}",Lead,11
+1478,"UI/UX Designer","Infrastructure","{Affinity,Kubernetes,PostgreSQL,Docker,Figma}",Mid,4
+1479,"Mobile Developer","Design","{Kubernetes,Figma,Vue.js,Pandas,Blender,Python}",Senior,6
+1480,"AI & ML Engineer","Product","{Framer,AWS,Node.js}",Senior,6
+1481,"Data Scientist","Infrastructure","{Framer,Pandas,Vue.js,Affinity,TensorFlow}",Junior,1
+1482,"Tester","Design","{Framer,Tailwind CSS,Redis,TypeScript,Docker}",Senior,5
+1483,"DevOps Specialist","Developer","{Terraform,GSAP,Affinity,Node.js,AWS,Sass}",Lead,10
+1484,"Site Reliability Engineer","Developer","{React,PostgreSQL,Redis}",Lead,9
+1485,"Mobile Developer","Design","{Node.js,Data Bricks,Redis,Affinity,Kubernetes,Blender}",Junior,1
+1486,"Game Developer","Marketing","{GraphQL,Blender,Figma,Affinity,Go,GSAP}",Senior,6
+1487,"Full Stack Engineer","Product","{React,Affinity,Next.js,Figma,Photoshop,Kubernetes}",Lead,10
+1488,"DevOps Specialist","Engineering","{PostgreSQL,Vue.js,After Effects,Blender,Terraform,Kubernetes}",Senior,5
+1489,"DevOps Specialist","Design","{Python,Affinity,After Effects,Pandas,Go}",Junior,0
+1490,"DevOps Specialist","Infrastructure","{GraphQL,Python,Kubernetes,Vue.js}",Mid,4
+1491,"Site Reliability Engineer","Design","{GSAP,Vue.js,Docker,Pandas,TensorFlow}",Mid,4
+1492,"Mobile Developer","Infrastructure","{Affinity,Pandas,Photoshop,After Effects,Docker,Figma}",Junior,1
+1493,"DevOps Specialist","Developer","{PostgreSQL,Tailwind CSS,GraphQL,Photoshop,Framer}",Lead,10
+1494,"AI & ML Engineer","Design","{Vue.js,TypeScript,Sass}",Junior,0
+1495,"Backend Developer","Marketing","{Blender,Framer,Node.js}",Junior,0
+1496,"AI & ML Engineer","Product","{GSAP,Pandas,React,Affinity,Next.js,Go}",Senior,7
+1497,"Game Developer","Product","{Photoshop,TensorFlow,React,Vue.js}",Junior,0
+1498,"Game Developer","Engineering","{Pandas,GraphQL,Figma,TensorFlow}",Senior,7
+1499,"Data Scientist","Data & AI","{PostgreSQL,GraphQL,Tailwind CSS,Go,TypeScript}",Mid,4
+1500,"Data Scientist","Data & AI","{PostgreSQL,TensorFlow,React,Data Bricks,After Effects}",Mid,3
+1501,"Backend Developer","Marketing","{Blender,Tailwind CSS,Python,GSAP,Redis}",Mid,2
+1502,"Mobile Developer","Data & AI","{TypeScript,Vue.js,Sass,Pandas,Tailwind CSS}",Junior,0
+1503,"UI/UX Designer","Developer","{Python,Vue.js,AWS,TensorFlow}",Junior,1
+1504,"Backend Developer","Engineering","{Terraform,After Effects,Sass,Node.js}",Lead,11
+1505,"Game Developer","Infrastructure","{GSAP,Photoshop,Vue.js,Terraform,Docker,Kubernetes}",Senior,5
+1506,"Site Reliability Engineer","Product","{Terraform,GSAP,Go,Pandas,TensorFlow,React}",Mid,2
+1507,"AI & ML Engineer","Data & AI","{React,TensorFlow,Kubernetes,Photoshop,Vue.js}",Junior,1
+1508,"Mobile Developer","Engineering","{Redis,Vue.js,Terraform,React,TypeScript,Go}",Lead,9
+1509,"Full Stack Engineer","Infrastructure","{Photoshop,Redis,Affinity,GraphQL,Terraform,After Effects}",Mid,2
+1510,"Backend Developer","Marketing","{Figma,Kubernetes,Photoshop,Framer,PostgreSQL,TypeScript}",Junior,1
+1511,"Site Reliability Engineer","Marketing","{Pandas,Terraform,Python}",Mid,2
+1512,"DevOps Specialist","Infrastructure","{Terraform,TypeScript,Sass,React}",Mid,3
+1513,"AI & ML Engineer","Design","{Sass,TensorFlow,Terraform,Blender,Photoshop}",Senior,5
+1514,"Mobile Developer","Product","{Affinity,Framer,Redis,Kubernetes}",Junior,1
+1515,"UI/UX Designer","Design","{GraphQL,Blender,Kubernetes,Python,Framer,TypeScript}",Junior,0
+1516,"Game Developer","Developer","{Next.js,Kubernetes,Python,GSAP,Blender,React}",Lead,8
+1517,"AI & ML Engineer","Marketing","{PostgreSQL,Sass,After Effects,Next.js,Tailwind CSS,Vue.js}",Mid,4
+1518,"Full Stack Engineer","Design","{TypeScript,Blender,React,Vue.js,Tailwind CSS,Python}",Lead,11
+1519,"Mobile Developer","Design","{PostgreSQL,Data Bricks,Sass}",Junior,0
+1520,"Frontend Engineer","Developer","{Docker,Blender,React}",Senior,7
+1521,"UI/UX Designer","Engineering","{GSAP,Vue.js,Pandas,Framer,React}",Mid,2
+1522,"Tester","Design","{PostgreSQL,After Effects,Pandas,TensorFlow}",Senior,6
+1523,"Site Reliability Engineer","Design","{Docker,Go,Affinity,GraphQL,TypeScript,Pandas}",Lead,10
+1524,"UI/UX Designer","Product","{Vue.js,Node.js,Terraform,AWS}",Lead,11
+1525,"Site Reliability Engineer","Marketing","{PostgreSQL,Blender,AWS,TensorFlow,Next.js}",Senior,5
+1526,"Full Stack Engineer","Infrastructure","{TensorFlow,Python,Affinity,TypeScript,Node.js,Framer}",Junior,0
+1527,"Mobile Developer","Infrastructure","{AWS,Pandas,Figma,Data Bricks,PostgreSQL}",Junior,0
+1528,"Site Reliability Engineer","Infrastructure","{Python,Kubernetes,TensorFlow,Vue.js,Pandas}",Lead,11
+1529,"UI/UX Designer","Product","{Kubernetes,Node.js,Photoshop,Go}",Junior,0
+1530,"DevOps Specialist","Product","{Next.js,Blender,Photoshop,After Effects}",Lead,10
+1531,"DevOps Specialist","Data & AI","{Node.js,Figma,Tailwind CSS,GSAP,Photoshop}",Mid,2
+1532,"Data Scientist","Marketing","{Redis,React,Node.js,Blender}",Mid,2
+1533,"UI/UX Designer","Data & AI","{React,Next.js,Figma,Tailwind CSS}",Senior,6
+1534,"Mobile Developer","Engineering","{Terraform,Python,Sass}",Senior,7
+1535,"Site Reliability Engineer","Product","{Kubernetes,Go,Docker,Vue.js,TypeScript}",Mid,3
+1536,"DevOps Specialist","Marketing","{Python,Kubernetes,Framer,Redis,AWS,React}",Lead,11
+1537,"Backend Developer","Design","{Tailwind CSS,Docker,TensorFlow,Data Bricks}",Senior,5
+1538,"Game Developer","Marketing","{Python,TensorFlow,Blender,Kubernetes}",Junior,1
+1539,"DevOps Specialist","Product","{React,Docker,Affinity,Tailwind CSS}",Senior,7
+1540,"DevOps Specialist","Marketing","{Tailwind CSS,Data Bricks,Figma}",Mid,3
+1541,"UI/UX Designer","Product","{Tailwind CSS,Python,Blender,AWS,Vue.js,Photoshop}",Junior,0
+1542,"Backend Developer","Data & AI","{Kubernetes,GraphQL,Pandas,Next.js,Blender,PostgreSQL}",Mid,2
+1543,"UI/UX Designer","Engineering","{Vue.js,Data Bricks,Next.js,Photoshop,Kubernetes,AWS}",Junior,1
+1544,"Data Scientist","Product","{Node.js,Kubernetes,Data Bricks}",Junior,1
+1545,"Frontend Engineer","Design","{Terraform,Tailwind CSS,Node.js}",Lead,8
+1546,"UI/UX Designer","Product","{Next.js,React,After Effects,Docker}",Junior,0
+1547,"AI & ML Engineer","Design","{Framer,GSAP,Affinity,React,Kubernetes,After Effects}",Mid,4
+1548,"UI/UX Designer","Product","{Terraform,Kubernetes,React}",Junior,0
+1549,"DevOps Specialist","Engineering","{GraphQL,Affinity,Tailwind CSS,Data Bricks,GSAP,Sass}",Lead,11
+1550,"Site Reliability Engineer","Marketing","{After Effects,Pandas,Python,Blender,Docker,Affinity}",Junior,0
+1551,"Site Reliability Engineer","Marketing","{Framer,React,Photoshop,Affinity}",Mid,3
+1552,"Backend Developer","Developer","{Figma,TypeScript,Framer}",Senior,5
+1553,"DevOps Specialist","Infrastructure","{Affinity,Vue.js,React,Node.js}",Junior,1
+1554,"Full Stack Engineer","Developer","{Python,Vue.js,Go,Redis,Terraform,GraphQL}",Junior,1
+1555,"UI/UX Designer","Developer","{Pandas,Vue.js,Kubernetes,Affinity}",Senior,7
+1556,"Full Stack Engineer","Developer","{GSAP,GraphQL,Blender,Affinity}",Lead,8
+1557,"Data Scientist","Developer","{React,Photoshop,Python}",Junior,0
+1558,"Backend Developer","Engineering","{TypeScript,Next.js,Blender}",Mid,4
+1559,"Full Stack Engineer","Data & AI","{Kubernetes,React,Terraform,Redis}",Mid,2
+1560,"Game Developer","Design","{Node.js,Tailwind CSS,AWS,GraphQL}",Mid,3
+1561,"Tester","Engineering","{GSAP,Figma,Go,React,Next.js}",Junior,0
+1562,"Data Scientist","Engineering","{Python,Tailwind CSS,Photoshop,Kubernetes,TypeScript,Node.js}",Junior,1
+1563,"Game Developer","Marketing","{AWS,Redis,After Effects,Framer,PostgreSQL}",Senior,5
+1564,"Frontend Engineer","Engineering","{TypeScript,Photoshop,Blender,Affinity,Python,Vue.js}",Lead,10
+1565,"DevOps Specialist","Developer","{Pandas,Photoshop,TensorFlow}",Mid,2
+1566,"Backend Developer","Developer","{GSAP,Node.js,AWS,Photoshop,React,Redis}",Junior,0
+1567,"Site Reliability Engineer","Design","{Docker,Tailwind CSS,TensorFlow,Next.js,AWS}",Senior,5
+1568,"UI/UX Designer","Design","{React,Framer,After Effects}",Senior,7
+1569,"Full Stack Engineer","Design","{React,TypeScript,Vue.js,Pandas}",Senior,6
+1570,"Site Reliability Engineer","Data & AI","{Python,Node.js,Terraform,PostgreSQL,Docker,Go}",Lead,10
+1571,"Frontend Engineer","Engineering","{Node.js,Redis,Kubernetes,GraphQL,TypeScript,Docker}",Mid,2
+1572,"Site Reliability Engineer","Product","{Tailwind CSS,Terraform,Pandas}",Mid,2
+1573,"Tester","Design","{Photoshop,Sass,After Effects}",Lead,8
+1574,"DevOps Specialist","Developer","{Vue.js,Docker,Sass,Python,React,Next.js}",Junior,1
+1575,"DevOps Specialist","Engineering","{Terraform,Data Bricks,AWS,Tailwind CSS}",Lead,11
+1576,"UI/UX Designer","Engineering","{Data Bricks,PostgreSQL,React,Kubernetes,TypeScript}",Senior,5
+1577,"Mobile Developer","Marketing","{PostgreSQL,Vue.js,Framer,Terraform,Affinity}",Lead,11
+1578,"Data Scientist","Developer","{After Effects,Data Bricks,Node.js,AWS,Tailwind CSS}",Senior,7
+1579,"Backend Developer","Infrastructure","{TypeScript,PostgreSQL,Framer}",Mid,2
+1580,"Full Stack Engineer","Infrastructure","{AWS,After Effects,Figma,Node.js,Sass,Pandas}",Lead,9
+1581,"DevOps Specialist","Marketing","{AWS,React,Sass,Data Bricks,TypeScript}",Senior,7
+1582,"AI & ML Engineer","Developer","{Framer,React,PostgreSQL}",Senior,7
+1583,"Backend Developer","Infrastructure","{GraphQL,Tailwind CSS,Go,Vue.js,Kubernetes,Sass}",Senior,5
+1584,"Backend Developer","Design","{Photoshop,Node.js,Next.js}",Senior,6
+1585,"Full Stack Engineer","Infrastructure","{Blender,TensorFlow,Kubernetes,Docker}",Lead,10
+1586,"AI & ML Engineer","Infrastructure","{Tailwind CSS,PostgreSQL,TensorFlow,After Effects,Go,Terraform}",Lead,8
+1587,"Backend Developer","Infrastructure","{Framer,Python,Node.js}",Mid,4
+1588,"Full Stack Engineer","Engineering","{React,Next.js,Vue.js,Kubernetes}",Mid,2
+1589,"Full Stack Engineer","Infrastructure","{Figma,GraphQL,Tailwind CSS}",Mid,3
+1590,"Data Scientist","Developer","{After Effects,Kubernetes,Go,Node.js}",Junior,1
+1591,"Full Stack Engineer","Developer","{GSAP,Figma,Sass,React}",Lead,8
+1592,"Full Stack Engineer","Data & AI","{React,Vue.js,Terraform,Docker,Tailwind CSS,GSAP}",Junior,0
+1593,"Full Stack Engineer","Marketing","{TypeScript,Kubernetes,Redis,GSAP,TensorFlow}",Lead,9
+1594,"Mobile Developer","Infrastructure","{TensorFlow,TypeScript,Figma,Photoshop,Docker}",Mid,3
+1595,"Mobile Developer","Design","{Python,Photoshop,Node.js}",Senior,5
+1596,"Full Stack Engineer","Product","{Python,Redis,After Effects,Terraform,React,Go}",Junior,1
+1597,"Tester","Marketing","{React,Figma,Python}",Lead,9
+1598,"Full Stack Engineer","Data & AI","{Terraform,React,PostgreSQL,Sass,GSAP}",Senior,5
+1599,"Frontend Engineer","Product","{GSAP,Python,Kubernetes,Terraform}",Mid,2
+1600,"Site Reliability Engineer","Marketing","{AWS,Next.js,Photoshop,Vue.js,Framer,Blender}",Lead,10
+1601,"Tester","Engineering","{Sass,Figma,Data Bricks,Tailwind CSS,Docker}",Senior,6
+1602,"UI/UX Designer","Infrastructure","{Kubernetes,Redis,Tailwind CSS}",Junior,0
+1603,"Backend Developer","Design","{Blender,Vue.js,Pandas,Data Bricks,Tailwind CSS,Next.js}",Junior,0
+1604,"DevOps Specialist","Design","{Docker,Terraform,Pandas,Framer}",Senior,7
+1605,"AI & ML Engineer","Engineering","{PostgreSQL,Go,GSAP}",Mid,2
+1606,"Game Developer","Marketing","{Kubernetes,TypeScript,Affinity,Figma,Next.js,Go}",Senior,5
+1607,"UI/UX Designer","Engineering","{Redis,PostgreSQL,React,TensorFlow,Docker}",Senior,6
+1608,"Tester","Engineering","{GraphQL,React,Docker}",Senior,6
+1609,"Tester","Marketing","{AWS,TensorFlow,PostgreSQL,GSAP,Terraform,Pandas}",Lead,8
+1610,"Mobile Developer","Marketing","{Python,Photoshop,Affinity,Figma}",Junior,1
+1611,"Data Scientist","Developer","{Tailwind CSS,TensorFlow,Blender}",Senior,5
+1612,"Backend Developer","Developer","{Figma,Tailwind CSS,React,After Effects,Node.js}",Senior,5
+1613,"DevOps Specialist","Developer","{After Effects,PostgreSQL,Docker,GSAP}",Senior,5
+1614,"UI/UX Designer","Developer","{Vue.js,GraphQL,GSAP,Kubernetes}",Mid,3
+1615,"Game Developer","Infrastructure","{Go,Terraform,Blender,Tailwind CSS,Next.js}",Lead,11
+1616,"AI & ML Engineer","Design","{Figma,Kubernetes,Vue.js,Node.js}",Junior,1
+1617,"Full Stack Engineer","Design","{PostgreSQL,Vue.js,React}",Lead,8
+1618,"Backend Developer","Developer","{GSAP,Python,Redis,Framer,Terraform,Blender}",Mid,3
+1619,"Site Reliability Engineer","Design","{React,Next.js,After Effects,Terraform,Framer,Kubernetes}",Senior,5
+1620,"Site Reliability Engineer","Product","{Framer,Redis,Blender,Figma,Next.js}",Mid,4
+1621,"Site Reliability Engineer","Infrastructure","{Vue.js,Tailwind CSS,PostgreSQL,Terraform}",Senior,7
+1622,"Site Reliability Engineer","Product","{Terraform,Sass,Blender}",Mid,4
+1623,"Site Reliability Engineer","Engineering","{Redis,Docker,Framer,Terraform,Vue.js,TensorFlow}",Junior,1
+1624,"UI/UX Designer","Data & AI","{Node.js,Figma,AWS,GSAP,Vue.js,Next.js}",Lead,10
+1625,"DevOps Specialist","Developer","{Node.js,React,Redis,TypeScript}",Lead,10
+1626,"Game Developer","Product","{PostgreSQL,Photoshop,Next.js}",Mid,4
+1627,"AI & ML Engineer","Developer","{TensorFlow,Redis,Go,Framer}",Mid,4
+1628,"Site Reliability Engineer","Product","{Vue.js,Kubernetes,Redis,Docker,Terraform,PostgreSQL}",Senior,7
+1629,"UI/UX Designer","Design","{PostgreSQL,Data Bricks,Next.js}",Mid,3
+1630,"UI/UX Designer","Data & AI","{After Effects,Tailwind CSS,TypeScript,Redis,Go}",Mid,2
+1631,"Tester","Engineering","{Pandas,Next.js,TypeScript,Blender,Python}",Lead,8
+1632,"Mobile Developer","Infrastructure","{React,Docker,Go,TypeScript,After Effects}",Mid,2
+1633,"DevOps Specialist","Product","{Node.js,AWS,Affinity,Docker,After Effects,GraphQL}",Lead,11
+1634,"Mobile Developer","Developer","{Next.js,Node.js,Redis,Sass,Pandas}",Lead,8
+1635,"Full Stack Engineer","Engineering","{AWS,Docker,Go,Framer}",Mid,3
+1636,"Mobile Developer","Data & AI","{React,Docker,GraphQL}",Junior,0
+1637,"Data Scientist","Developer","{React,PostgreSQL,Photoshop,Next.js,AWS}",Senior,7
+1638,"Backend Developer","Marketing","{AWS,Kubernetes,Data Bricks,Figma}",Mid,3
+1639,"Site Reliability Engineer","Design","{Pandas,React,Framer,Affinity}",Mid,4
+1640,"AI & ML Engineer","Engineering","{Framer,Node.js,Terraform,Redis,Docker}",Mid,3
+1641,"Frontend Engineer","Data & AI","{GraphQL,Blender,Node.js}",Lead,8
+1642,"Full Stack Engineer","Marketing","{Node.js,Next.js,TypeScript,Kubernetes,Go}",Junior,1
+1643,"Backend Developer","Engineering","{React,TensorFlow,Next.js,Tailwind CSS,Vue.js,Photoshop}",Lead,11
+1644,"Full Stack Engineer","Developer","{Framer,GSAP,Photoshop,Figma}",Senior,6
+1645,"Frontend Engineer","Engineering","{AWS,Tailwind CSS,Affinity,After Effects}",Junior,0
+1646,"Full Stack Engineer","Developer","{TensorFlow,Terraform,Affinity,React,Docker}",Junior,0
+1647,"Site Reliability Engineer","Product","{React,Python,Node.js,Data Bricks,Docker}",Mid,2
+1648,"Site Reliability Engineer","Design","{GraphQL,Terraform,Blender,TypeScript}",Mid,4
+1649,"AI & ML Engineer","Design","{React,Photoshop,Affinity,AWS,Next.js,Vue.js}",Senior,7
+1650,"Tester","Infrastructure","{React,AWS,Blender,Next.js,TensorFlow,Affinity}",Junior,1
+1651,"UI/UX Designer","Marketing","{Terraform,React,TypeScript,Figma,Redis,Pandas}",Lead,8
+1652,"Data Scientist","Marketing","{Kubernetes,Figma,After Effects,Vue.js,Go,Tailwind CSS}",Junior,1
+1653,"Game Developer","Product","{Go,Photoshop,Docker,Python,Tailwind CSS,After Effects}",Lead,8
+1654,"Frontend Engineer","Developer","{AWS,TypeScript,After Effects,Next.js,React,Kubernetes}",Junior,1
+1655,"Frontend Engineer","Engineering","{AWS,React,Next.js,GraphQL}",Mid,4
+1656,"Full Stack Engineer","Design","{Affinity,React,Next.js,Node.js,Kubernetes}",Lead,11
+1657,"DevOps Specialist","Marketing","{React,Photoshop,TypeScript,Terraform,Affinity,AWS}",Senior,5
+1658,"UI/UX Designer","Marketing","{React,GraphQL,After Effects}",Senior,5
+1659,"DevOps Specialist","Design","{Tailwind CSS,Kubernetes,Terraform,Pandas,After Effects,TypeScript}",Mid,2
+1660,"DevOps Specialist","Engineering","{Photoshop,React,Tailwind CSS,Next.js}",Mid,4
+1661,"Tester","Product","{Python,Blender,Sass,Redis}",Junior,1
+1662,"Tester","Product","{TypeScript,Pandas,Data Bricks}",Junior,1
+1663,"Game Developer","Infrastructure","{Kubernetes,GraphQL,After Effects,Blender,Go,React}",Mid,2
+1664,"Mobile Developer","Product","{Photoshop,React,Affinity,After Effects}",Mid,2
+1665,"Mobile Developer","Data & AI","{TensorFlow,Terraform,Kubernetes,Vue.js}",Junior,1
+1666,"Tester","Developer","{Kubernetes,After Effects,GSAP,Go}",Senior,6
+1667,"Frontend Engineer","Marketing","{Node.js,Docker,PostgreSQL,React}",Junior,1
+1668,"UI/UX Designer","Infrastructure","{After Effects,React,GraphQL,TensorFlow,Next.js,Vue.js}",Mid,3
+1669,"Tester","Product","{Blender,Python,Docker,Figma,Data Bricks}",Junior,0
+1670,"Game Developer","Infrastructure","{Docker,Vue.js,Data Bricks,TensorFlow,GraphQL,Figma}",Senior,6
+1671,"UI/UX Designer","Infrastructure","{Python,TensorFlow,GraphQL,After Effects}",Senior,7
+1672,"Site Reliability Engineer","Developer","{TensorFlow,Docker,Go}",Mid,2
+1673,"Frontend Engineer","Data & AI","{Node.js,Next.js,Docker,Terraform,Go}",Mid,3
+1674,"Backend Developer","Product","{AWS,Kubernetes,Data Bricks}",Junior,0
+1675,"Mobile Developer","Developer","{Figma,Python,Framer}",Lead,11
+1676,"Data Scientist","Product","{Kubernetes,TypeScript,Next.js,Redis}",Lead,11
+1677,"Backend Developer","Design","{Python,TypeScript,Figma,Go}",Junior,1
+1678,"Frontend Engineer","Design","{Vue.js,GSAP,Blender,Framer}",Lead,10
+1679,"Data Scientist","Product","{TensorFlow,Photoshop,Affinity}",Mid,4
+1680,"Site Reliability Engineer","Product","{Data Bricks,PostgreSQL,Kubernetes}",Mid,3
+1681,"Backend Developer","Product","{Go,Python,React,Blender,Sass,Affinity}",Mid,4
+1682,"Mobile Developer","Data & AI","{Go,Node.js,PostgreSQL,Docker,React,Redis}",Junior,0
+1683,"Game Developer","Design","{Node.js,Next.js,Data Bricks,Sass}",Senior,5
+1684,"UI/UX Designer","Design","{React,Next.js,Pandas}",Lead,8
+1685,"Site Reliability Engineer","Engineering","{Node.js,Tailwind CSS,Docker,Redis}",Mid,4
+1686,"Backend Developer","Engineering","{Figma,PostgreSQL,Framer}",Senior,7
+1687,"Data Scientist","Product","{React,Terraform,GraphQL,TensorFlow,Redis}",Senior,6
+1688,"Backend Developer","Developer","{GSAP,Sass,AWS,Node.js}",Lead,8
+1689,"DevOps Specialist","Marketing","{Node.js,Terraform,Redis,Photoshop}",Junior,0
+1690,"Frontend Engineer","Engineering","{Node.js,After Effects,Docker}",Senior,6
+1691,"Site Reliability Engineer","Marketing","{After Effects,Kubernetes,Pandas,Figma,Photoshop,TensorFlow}",Mid,3
+1692,"Game Developer","Marketing","{Pandas,Redis,Kubernetes}",Junior,1
+1693,"AI & ML Engineer","Infrastructure","{TypeScript,Sass,Go,Affinity,Data Bricks,TensorFlow}",Junior,1
+1694,"Site Reliability Engineer","Marketing","{Data Bricks,Python,Next.js,Sass,TypeScript,PostgreSQL}",Junior,0
+1695,"Tester","Marketing","{GSAP,Python,Next.js,Photoshop,Framer,Node.js}",Junior,1
+1696,"Backend Developer","Data & AI","{PostgreSQL,Node.js,Vue.js,Redis}",Mid,3
+1697,"Tester","Infrastructure","{GSAP,Blender,React}",Mid,2
+1698,"UI/UX Designer","Design","{Framer,PostgreSQL,Node.js}",Senior,5
+1699,"UI/UX Designer","Product","{TensorFlow,Data Bricks,GraphQL,React,Next.js}",Mid,2
+1700,"Data Scientist","Engineering","{Framer,GSAP,Redis,Figma}",Lead,11
+1701,"Tester","Engineering","{Data Bricks,Kubernetes,GraphQL,TensorFlow,TypeScript}",Mid,3
+1702,"Frontend Engineer","Design","{TypeScript,GraphQL,After Effects,Vue.js,Framer,Terraform}",Lead,10
+1703,"UI/UX Designer","Data & AI","{Blender,GraphQL,After Effects,Figma,Terraform,Sass}",Junior,0
+1704,"Full Stack Engineer","Infrastructure","{Python,Photoshop,Affinity}",Lead,8
+1705,"Data Scientist","Product","{Docker,TensorFlow,Python,Data Bricks,Redis}",Senior,7
+1706,"Mobile Developer","Design","{Figma,Go,After Effects}",Junior,0
+1707,"AI & ML Engineer","Design","{Kubernetes,After Effects,Node.js}",Senior,5
+1708,"Mobile Developer","Infrastructure","{Vue.js,Node.js,Terraform,Affinity,Framer}",Junior,0
+1709,"Data Scientist","Infrastructure","{Photoshop,After Effects,Data Bricks,Python}",Junior,1
+1710,"Site Reliability Engineer","Infrastructure","{TensorFlow,Pandas,React,Sass,Vue.js,TypeScript}",Mid,2
+1711,"Data Scientist","Developer","{After Effects,Tailwind CSS,React}",Mid,3
+1712,"Tester","Marketing","{React,AWS,Next.js}",Junior,1
+1713,"DevOps Specialist","Design","{Docker,Blender,Pandas}",Junior,0
+1714,"Game Developer","Product","{AWS,Affinity,React,Docker,Redis}",Senior,7
+1715,"UI/UX Designer","Engineering","{After Effects,Go,Node.js}",Junior,0
+1716,"Site Reliability Engineer","Data & AI","{GraphQL,Kubernetes,Sass,Photoshop,Pandas}",Mid,4
+1717,"AI & ML Engineer","Data & AI","{Kubernetes,Blender,TensorFlow,Vue.js,Affinity,Redis}",Senior,6
+1718,"Frontend Engineer","Developer","{TensorFlow,Affinity,React,Blender,TypeScript}",Lead,8
+1719,"Tester","Marketing","{Pandas,Node.js,After Effects}",Lead,9
+1720,"Site Reliability Engineer","Developer","{Vue.js,Next.js,Pandas,Figma}",Mid,4
+1721,"UI/UX Designer","Infrastructure","{Node.js,React,Kubernetes,AWS}",Junior,0
+1722,"Game Developer","Product","{Python,Data Bricks,AWS,Kubernetes,After Effects}",Lead,8
+1723,"Game Developer","Product","{Docker,TypeScript,Kubernetes}",Junior,1
+1724,"Mobile Developer","Engineering","{Next.js,Terraform,AWS,Figma}",Lead,8
+1725,"Game Developer","Infrastructure","{Docker,Blender,Python,Kubernetes}",Senior,5
+1726,"Backend Developer","Data & AI","{Terraform,Go,Photoshop}",Mid,3
+1727,"Data Scientist","Product","{Terraform,Framer,Vue.js,Next.js,Python}",Lead,11
+1728,"Data Scientist","Data & AI","{Photoshop,React,Docker}",Junior,1
+1729,"Data Scientist","Engineering","{Vue.js,Tailwind CSS,TypeScript}",Junior,1
+1730,"Full Stack Engineer","Product","{React,Vue.js,Redis,Framer,Tailwind CSS,Sass}",Lead,11
+1731,"DevOps Specialist","Design","{React,Docker,Redis,Python,Vue.js}",Mid,2
+1732,"Data Scientist","Design","{React,Terraform,AWS}",Lead,9
+1733,"Backend Developer","Design","{Terraform,Affinity,Tailwind CSS,Redis,Docker}",Junior,1
+1734,"AI & ML Engineer","Marketing","{Vue.js,Photoshop,Sass,Framer,TypeScript,Kubernetes}",Senior,7
+1735,"Frontend Engineer","Marketing","{React,Sass,Affinity}",Senior,7
+1736,"Frontend Engineer","Data & AI","{Vue.js,Next.js,React,Go,Kubernetes}",Mid,3
+1737,"AI & ML Engineer","Developer","{TypeScript,Kubernetes,Docker}",Senior,5
+1738,"Site Reliability Engineer","Design","{GSAP,Data Bricks,React,Framer,Next.js}",Lead,10
+1739,"Mobile Developer","Data & AI","{Terraform,Next.js,AWS,Vue.js,React,Python}",Junior,0
+1740,"Site Reliability Engineer","Marketing","{Tailwind CSS,Kubernetes,Terraform,GSAP}",Junior,0
+1741,"Tester","Marketing","{GraphQL,GSAP,AWS}",Senior,5
+1742,"AI & ML Engineer","Data & AI","{Vue.js,GSAP,Framer,Tailwind CSS}",Junior,0
+1743,"DevOps Specialist","Product","{React,GSAP,Pandas}",Mid,3
+1744,"Mobile Developer","Infrastructure","{Python,TensorFlow,React,Terraform}",Senior,6
+1745,"Game Developer","Data & AI","{Photoshop,React,Redis,TensorFlow,Data Bricks}",Junior,1
+1746,"Game Developer","Product","{Pandas,Kubernetes,Data Bricks,GSAP,Framer,After Effects}",Senior,7
+1747,"Game Developer","Data & AI","{Next.js,TensorFlow,AWS,TypeScript,Data Bricks,Sass}",Senior,6
+1748,"Data Scientist","Design","{PostgreSQL,Node.js,After Effects,Redis,Pandas}",Mid,2
+1749,"UI/UX Designer","Developer","{Go,Data Bricks,GraphQL}",Mid,4
+1750,"Mobile Developer","Design","{AWS,Sass,Node.js,Blender,Photoshop,React}",Senior,7
+1751,"Mobile Developer","Design","{Redis,Terraform,Figma,Affinity,Python,Blender}",Mid,2
+1752,"Frontend Engineer","Design","{React,PostgreSQL,Next.js,Docker}",Lead,10
+1753,"Frontend Engineer","Engineering","{GSAP,React,Vue.js,TypeScript,Next.js,Pandas}",Senior,7
+1754,"AI & ML Engineer","Developer","{TensorFlow,Blender,Figma,GraphQL,Photoshop}",Junior,0
+1755,"Backend Developer","Marketing","{Docker,React,Next.js,Tailwind CSS,TypeScript}",Senior,5
+1756,"Frontend Engineer","Data & AI","{After Effects,React,Kubernetes,AWS,Data Bricks,Vue.js}",Mid,4
+1757,"Backend Developer","Marketing","{Node.js,TypeScript,GraphQL}",Lead,9
+1758,"AI & ML Engineer","Developer","{React,Affinity,Docker,Redis,GSAP}",Mid,3
+1759,"Tester","Developer","{Blender,TensorFlow,Framer}",Junior,1
+1760,"Backend Developer","Data & AI","{PostgreSQL,React,Redis,Next.js}",Mid,4
+1761,"AI & ML Engineer","Developer","{Next.js,TypeScript,After Effects}",Junior,1
+1762,"UI/UX Designer","Data & AI","{Tailwind CSS,Python,After Effects,Node.js}",Junior,1
+1763,"UI/UX Designer","Developer","{Vue.js,GSAP,React}",Lead,9
+1764,"UI/UX Designer","Marketing","{Python,Kubernetes,Tailwind CSS}",Junior,0
+1765,"AI & ML Engineer","Design","{Terraform,Kubernetes,Next.js}",Mid,3
+1766,"DevOps Specialist","Product","{Tailwind CSS,Vue.js,GraphQL}",Junior,1
+1767,"Tester","Developer","{Terraform,Vue.js,Kubernetes}",Lead,11
+1768,"DevOps Specialist","Data & AI","{React,Figma,GSAP,Terraform}",Lead,11
+1769,"UI/UX Designer","Data & AI","{Blender,Pandas,Python,TypeScript,PostgreSQL}",Junior,0
+1770,"Site Reliability Engineer","Product","{Terraform,AWS,Blender,Pandas}",Mid,2
+1771,"Site Reliability Engineer","Engineering","{Next.js,React,Sass,TypeScript,Tailwind CSS}",Junior,0
+1772,"AI & ML Engineer","Developer","{Photoshop,Python,Figma,React,PostgreSQL}",Lead,11
+1773,"Site Reliability Engineer","Developer","{Node.js,GSAP,TypeScript,Python,Docker}",Mid,4
+1774,"AI & ML Engineer","Marketing","{Next.js,Python,Go}",Mid,4
+1775,"Tester","Marketing","{Redis,Pandas,Next.js,React}",Junior,1
+1776,"AI & ML Engineer","Marketing","{Figma,React,Framer}",Lead,8
+1777,"Game Developer","Developer","{Vue.js,Node.js,AWS,After Effects}",Lead,9
+1778,"AI & ML Engineer","Engineering","{React,Next.js,Figma}",Mid,2
+1779,"Mobile Developer","Marketing","{Next.js,Python,Redis,Pandas,Tailwind CSS,AWS}",Lead,8
+1780,"AI & ML Engineer","Design","{React,AWS,Tailwind CSS,Vue.js}",Lead,11
+1781,"AI & ML Engineer","Developer","{After Effects,Docker,Python}",Mid,2
+1782,"Site Reliability Engineer","Product","{React,Python,PostgreSQL}",Lead,10
+1783,"Full Stack Engineer","Developer","{Figma,Sass,Go,React}",Senior,7
+1784,"Site Reliability Engineer","Infrastructure","{GraphQL,GSAP,Sass,React,Figma}",Mid,2
+1785,"Data Scientist","Engineering","{Node.js,Kubernetes,Data Bricks,Terraform,After Effects}",Lead,8
+1786,"AI & ML Engineer","Data & AI","{TypeScript,Python,TensorFlow,Node.js}",Mid,4
+1787,"Tester","Product","{Terraform,AWS,Python,Tailwind CSS,Figma}",Lead,8
+1788,"Mobile Developer","Developer","{Sass,Tailwind CSS,TypeScript,After Effects,Affinity}",Senior,6
+1789,"Full Stack Engineer","Data & AI","{Framer,PostgreSQL,Pandas,GSAP,Python,Blender}",Lead,11
+1790,"Mobile Developer","Developer","{React,Python,Vue.js}",Mid,3
+1791,"Data Scientist","Design","{After Effects,Node.js,Kubernetes,React,AWS,TensorFlow}",Mid,3
+1792,"UI/UX Designer","Data & AI","{Terraform,Data Bricks,Kubernetes,Blender}",Mid,2
+1793,"Game Developer","Infrastructure","{Redis,Framer,TypeScript,Node.js,Kubernetes,Pandas}",Senior,5
+1794,"UI/UX Designer","Design","{Affinity,TypeScript,Redis,Data Bricks,Go,Pandas}",Lead,10
+1795,"Mobile Developer","Developer","{Terraform,After Effects,Pandas,Next.js,PostgreSQL,TypeScript}",Junior,1
+1796,"Tester","Engineering","{Node.js,Tailwind CSS,Data Bricks,PostgreSQL}",Mid,2
+1797,"Frontend Engineer","Marketing","{Blender,Next.js,Python,Framer,Go,Docker}",Mid,4
+1798,"DevOps Specialist","Data & AI","{AWS,Kubernetes,Figma,Vue.js,Python}",Lead,9
+1799,"Full Stack Engineer","Engineering","{AWS,Docker,After Effects,React,Data Bricks,GSAP}",Junior,0
+1800,"DevOps Specialist","Design","{Python,Node.js,Pandas,Figma}",Junior,0
+1801,"Site Reliability Engineer","Infrastructure","{Blender,Kubernetes,PostgreSQL,Terraform,Figma,GSAP}",Lead,11
+1802,"Full Stack Engineer","Data & AI","{Affinity,Kubernetes,Redis}",Senior,6
+1803,"Backend Developer","Data & AI","{Python,After Effects,Framer,Photoshop,Go}",Junior,1
+1804,"Site Reliability Engineer","Engineering","{Tailwind CSS,Figma,Kubernetes,TypeScript}",Lead,10
+1805,"AI & ML Engineer","Marketing","{Python,TensorFlow,Tailwind CSS,Node.js,Docker,Sass}",Lead,8
+1806,"Data Scientist","Marketing","{Framer,Docker,Photoshop,Affinity}",Senior,7
+1807,"Data Scientist","Engineering","{Framer,AWS,Python,Next.js}",Junior,1
+1808,"DevOps Specialist","Data & AI","{TypeScript,Terraform,Data Bricks,Kubernetes,Node.js,Tailwind CSS}",Junior,1
+1809,"AI & ML Engineer","Engineering","{After Effects,Framer,GSAP,Kubernetes}",Junior,0
+1810,"Mobile Developer","Marketing","{Vue.js,React,Redis,Terraform,TypeScript,Affinity}",Lead,8
+1811,"UI/UX Designer","Design","{Terraform,After Effects,Figma,GSAP,Python,TensorFlow}",Senior,5
+1812,"AI & ML Engineer","Product","{PostgreSQL,Python,Figma,Vue.js,Tailwind CSS}",Mid,4
+1813,"Game Developer","Developer","{AWS,Data Bricks,PostgreSQL}",Senior,6
+1814,"UI/UX Designer","Data & AI","{Terraform,GSAP,After Effects,Photoshop,Framer,PostgreSQL}",Mid,3
+1815,"Full Stack Engineer","Marketing","{Next.js,Kubernetes,Redis,GraphQL}",Lead,8
+1816,"AI & ML Engineer","Developer","{Figma,React,GraphQL,Photoshop,After Effects,Framer}",Lead,8
+1817,"Mobile Developer","Design","{GSAP,Vue.js,Redis,Figma,Tailwind CSS,Sass}",Mid,3
+1818,"Tester","Marketing","{React,Next.js,Kubernetes}",Junior,0
+1819,"Frontend Engineer","Engineering","{TensorFlow,Go,Docker,Blender,Python}",Mid,3
+1820,"Frontend Engineer","Marketing","{Pandas,Python,Node.js}",Mid,2
+1821,"Site Reliability Engineer","Engineering","{TypeScript,Pandas,Vue.js,Redis,GSAP}",Senior,6
+1822,"AI & ML Engineer","Infrastructure","{Photoshop,Tailwind CSS,After Effects,Kubernetes}",Lead,10
+1823,"AI & ML Engineer","Product","{React,GraphQL,Next.js,Redis}",Mid,4
+1824,"Backend Developer","Developer","{Terraform,Docker,Blender}",Mid,4
+1825,"Data Scientist","Product","{Figma,TypeScript,Node.js}",Lead,10
+1826,"Tester","Marketing","{Affinity,TypeScript,Go}",Junior,0
+1827,"Tester","Developer","{Redis,Next.js,Terraform}",Senior,5
+1828,"Frontend Engineer","Product","{PostgreSQL,Kubernetes,Photoshop,Python,Framer}",Mid,2
+1829,"Tester","Data & AI","{Vue.js,React,Next.js,Affinity,Redis}",Senior,6
+1830,"Site Reliability Engineer","Product","{GraphQL,Terraform,Node.js,Data Bricks,AWS}",Lead,11
+1831,"Data Scientist","Marketing","{Go,GraphQL,Node.js,Next.js,AWS,Vue.js}",Lead,8
+1832,"Full Stack Engineer","Engineering","{Docker,React,Redis,Affinity,Kubernetes,Sass}",Lead,9
+1833,"Site Reliability Engineer","Design","{Sass,TypeScript,Framer,Python,React}",Senior,6
+1834,"Mobile Developer","Infrastructure","{Figma,React,Next.js}",Mid,4
+1835,"Tester","Engineering","{Docker,Next.js,TensorFlow}",Senior,7
+1836,"Data Scientist","Infrastructure","{Terraform,React,Affinity,Vue.js,Framer}",Lead,10
+1837,"Full Stack Engineer","Data & AI","{React,GSAP,Kubernetes,Tailwind CSS,Next.js}",Senior,5
+1838,"Tester","Product","{React,Figma,Data Bricks,Go,TypeScript}",Lead,11
+1839,"Site Reliability Engineer","Infrastructure","{Sass,After Effects,Figma,Docker,Kubernetes}",Mid,2
+1840,"Data Scientist","Product","{Node.js,TensorFlow,Docker}",Senior,6
+1841,"Site Reliability Engineer","Infrastructure","{Docker,GSAP,Affinity}",Senior,5
+1842,"UI/UX Designer","Engineering","{Terraform,Tailwind CSS,GraphQL,Go}",Junior,0
+1843,"Frontend Engineer","Marketing","{Framer,Docker,After Effects,Affinity}",Mid,2
+1844,"Mobile Developer","Developer","{Kubernetes,PostgreSQL,After Effects}",Senior,5
+1845,"Mobile Developer","Product","{Kubernetes,TypeScript,Tailwind CSS,Node.js}",Mid,4
+1846,"UI/UX Designer","Engineering","{Next.js,Tailwind CSS,Node.js,Sass}",Lead,9
+1847,"Full Stack Engineer","Data & AI","{Figma,Node.js,Vue.js,Python,PostgreSQL}",Mid,2
+1848,"Game Developer","Data & AI","{Blender,Tailwind CSS,Figma,Go,Redis,React}",Mid,3
+1849,"Data Scientist","Infrastructure","{React,Next.js,Figma,TensorFlow,Go,Terraform}",Mid,4
+1850,"DevOps Specialist","Marketing","{TensorFlow,After Effects,Python,Photoshop,Next.js}",Senior,5
+1851,"Full Stack Engineer","Developer","{Docker,Data Bricks,GraphQL,Sass,TensorFlow}",Senior,7
+1852,"Data Scientist","Marketing","{Docker,TensorFlow,Terraform,Vue.js,Go}",Mid,3
+1853,"UI/UX Designer","Marketing","{Docker,GSAP,GraphQL,Pandas}",Junior,0
+1854,"Mobile Developer","Marketing","{Pandas,Kubernetes,After Effects,Docker,Tailwind CSS}",Lead,10
+1855,"Game Developer","Infrastructure","{Redis,Go,Python}",Lead,8
+1856,"AI & ML Engineer","Data & AI","{Terraform,Node.js,After Effects}",Mid,4
+1857,"Data Scientist","Product","{Vue.js,Node.js,PostgreSQL,Pandas,Next.js,Affinity}",Senior,5
+1858,"AI & ML Engineer","Marketing","{Data Bricks,Pandas,Figma,Terraform,Sass,Go}",Senior,6
+1859,"Backend Developer","Developer","{Sass,Python,Affinity}",Senior,5
+1860,"Site Reliability Engineer","Infrastructure","{Python,TensorFlow,Redis}",Senior,7
+1861,"Game Developer","Infrastructure","{Next.js,React,Tailwind CSS}",Mid,2
+1862,"Tester","Infrastructure","{Photoshop,Figma,AWS}",Mid,2
+1863,"Full Stack Engineer","Data & AI","{React,GraphQL,Next.js,Terraform,Kubernetes}",Junior,0
+1864,"DevOps Specialist","Data & AI","{Node.js,Python,Affinity,Sass}",Lead,8
+1865,"Mobile Developer","Engineering","{AWS,Python,Redis}",Senior,6
+1866,"Site Reliability Engineer","Developer","{Terraform,TypeScript,Affinity,Figma,Docker,Kubernetes}",Lead,8
+1867,"Backend Developer","Engineering","{Data Bricks,React,Next.js}",Senior,6
+1868,"Site Reliability Engineer","Infrastructure","{Next.js,Data Bricks,Node.js,After Effects,GSAP}",Lead,8
+1869,"Site Reliability Engineer","Developer","{GSAP,GraphQL,Node.js}",Junior,0
+1870,"Frontend Engineer","Marketing","{AWS,Python,Tailwind CSS}",Mid,4
+1871,"Frontend Engineer","Design","{TensorFlow,Blender,Data Bricks,Terraform,GSAP,GraphQL}",Lead,8
+1872,"AI & ML Engineer","Infrastructure","{PostgreSQL,Data Bricks,Sass,React,Next.js}",Junior,1
+1873,"Frontend Engineer","Infrastructure","{GSAP,Figma,Tailwind CSS}",Mid,3
+1874,"Tester","Data & AI","{AWS,PostgreSQL,Affinity,GraphQL,Python}",Senior,7
+1875,"Frontend Engineer","Infrastructure","{GSAP,Vue.js,Kubernetes}",Senior,6
+1876,"Frontend Engineer","Data & AI","{Figma,React,Docker,Terraform,Affinity}",Junior,1
+1877,"Data Scientist","Data & AI","{TensorFlow,Docker,Pandas,Tailwind CSS,Next.js}",Mid,4
+1878,"Data Scientist","Product","{Docker,After Effects,TypeScript}",Lead,11
+1879,"UI/UX Designer","Engineering","{TypeScript,GraphQL,Redis}",Lead,10
+1880,"Mobile Developer","Design","{Node.js,Figma,TypeScript,Vue.js,Framer}",Lead,9
+1881,"Mobile Developer","Data & AI","{Pandas,TypeScript,Go,Kubernetes,Node.js}",Lead,11
+1882,"Mobile Developer","Engineering","{Kubernetes,GraphQL,Framer,Affinity,AWS,Go}",Senior,6
+1883,"Frontend Engineer","Engineering","{Node.js,Vue.js,Go,GSAP,Docker}",Lead,11
+1884,"DevOps Specialist","Developer","{TypeScript,Pandas,Sass}",Junior,0
+1885,"Tester","Data & AI","{Node.js,Tailwind CSS,React,Docker}",Lead,10
+1886,"Data Scientist","Infrastructure","{AWS,Node.js,Blender,Photoshop,Framer,Terraform}",Senior,7
+1887,"Frontend Engineer","Infrastructure","{React,GraphQL,Next.js}",Mid,4
+1888,"DevOps Specialist","Marketing","{PostgreSQL,After Effects,Figma,Affinity,GraphQL}",Mid,4
+1889,"Backend Developer","Design","{Vue.js,Tailwind CSS,PostgreSQL,Next.js,Affinity,Sass}",Senior,6
+1890,"DevOps Specialist","Developer","{Terraform,GraphQL,Affinity,Data Bricks}",Senior,5
+1891,"Tester","Design","{Sass,Tailwind CSS,Data Bricks,PostgreSQL,Blender,After Effects}",Senior,5
+1892,"Game Developer","Product","{Next.js,GraphQL,Sass,Kubernetes}",Lead,9
+1893,"Data Scientist","Product","{Figma,Python,GSAP,TypeScript}",Mid,3
+1894,"Full Stack Engineer","Design","{React,TypeScript,Kubernetes,GraphQL,Next.js}",Mid,3
+1895,"Frontend Engineer","Marketing","{React,GraphQL,Next.js,TypeScript,Redis}",Mid,3
+1896,"DevOps Specialist","Product","{Blender,TensorFlow,React}",Mid,2
+1897,"Game Developer","Data & AI","{Docker,Sass,Go,GSAP,PostgreSQL}",Mid,4
+1898,"Data Scientist","Infrastructure","{Next.js,After Effects,Pandas,Figma,Python,Terraform}",Mid,2
+1899,"Game Developer","Product","{Node.js,GraphQL,Redis,After Effects,Affinity}",Senior,5
+1900,"Tester","Marketing","{GraphQL,After Effects,Photoshop,Kubernetes,GSAP,React}",Lead,10
+1901,"Frontend Engineer","Infrastructure","{Data Bricks,Affinity,Pandas,Blender}",Lead,11
+1902,"Site Reliability Engineer","Data & AI","{Kubernetes,Tailwind CSS,Affinity,React,Next.js}",Lead,9
+1903,"DevOps Specialist","Engineering","{Pandas,Terraform,React}",Lead,9
+1904,"Mobile Developer","Engineering","{Tailwind CSS,Framer,Kubernetes,React,Sass}",Lead,8
+1905,"AI & ML Engineer","Infrastructure","{Vue.js,TypeScript,Photoshop,Pandas}",Senior,5
+1906,"Site Reliability Engineer","Marketing","{After Effects,Pandas,Data Bricks,Photoshop}",Senior,7
+1907,"Tester","Engineering","{Next.js,Kubernetes,Python,Go,Photoshop,Tailwind CSS}",Junior,1
+1908,"Frontend Engineer","Design","{Affinity,After Effects,Node.js,TypeScript}",Senior,6
+1909,"UI/UX Designer","Developer","{Redis,Vue.js,Tailwind CSS}",Senior,6
+1910,"DevOps Specialist","Data & AI","{Next.js,Kubernetes,React,TypeScript,GraphQL}",Junior,0
+1911,"Backend Developer","Marketing","{AWS,Terraform,Affinity,Framer,Redis,Next.js}",Senior,6
+1912,"Full Stack Engineer","Infrastructure","{Terraform,Pandas,Blender,Go,React}",Junior,1
+1913,"Backend Developer","Developer","{React,Next.js,Tailwind CSS,Framer,Photoshop}",Lead,8
+1914,"Game Developer","Marketing","{Node.js,Tailwind CSS,Framer}",Senior,5
+1915,"Full Stack Engineer","Infrastructure","{Next.js,Tailwind CSS,Kubernetes,Node.js,Go}",Lead,8
+1916,"Mobile Developer","Infrastructure","{Docker,GSAP,Kubernetes,Tailwind CSS,Go}",Lead,11
+1917,"Game Developer","Marketing","{Terraform,Data Bricks,Figma}",Senior,6
+1918,"Frontend Engineer","Engineering","{Docker,Blender,React,Redis}",Lead,9
+1919,"DevOps Specialist","Design","{Photoshop,Redis,Data Bricks,After Effects,Go,Docker}",Lead,10
+1920,"Data Scientist","Data & AI","{Affinity,Framer,GraphQL,Go,Figma}",Senior,5
+1921,"Backend Developer","Infrastructure","{Framer,Next.js,Node.js,React,Tailwind CSS}",Junior,0
+1922,"Data Scientist","Marketing","{Python,TensorFlow,GraphQL,Kubernetes,Terraform}",Junior,1
+1923,"DevOps Specialist","Design","{GSAP,TypeScript,Redis}",Senior,6
+1924,"Site Reliability Engineer","Infrastructure","{Figma,PostgreSQL,React,After Effects,Framer}",Junior,0
+1925,"Game Developer","Design","{Terraform,PostgreSQL,Photoshop,GSAP}",Junior,1
+1926,"Data Scientist","Infrastructure","{Photoshop,Vue.js,Node.js,React,GraphQL,AWS}",Junior,1
+1927,"UI/UX Designer","Design","{React,Framer,Next.js,Terraform,Affinity}",Junior,1
+1928,"DevOps Specialist","Developer","{Sass,Kubernetes,GraphQL}",Senior,6
+1929,"Mobile Developer","Engineering","{Node.js,Kubernetes,TypeScript}",Mid,2
+1930,"Data Scientist","Data & AI","{After Effects,Affinity,Python,GSAP}",Lead,10
+1931,"Backend Developer","Developer","{Kubernetes,TypeScript,Blender,Framer,Python}",Mid,3
+1932,"Game Developer","Marketing","{Terraform,Data Bricks,Next.js,Kubernetes,Python}",Senior,6
+1933,"AI & ML Engineer","Marketing","{Python,Docker,Photoshop,AWS,Blender}",Lead,9
+1934,"Full Stack Engineer","Infrastructure","{Terraform,Data Bricks,PostgreSQL}",Lead,9
+1935,"Tester","Design","{Python,Terraform,Node.js,Framer,TypeScript,Sass}",Junior,0
+1936,"Mobile Developer","Product","{Tailwind CSS,Affinity,Python}",Lead,11
+1937,"Site Reliability Engineer","Design","{Vue.js,React,Sass}",Mid,2
+1938,"Data Scientist","Infrastructure","{Python,TensorFlow,Figma,Node.js,Tailwind CSS}",Junior,1
+1939,"Backend Developer","Engineering","{PostgreSQL,GSAP,React,Kubernetes,Go,Affinity}",Mid,3
+1940,"Full Stack Engineer","Engineering","{Framer,Vue.js,React,Python}",Mid,4
+1941,"Game Developer","Developer","{Photoshop,Go,React,Next.js}",Mid,4
+1942,"Tester","Marketing","{Pandas,Node.js,Data Bricks}",Junior,0
+1943,"UI/UX Designer","Design","{Figma,React,Photoshop}",Lead,11
+1944,"AI & ML Engineer","Design","{Node.js,Docker,Tailwind CSS,Next.js}",Junior,0
+1945,"Tester","Design","{Terraform,Pandas,Node.js}",Junior,1
+1946,"Full Stack Engineer","Data & AI","{Sass,Figma,React,Terraform,GraphQL}",Mid,2
+1947,"Full Stack Engineer","Marketing","{Framer,Pandas,AWS,GraphQL,Python,React}",Lead,11
+1948,"Game Developer","Infrastructure","{GSAP,Data Bricks,Vue.js}",Junior,1
+1949,"Full Stack Engineer","Marketing","{React,TensorFlow,Tailwind CSS,Next.js,Blender,Vue.js}",Junior,1
+1950,"AI & ML Engineer","Developer","{Framer,Terraform,Docker,TypeScript}",Lead,8
+1951,"AI & ML Engineer","Infrastructure","{Docker,GraphQL,Kubernetes,Redis}",Junior,0
+1952,"UI/UX Designer","Developer","{Pandas,GraphQL,Blender,React,Vue.js,Photoshop}",Junior,0
+1953,"Mobile Developer","Developer","{Sass,Kubernetes,Photoshop,Python,Next.js,TypeScript}",Senior,6
+1954,"Site Reliability Engineer","Product","{React,Photoshop,GraphQL,Next.js,Figma}",Junior,1
+1955,"Frontend Engineer","Data & AI","{Python,GraphQL,Node.js}",Lead,11
+1956,"Site Reliability Engineer","Engineering","{PostgreSQL,GSAP,After Effects}",Lead,9
+1957,"Full Stack Engineer","Engineering","{Python,Vue.js,AWS,TensorFlow,Redis,Figma}",Senior,5
+1958,"Frontend Engineer","Marketing","{Kubernetes,Docker,TypeScript,Pandas}",Mid,2
+1959,"Full Stack Engineer","Developer","{Node.js,Kubernetes,PostgreSQL,GraphQL}",Lead,8
+1960,"UI/UX Designer","Developer","{TensorFlow,Node.js,Next.js,Blender,Redis}",Junior,1
+1961,"AI & ML Engineer","Marketing","{TypeScript,Vue.js,Kubernetes,Data Bricks,Redis,Go}",Lead,9
+1962,"Mobile Developer","Developer","{Redis,Framer,React}",Senior,6
+1963,"Mobile Developer","Developer","{Data Bricks,React,Framer,Affinity,Terraform}",Junior,0
+1964,"Full Stack Engineer","Product","{After Effects,Next.js,Framer,Docker,Tailwind CSS,Vue.js}",Junior,0
+1965,"Full Stack Engineer","Engineering","{Kubernetes,Terraform,React,Docker}",Senior,6
+1966,"Backend Developer","Marketing","{Python,Node.js,Redis}",Junior,1
+1967,"Mobile Developer","Product","{Python,React,TypeScript}",Lead,8
+1968,"Backend Developer","Data & AI","{AWS,Pandas,Vue.js}",Junior,0
+1969,"Full Stack Engineer","Developer","{Framer,After Effects,Go}",Lead,9
+1970,"Backend Developer","Data & AI","{GSAP,Docker,React,Framer,Terraform,Data Bricks}",Lead,10
+1971,"Frontend Engineer","Marketing","{Photoshop,Pandas,Python,GraphQL}",Lead,9
+1972,"Frontend Engineer","Engineering","{Figma,Terraform,GraphQL,Pandas,Affinity}",Senior,6
+1973,"Site Reliability Engineer","Infrastructure","{Docker,Data Bricks,TypeScript,PostgreSQL,Terraform,Next.js}",Lead,9
+1974,"Site Reliability Engineer","Infrastructure","{After Effects,Tailwind CSS,Pandas,Kubernetes}",Lead,11
+1975,"DevOps Specialist","Marketing","{Node.js,Go,Next.js}",Mid,4
+1976,"Game Developer","Marketing","{TypeScript,Python,Go}",Senior,5
+1977,"UI/UX Designer","Marketing","{AWS,Pandas,React,TypeScript,Kubernetes}",Lead,9
+1978,"Mobile Developer","Infrastructure","{GraphQL,React,Pandas,Kubernetes,Figma,Python}",Junior,0
+1979,"Tester","Marketing","{Vue.js,Next.js,Pandas,Redis,React,AWS}",Senior,5
+1980,"Data Scientist","Infrastructure","{PostgreSQL,Sass,Figma,Redis,Node.js}",Mid,2
+1981,"AI & ML Engineer","Data & AI","{Kubernetes,Tailwind CSS,Figma,Photoshop}",Junior,0
+1982,"UI/UX Designer","Data & AI","{GSAP,Python,Docker,Data Bricks,React,TensorFlow}",Junior,0
+1983,"Backend Developer","Infrastructure","{GSAP,Pandas,Vue.js}",Senior,6
+1984,"Mobile Developer","Developer","{Vue.js,Node.js,Framer,Next.js,Terraform,Docker}",Junior,1
+1985,"Backend Developer","Developer","{Blender,PostgreSQL,Photoshop,Terraform,Kubernetes,Pandas}",Mid,4
+1986,"DevOps Specialist","Product","{Next.js,Tailwind CSS,Vue.js,GraphQL}",Mid,2
+1987,"Game Developer","Marketing","{Data Bricks,Tailwind CSS,React,Framer,Figma}",Lead,9
+1988,"DevOps Specialist","Marketing","{Figma,Go,Kubernetes}",Mid,4
+1989,"Backend Developer","Design","{React,Next.js,Terraform,Go,Kubernetes}",Senior,7
+1990,"Mobile Developer","Data & AI","{Affinity,Kubernetes,Blender,Terraform,Framer,Python}",Lead,9
+1991,"Game Developer","Engineering","{Tailwind CSS,Data Bricks,Node.js}",Lead,9
+1992,"DevOps Specialist","Engineering","{TensorFlow,Terraform,Affinity}",Junior,0
+1993,"Mobile Developer","Design","{Figma,Terraform,Python}",Mid,4
+1994,"Site Reliability Engineer","Marketing","{TensorFlow,GSAP,Kubernetes}",Lead,8
+1995,"Data Scientist","Design","{Affinity,Next.js,Tailwind CSS}",Lead,8
+1996,"Tester","Product","{Affinity,Node.js,Docker}",Lead,10
+1997,"Full Stack Engineer","Infrastructure","{Figma,Node.js,GraphQL,Data Bricks,Sass,Vue.js}",Senior,7
+1998,"UI/UX Designer","Design","{Pandas,Terraform,Figma,Blender}",Junior,1
+1999,"Full Stack Engineer","Marketing","{Pandas,Next.js,Blender,Vue.js,Tailwind CSS}",Senior,6
+2000,"UI/UX Designer","Product","{Docker,Blender,React,Figma,Photoshop,Sass}",Mid,2
+2001,"UI/UX Designer","Infrastructure","{Terraform,TensorFlow,Go,Next.js,TypeScript}",Mid,4
+2002,"Mobile Developer","Product","{Docker,Figma,TypeScript}",Senior,7
+2003,"Site Reliability Engineer","Design","{React,Node.js,Next.js,TypeScript,Kubernetes}",Senior,5
+2004,"Game Developer","Infrastructure","{Terraform,Framer,PostgreSQL,Docker,Figma,After Effects}",Mid,4
+2005,"UI/UX Designer","Infrastructure","{Affinity,Terraform,Data Bricks,Node.js}",Senior,5
+2006,"Tester","Design","{Vue.js,React,Photoshop}",Senior,6
+2007,"DevOps Specialist","Engineering","{Next.js,TensorFlow,Docker}",Lead,10
+2008,"AI & ML Engineer","Marketing","{Next.js,Kubernetes,After Effects,Photoshop}",Senior,5
+2009,"AI & ML Engineer","Data & AI","{TypeScript,Python,Photoshop,Terraform,GSAP,Blender}",Junior,0
+2010,"Frontend Engineer","Data & AI","{After Effects,Python,Go,Framer}",Lead,11
+2011,"UI/UX Designer","Design","{After Effects,Redis,Photoshop}",Lead,11
+2012,"DevOps Specialist","Developer","{Redis,GraphQL,Kubernetes,Pandas,Terraform}",Mid,4
+2013,"UI/UX Designer","Design","{Terraform,Kubernetes,GraphQL,React}",Lead,10
+2014,"AI & ML Engineer","Engineering","{GraphQL,Node.js,Terraform,Python,Kubernetes}",Junior,1
+2015,"Data Scientist","Infrastructure","{Tailwind CSS,Blender,Kubernetes,TensorFlow,GSAP}",Mid,3
+2016,"Mobile Developer","Developer","{Python,Terraform,React,Framer}",Senior,6
+2017,"Frontend Engineer","Infrastructure","{GraphQL,Affinity,Python,Vue.js}",Lead,8
+2018,"Site Reliability Engineer","Infrastructure","{Docker,Photoshop,Kubernetes,React,Go}",Junior,1
+2019,"Backend Developer","Product","{TypeScript,Photoshop,Figma,Sass,React}",Senior,7
+2020,"AI & ML Engineer","Design","{TensorFlow,Terraform,Node.js,Affinity}",Junior,1
+2021,"UI/UX Designer","Design","{Node.js,Next.js,Photoshop,Redis}",Lead,11
+2022,"UI/UX Designer","Data & AI","{AWS,Node.js,Go,PostgreSQL,Next.js,Figma}",Lead,10
+2023,"AI & ML Engineer","Infrastructure","{Pandas,Photoshop,Next.js,Docker,Figma,React}",Junior,0
+2024,"Full Stack Engineer","Developer","{GSAP,Vue.js,Photoshop,Next.js,React}",Mid,3
+2025,"Full Stack Engineer","Product","{Docker,Kubernetes,Affinity,Photoshop,Framer}",Senior,7
+2026,"Game Developer","Engineering","{Terraform,GSAP,React}",Mid,2
+2027,"Game Developer","Product","{Python,Sass,Framer,Node.js}",Senior,6
+2028,"Site Reliability Engineer","Data & AI","{TypeScript,Next.js,After Effects,Photoshop}",Junior,1
+2029,"Full Stack Engineer","Marketing","{Kubernetes,Docker,Terraform}",Junior,0
+2030,"Data Scientist","Data & AI","{Next.js,Docker,Terraform,React,Python,Affinity}",Lead,10
+2031,"Data Scientist","Product","{Python,Go,TensorFlow,AWS,Pandas}",Mid,2
+2032,"Site Reliability Engineer","Data & AI","{Pandas,Figma,Kubernetes,GSAP,Framer}",Junior,1
+2033,"AI & ML Engineer","Product","{Redis,Node.js,AWS,Kubernetes}",Lead,10
+2034,"Full Stack Engineer","Infrastructure","{Pandas,Tailwind CSS,PostgreSQL,Next.js,After Effects}",Mid,4
+2035,"Backend Developer","Design","{Framer,Python,Blender,Node.js,Docker,After Effects}",Lead,10
+2036,"Frontend Engineer","Engineering","{Python,Pandas,Framer,Affinity,Kubernetes,After Effects}",Senior,6
+2037,"Game Developer","Engineering","{Vue.js,Go,Kubernetes,Docker,React}",Junior,1
+2038,"Site Reliability Engineer","Design","{Terraform,Blender,React,GraphQL,Sass,Redis}",Lead,8
+2039,"UI/UX Designer","Engineering","{Photoshop,Framer,Python,AWS,Docker,TensorFlow}",Mid,2
+2040,"Game Developer","Developer","{Kubernetes,Pandas,Node.js}",Junior,0
+2041,"Tester","Product","{Kubernetes,Data Bricks,Python,Vue.js}",Senior,6
+2042,"Site Reliability Engineer","Engineering","{React,Node.js,Affinity}",Senior,6
+2043,"Data Scientist","Data & AI","{GraphQL,React,AWS}",Mid,3
+2044,"Backend Developer","Product","{React,Next.js,Affinity,Node.js,After Effects,AWS}",Senior,5
+2045,"Mobile Developer","Marketing","{After Effects,GSAP,Blender,Next.js,Docker,Figma}",Lead,11
+2046,"Backend Developer","Infrastructure","{React,TensorFlow,GSAP,Next.js,GraphQL,Figma}",Junior,1
+2047,"Frontend Engineer","Data & AI","{Kubernetes,Terraform,Photoshop,React,Vue.js}",Mid,3
+2048,"Backend Developer","Engineering","{GSAP,Sass,Go,TypeScript,Framer}",Junior,1
+2049,"Mobile Developer","Infrastructure","{Docker,Blender,Vue.js}",Mid,2
+2050,"DevOps Specialist","Marketing","{Data Bricks,Vue.js,Python}",Mid,2
+2051,"Game Developer","Data & AI","{Vue.js,Go,Kubernetes,React,Tailwind CSS}",Mid,3
+2052,"Full Stack Engineer","Design","{Figma,Next.js,Docker,Pandas,PostgreSQL,Data Bricks}",Mid,4
+2053,"AI & ML Engineer","Infrastructure","{Vue.js,Sass,Node.js,Blender,PostgreSQL}",Lead,10
+2054,"Full Stack Engineer","Developer","{Kubernetes,Pandas,Tailwind CSS}",Mid,4
+2055,"Full Stack Engineer","Product","{PostgreSQL,Vue.js,Terraform,Python,Photoshop}",Junior,1
+2056,"Frontend Engineer","Product","{Python,Next.js,Tailwind CSS,GSAP,Node.js}",Junior,1
+2057,"Frontend Engineer","Product","{Vue.js,Node.js,Next.js,Pandas,Data Bricks,GSAP}",Mid,4
+2058,"Backend Developer","Product","{Node.js,Vue.js,After Effects,Terraform,Redis}",Junior,0
+2059,"UI/UX Designer","Data & AI","{Pandas,React,Photoshop,Tailwind CSS,TypeScript,PostgreSQL}",Lead,10
+2060,"AI & ML Engineer","Infrastructure","{GSAP,Docker,Pandas,Data Bricks,Framer,Sass}",Lead,9
+2061,"Backend Developer","Marketing","{PostgreSQL,Next.js,Pandas,TypeScript,Docker}",Senior,7
+2062,"DevOps Specialist","Design","{React,Next.js,TensorFlow}",Mid,3
+2063,"AI & ML Engineer","Data & AI","{React,PostgreSQL,Go,After Effects}",Lead,10
+2064,"Full Stack Engineer","Marketing","{Vue.js,Next.js,Sass,Kubernetes,React}",Senior,6
+2065,"Backend Developer","Engineering","{After Effects,Affinity,TensorFlow}",Junior,0
+2066,"Mobile Developer","Product","{Pandas,Blender,Python}",Senior,5
+2067,"Full Stack Engineer","Design","{Docker,PostgreSQL,React}",Junior,1
+2068,"Data Scientist","Marketing","{React,Vue.js,Sass}",Lead,9
+2069,"AI & ML Engineer","Design","{Tailwind CSS,Node.js,Docker}",Junior,0
+2070,"Game Developer","Product","{Framer,Sass,TypeScript,Tailwind CSS,Figma,Affinity}",Senior,7
+2071,"Data Scientist","Engineering","{AWS,Go,Framer,Figma}",Senior,7
+2072,"UI/UX Designer","Data & AI","{Python,Docker,Node.js,Data Bricks,After Effects}",Lead,11
+2073,"DevOps Specialist","Data & AI","{React,TypeScript,Photoshop,PostgreSQL}",Senior,5
+2074,"Backend Developer","Marketing","{Go,Data Bricks,TypeScript,After Effects,Node.js,Pandas}",Mid,2
+2075,"Mobile Developer","Marketing","{Python,Vue.js,Docker,Node.js,Framer,Figma}",Senior,7
+2076,"UI/UX Designer","Infrastructure","{AWS,Data Bricks,Node.js,Python,Vue.js,Docker}",Junior,1
+2077,"Frontend Engineer","Data & AI","{Sass,AWS,React,Tailwind CSS,Next.js,Docker}",Senior,6
+2078,"UI/UX Designer","Data & AI","{Kubernetes,Node.js,AWS,Python,PostgreSQL}",Junior,0
+2079,"Data Scientist","Product","{Figma,Sass,Tailwind CSS}",Lead,11
+2080,"AI & ML Engineer","Engineering","{After Effects,TypeScript,Photoshop,Affinity,TensorFlow}",Lead,8
+2081,"Full Stack Engineer","Data & AI","{React,Tailwind CSS,Sass,Affinity,Data Bricks}",Mid,4
+2082,"Full Stack Engineer","Engineering","{Pandas,Photoshop,Python}",Mid,3
+2083,"Full Stack Engineer","Product","{GSAP,Go,Blender}",Junior,1
+2084,"Full Stack Engineer","Developer","{React,Figma,Sass,Affinity}",Junior,0
+2085,"Site Reliability Engineer","Marketing","{Python,Node.js,Blender}",Junior,0
+2086,"AI & ML Engineer","Design","{Go,React,Next.js,Affinity,After Effects,AWS}",Junior,1
+2087,"Tester","Marketing","{Docker,Data Bricks,Node.js,Affinity}",Mid,4
+2088,"Backend Developer","Infrastructure","{Next.js,Photoshop,Terraform,Python}",Lead,8
+2089,"Tester","Data & AI","{AWS,Framer,TensorFlow,Tailwind CSS,Python,Vue.js}",Mid,3
+2090,"Backend Developer","Marketing","{Docker,GSAP,After Effects,TypeScript,Python,Sass}",Senior,6
+2091,"UI/UX Designer","Engineering","{Pandas,Vue.js,Sass}",Junior,1
+2092,"Data Scientist","Design","{Terraform,Data Bricks,Vue.js,Blender,Tailwind CSS,GraphQL}",Mid,3
+2093,"Game Developer","Product","{Next.js,AWS,Python,TypeScript,GraphQL,Affinity}",Lead,8
+2094,"DevOps Specialist","Engineering","{TypeScript,Kubernetes,Pandas,PostgreSQL}",Junior,0
+2095,"Full Stack Engineer","Data & AI","{AWS,Pandas,Blender,Affinity,Photoshop}",Senior,5
+2096,"Mobile Developer","Developer","{Data Bricks,TensorFlow,GSAP,Docker}",Junior,1
+2097,"AI & ML Engineer","Marketing","{After Effects,Framer,TensorFlow,React}",Junior,1
+2098,"UI/UX Designer","Developer","{Next.js,Pandas,Go,After Effects,Terraform}",Lead,11
+2099,"Site Reliability Engineer","Design","{Python,Docker,Affinity}",Lead,11
+2100,"Site Reliability Engineer","Engineering","{After Effects,GraphQL,Node.js,Next.js,Kubernetes}",Senior,5
