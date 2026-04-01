@@ -4,7 +4,7 @@ import {
   createSelector,
   PayloadAction,
 } from "@reduxjs/toolkit";
-import { jds } from "@/generated/prisma";
+import { jds } from "@/generated";
 
 /**
  * 1. DEFINE ADAPTER FIRST
