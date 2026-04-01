@@ -4,6 +4,7 @@ import {
   createSelector,
   PayloadAction,
 } from "@reduxjs/toolkit";
+import { RootState } from "../store";
 import { jds } from "@/generated";
 
 /**
@@ -13,6 +14,10 @@ import { jds } from "@/generated";
 const jdsAdapter = createEntityAdapter<jds>({
   sortComparer: (a, b) => a.title.localeCompare(b.title),
 });
+
+export const jdsSelectors = jdsAdapter.getSelectors(
+  (state: RootState) => state.jds,
+);
 
 /**
  * 2. DEFINE STATE INTERFACE

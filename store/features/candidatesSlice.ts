@@ -3,7 +3,7 @@ import {
   createEntityAdapter,
   PayloadAction,
 } from "@reduxjs/toolkit";
-import { candidates } from "@/generated/prisma";
+import { candidates } from "@/generated";
 
 // 1. Initialize the adapter
 const candidatesAdapter = createEntityAdapter<candidates>();
@@ -47,3 +47,15 @@ export const selectSelectedCandidate = (state: CandidateFeatureState) =>
   state.candidates.selectedCandidateId
     ? state.candidates.entities[state.candidates.selectedCandidateId]
     : null;
+
+// --- SELECTORS ---
+
+// Create the adapter selectors
+export const candidateSelectors = candidatesAdapter.getSelectors(
+  (state: CandidateFeatureState) => state.candidates,
+);
+
+// Keep your individual exports if you use them elsewhere
+
+export const selectSelectedCandidateId = (state: CandidateFeatureState) =>
+  state.candidates.selectedCandidateId;
