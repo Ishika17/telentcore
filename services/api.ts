@@ -7,3 +7,9 @@ export const fetchAllData = async () => {
 
   return { jds, candidates, applications };
 };
+
+export const fetchInitialData = async () => {
+  const response = await fetch("/api/init");
+  if (!response.ok) throw new Error("Failed to fetch dashboard data");
+  return response.json(); // Returns { jds, candidates }
+};

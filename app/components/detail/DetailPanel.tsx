@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import { useAppSelector } from "@/store/hooks";
 import { useIsClient } from "@/app/hooks/useIsClient";
 import {
@@ -33,8 +34,9 @@ export default function DetailPanel() {
   const selectedJd = useAppSelector(selectSelectedJd);
   const history = useAppSelector(selectCandidateHistory);
 
-  const jdSkills = new Set(
-    selectedJd?.skills?.map((s) => s.toLowerCase()) || [],
+  const jdSkills = useMemo(
+    () => new Set(selectedJd?.skills?.map((s) => s.toLowerCase()) || []),
+    [selectedJd],
   );
 
   if (!isClient) return <div className="h-full bg-white" />;

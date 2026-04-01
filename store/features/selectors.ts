@@ -1,8 +1,10 @@
 import { createSelector } from "@reduxjs/toolkit";
+import { RootState } from "@/store/store";
 import { selectAllJDs, selectSelectedJd } from "./jdsSlice";
 import {
   selectAllCandidates,
   selectSelectedCandidate,
+  // We rename it here to avoid the naming conflict
   selectMatchedCandidates as selectMatchedCandidatesEngine,
 } from "./candidatesSlice";
 
@@ -19,18 +21,18 @@ interface CandidateWithHistory {
 
 /**
  * 2. SELECTOR: selectMatchedCandidates
- * Exporting the engine so the Talent Pool can display the 60% scores.
+ * This is now the ONLY declaration of this name in this file.
  */
 export const selectMatchedCandidates = selectMatchedCandidatesEngine;
 
 /**
  * 3. SELECTOR: selectSelectedCandidateWithScore
- * FIX: This is the missing member!
- * It finds the selected candidate inside the CALCULATED list so the
- * Detail Panel sees the 60% instead of 0%.
  */
 export const selectSelectedCandidateWithScore = createSelector(
-  [selectMatchedCandidates, (state) => state.candidates.selectedCandidateId],
+  [
+    selectMatchedCandidates,
+    (state: RootState) => state.candidates.selectedCandidateId,
+  ],
   (matchedList, selectedId) => {
     if (!selectedId) return null;
     return matchedList.find((c) => c.id === selectedId) || null;
@@ -39,21 +41,17 @@ export const selectSelectedCandidateWithScore = createSelector(
 
 /**
  * 4. SELECTOR: selectCandidateHistory
- * Fulfills "Clicking candidate shows applied JDs" (Bidirectional Mapping)
  */
 export const selectCandidateHistory = createSelector(
   [selectAllJDs, selectSelectedCandidate],
   (allJds, candidate) => {
     if (!candidate) return [];
-
     const c = candidate as unknown as CandidateWithHistory;
 
-    // Direct ID Match
     if (c.appliedJdIds && c.appliedJdIds.length > 0) {
       return allJds.filter((jd) => c.appliedJdIds?.includes(jd.id));
     }
 
-    // Fallback: Skill-based Relationship Mapping
     return allJds
       .filter((jd) => c.skills.some((skill) => jd.skills.includes(skill)))
       .slice(0, 3);
@@ -61,7 +59,28 @@ export const selectCandidateHistory = createSelector(
 );
 
 /**
- * 5. RE-EXPORTS
+ * 5. SELECTOR: selectFilteredCandidates
+ */
+export const selectFilteredCandidates = createSelector(
+  [selectMatchedCandidates, (state: RootState) => state.jds.filters],
+  (matchedCandidates, filters) => {
+    const { minExp, selectedSkills } = filters;
+
+    return matchedCandidates.filter((c) => {
+      const expMatch = c.total_exp >= minExp;
+      const skillMatch =
+        selectedSkills.length === 0 ||
+        selectedSkills.every((s: string) =>
+          c.skills.some((cs: string) => cs.toLowerCase() === s.toLowerCase()),
+        );
+
+      return expMatch && skillMatch;
+    });
+  },
+);
+
+/**
+ * 6. RE-EXPORTS
  */
 export {
   selectAllJDs,
