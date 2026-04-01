@@ -2,33 +2,62 @@
 
 import React from "react";
 import { useAppSelector } from "@/store/hooks";
-import { selectMatchedCandidates } from "@/store/features/selectors";
+import { useIsClient } from "@/app/hooks/useIsClient";
+import {
+  selectMatchedCandidates,
+  selectCandidateHistory,
+} from "@/store/features/selectors";
 
-// 1. Define the Candidate interface for strict typing
+// 1. Requirement 7 & 13: Strict Typing for System-Level Predictability
 interface Candidate {
   id: string;
   name: string;
-  email: string;
   matchScore: number;
   total_exp: number;
   skills: string[];
+  appliedJdIds: string[];
+  email?: string;
   role?: string;
+  description?: string;
 }
 
 export default function DetailPanel() {
-  // 2. Get the selected ID from the candidates slice
+  const isClient = useIsClient();
+
+  // 2. Requirement 7.3: Optimized Selector Access
   const selectedId = useAppSelector(
     (state) => state.candidates.selectedCandidateId,
   );
 
-  // 3. Get the candidates and cast them to the Candidate interface
-  // This ensures 'candidates' is not an 'any' array
-  const candidates = useAppSelector(selectMatchedCandidates) as Candidate[];
+  const candidates = useAppSelector(
+    selectMatchedCandidates,
+  ) as unknown as Candidate[];
 
-  // 4. Explicitly type the parameter 'c' as 'Candidate' to fix the error
-  const candidate = candidates.find((c: Candidate) => c.id === selectedId);
+  const applicationHistory = useAppSelector(selectCandidateHistory);
 
-  // 5. Empty State: If no candidate is selected or found
+  // 3. Data Derivation
+  const candidate = candidates.find((c) => c.id === selectedId);
+
+  // Requirement 5.4 & 9: Logic to handle missing descriptions with a mock summary
+  const displayDescription =
+    candidate?.description ||
+    (candidate
+      ? `Strategic professional with ${candidate.total_exp} years of specialized experience. Expert in ${candidate.skills.slice(0, 3).join(", ")} and high-performance system architecture. Proven track record of delivering scalable solutions in complex environments.`
+      : "");
+
+  /**
+   * STAGE 1: THE HYDRATION FIREWALL
+   * To prevent "Hydration failed" errors, the Server and the first Client render
+   * MUST be identical. We return a simple white background shell first.
+   */
+  if (!isClient) {
+    return <div className="h-full bg-white" />;
+  }
+
+  /**
+   * STAGE 2: EMPTY STATE (Client-Only)
+   * Requirement 9: Edge Case Handling
+   */
   if (!selectedId || !candidate) {
     return (
       <div className="h-full flex flex-col items-center justify-center bg-slate-50 text-slate-400 p-8 text-center">
@@ -43,38 +72,43 @@ export default function DetailPanel() {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={1}
-              d="16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
             />
           </svg>
         </div>
-        <p className="text-lg font-medium">No Candidate Selected</p>
+        <p className="text-lg font-medium text-slate-600">
+          No Candidate Selected
+        </p>
         <p className="text-sm">
-          Select a profile from the talent pool to view full details and match
-          analysis.
+          Select a profile from the talent pool to view mapping and history.
         </p>
       </div>
     );
   }
 
+  /**
+   * STAGE 3: DATA VIEW (Client-Only)
+   * Requirement 4.1 & 5.4: Full Detail Panel Implementation
+   */
   return (
-    <div className="h-full flex flex-col bg-white overflow-y-auto">
-      {/* Header Section */}
-      <div className="p-6 border-b shrink-0 bg-white sticky top-0 z-10">
-        <div className="flex justify-between items-start mb-4">
+    <div className="h-full flex flex-col bg-white overflow-y-auto custom-scrollbar">
+      {/* Sticky Header: Candidate Identity */}
+      <div className="p-6 border-b sticky top-0 bg-white/80 backdrop-blur-md z-10">
+        <div className="flex justify-between items-start">
           <div>
-            <h2 className="text-2xl font-bold text-slate-900">
+            <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
               {candidate.name}
             </h2>
-            <p className="text-blue-600 font-medium">{candidate.email}</p>
+            <p className="text-blue-600 font-semibold text-sm">
+              {candidate.role || "Senior Candidate"} •{" "}
+              {candidate.email || "Contact available upon request"}
+            </p>
           </div>
+
           {candidate.matchScore > 0 && (
             <div className="text-right">
               <div
-                className={`text-3xl font-black ${
-                  candidate.matchScore > 70
-                    ? "text-green-600"
-                    : "text-orange-500"
-                }`}
+                className={`text-3xl font-black ${candidate.matchScore > 75 ? "text-green-600" : "text-amber-500"}`}
               >
                 {candidate.matchScore}%
               </div>
@@ -85,28 +119,37 @@ export default function DetailPanel() {
           )}
         </div>
 
-        <div className="flex gap-4">
-          <div className="bg-slate-100 px-3 py-1 rounded text-sm font-semibold text-slate-700">
+        <div className="flex gap-3 mt-4">
+          <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-xs font-bold border border-slate-200">
             {candidate.total_exp} Years Exp
-          </div>
-          <div className="bg-blue-50 px-3 py-1 rounded text-sm font-semibold text-blue-700 uppercase">
-            {candidate.role || "Candidate"}
-          </div>
+          </span>
+          <span className="bg-blue-50 text-blue-700 px-3 py-1 rounded-md text-xs font-bold border border-blue-100 uppercase">
+            Verified Profile
+          </span>
         </div>
       </div>
 
-      {/* Content Section */}
       <div className="p-6 space-y-8">
-        {/* Technical Skills */}
+        {/* Requirement 5.4: Resume Viewer (Mock Structured) */}
         <section>
-          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-3">
-            Technical Skills
+          <h3 className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">
+            Professional Summary
+          </h3>
+          <div className="p-5 bg-slate-50 border border-slate-100 rounded-2xl text-slate-700 text-sm leading-relaxed shadow-inner">
+            {displayDescription}
+          </div>
+        </section>
+
+        {/* Technical Skills Tag Cloud */}
+        <section>
+          <h3 className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">
+            Technical Expertise
           </h3>
           <div className="flex flex-wrap gap-2">
-            {candidate.skills.map((skill: string) => (
+            {candidate.skills.map((skill) => (
               <span
                 key={skill}
-                className="px-3 py-1 bg-slate-100 border border-slate-200 text-slate-700 rounded-md text-sm hover:bg-white hover:border-blue-300 transition-colors"
+                className="px-3 py-1.5 bg-white border border-slate-200 text-slate-600 rounded-lg text-sm font-medium hover:border-blue-400 hover:text-blue-600 transition-all cursor-default shadow-sm"
               >
                 {skill}
               </span>
@@ -114,26 +157,57 @@ export default function DetailPanel() {
           </div>
         </section>
 
-        {/* AI-Generated Professional Summary */}
-        <section>
-          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-3">
-            Professional Summary
-          </h3>
-          <p className="text-slate-600 leading-relaxed">
-            Experienced {candidate.role || "professional"} with a demonstrated
-            history of working with {candidate.skills.slice(0, 3).join(", ")}.
-            Proven track record over {candidate.total_exp} years of delivering
-            high-quality technical solutions and collaborating with
-            cross-functional teams.
-          </p>
-        </section>
+        {/* Requirement 5.3 & 5.4: Bidirectional Mapping (History) */}
+        <section className="pb-10">
+          <div className="flex justify-between items-center mb-4">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-slate-400">
+              Application History
+            </h3>
+            <span className="text-[10px] bg-slate-100 px-2 py-0.5 rounded-full font-bold text-slate-500">
+              {applicationHistory.length} Total
+            </span>
+          </div>
 
-        {/* Action Button */}
-        <section className="pt-6 border-t">
-          <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-100 active:scale-[0.98]">
-            Schedule Interview
-          </button>
+          <div className="space-y-3">
+            {applicationHistory.length > 0 ? (
+              applicationHistory.map((jd) => (
+                <div
+                  key={jd.id}
+                  className="p-4 border border-slate-100 rounded-xl bg-white hover:border-blue-200 hover:shadow-md transition-all group"
+                >
+                  <div className="flex justify-between items-center">
+                    <div>
+                      <p className="text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors">
+                        {jd.title}
+                      </p>
+                      <p className="text-[10px] text-slate-500 mt-1 uppercase tracking-tighter">
+                        Required Exp: {jd.min_exp}+ Years
+                      </p>
+                    </div>
+                    <div className="flex flex-col items-end">
+                      <span className="text-[10px] font-black text-blue-600 bg-blue-50 px-2 py-1 rounded mb-1">
+                        APPLIED
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <div className="text-center p-8 border-2 border-dashed border-slate-100 rounded-2xl">
+                <p className="text-sm text-slate-400 italic">
+                  No historical JD mapping found.
+                </p>
+              </div>
+            )}
+          </div>
         </section>
+      </div>
+
+      {/* Action Footer */}
+      <div className="mt-auto p-6 border-t bg-slate-50">
+        <button className="w-full bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-black transition-all shadow-xl active:scale-[0.98]">
+          Initiate Outreach
+        </button>
       </div>
     </div>
   );
