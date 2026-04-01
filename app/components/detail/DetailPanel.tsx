@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { useAppSelector } from "@/store/hooks";
 import { useIsClient } from "@/app/hooks/useIsClient";
 import {
@@ -173,29 +172,26 @@ export default function DetailPanel() {
               applicationHistory.map((jd) => (
                 <div
                   key={jd.id}
-                  className="p-4 border border-slate-100 rounded-xl bg-white hover:border-blue-200 hover:shadow-md transition-all group"
+                  className="p-3 bg-slate-50 rounded-lg border border-slate-100 flex justify-between items-center hover:border-blue-200 transition-all"
                 >
-                  <div className="flex justify-between items-center">
-                    <div>
-                      <p className="text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors">
-                        {jd.title}
-                      </p>
-                      <p className="text-[10px] text-slate-500 mt-1 uppercase tracking-tighter">
-                        Required Exp: {jd.min_exp}+ Years
-                      </p>
-                    </div>
-                    <div className="flex flex-col items-end">
-                      <span className="text-[10px] font-black text-blue-600 bg-blue-50 px-2 py-1 rounded mb-1">
-                        APPLIED
-                      </span>
-                    </div>
+                  <div>
+                    <p className="text-sm font-bold text-slate-700">
+                      {jd.title}
+                    </p>
+                    {/* Added the dynamic-looking mock date from your snippet */}
+                    <p className="text-[10px] text-slate-400 uppercase font-bold mt-0.5">
+                      Applied 2 days ago
+                    </p>
                   </div>
+                  <span className="text-[10px] font-black px-2 py-1 bg-green-100 text-green-700 rounded-md">
+                    ACTIVE
+                  </span>
                 </div>
               ))
             ) : (
               <div className="text-center p-8 border-2 border-dashed border-slate-100 rounded-2xl">
-                <p className="text-sm text-slate-400 italic">
-                  No historical JD mapping found.
+                <p className="text-xs text-slate-400 italic">
+                  No previous applications found.
                 </p>
               </div>
             )}

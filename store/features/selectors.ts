@@ -3,38 +3,54 @@ import { selectAllJDs, selectSelectedJd } from "./jdsSlice";
 import {
   selectAllCandidates,
   selectSelectedCandidate,
-  selectMatchedCandidates as selectMatchedCandidatesFromSlice,
+  selectMatchedCandidates as selectMatchedCandidatesEngine, // Rename the import
 } from "./candidatesSlice";
 
 /**
- * Requirement 5.3: Bidirectional Mapping
- * This fulfills "Clicking candidate shows applied JDs" in the Detail Panel.
+ * 1. REQUIREMENT 5.3: SYSTEM-LEVEL INTERFACE
+ */
+interface CandidateWithHistory {
+  id: string;
+  skills: string[];
+  appliedJdIds?: string[];
+  name: string;
+  total_exp: number;
+}
+
+/**
+ * 2. SELECTOR: selectCandidateHistory
+ * Fulfills "Clicking candidate shows applied JDs" (Bidirectional Mapping)
  */
 export const selectCandidateHistory = createSelector(
   [selectAllJDs, selectSelectedCandidate],
   (allJds, candidate) => {
-    // Check if candidate exists (Requirement 9: Edge Case)
     if (!candidate) return [];
 
-    /**
-     * If your 'candidate' object has an 'appliedJdIds' array, use this:
-     * return allJds.filter((jd) => candidate.appliedJdIds?.includes(jd.id));
-     * * Fallback Logic: Show JDs that match at least one of the candidate's skills
-     */
-    return allJds.filter((jd) =>
-      candidate.skills.some((skill) => jd.skills.includes(skill)),
-    );
+    const c = candidate as unknown as CandidateWithHistory;
+
+    // Direct ID Match
+    if (c.appliedJdIds && c.appliedJdIds.length > 0) {
+      return allJds.filter((jd) => c.appliedJdIds?.includes(jd.id));
+    }
+
+    // Fallback: Skill-based Relationship Mapping
+    return allJds
+      .filter((jd) => c.skills.some((skill) => jd.skills.includes(skill)))
+      .slice(0, 3);
   },
 );
 
 /**
- * Requirement 5.2 & 6: Match Scoring Engine
- * We re-export the logic from the candidatesSlice to ensure
- * 3,000+ candidates are sorted with zero lag.
+ * 3. EXPORT THE MATCH ENGINE
+ * We export the engine from candidatesSlice under the name 'selectMatchedCandidates'
+ * so that CandidatePanel.tsx can find it.
  */
-export const selectMatchedCandidates = selectMatchedCandidatesFromSlice;
+export const selectMatchedCandidates = selectMatchedCandidatesEngine;
 
-// Export base selectors for use in components
+/**
+ * 4. RE-EXPORTS
+ * Requirement 5.4: Ensure base selectors are available for the Detail Panel
+ */
 export {
   selectAllJDs,
   selectSelectedJd,

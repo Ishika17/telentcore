@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { Virtuoso } from "react-virtuoso";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import {
