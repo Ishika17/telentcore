@@ -9,7 +9,6 @@ import { jds } from "@/generated";
 /**
  * 1. ADAPTER CONFIGURATION
  * Requirement 7: Normalized State Structure
- * Automatically handles 'id' and provides optimized CRUD operations.
  */
 const jdsAdapter = createEntityAdapter<jds>({
   sortComparer: (a, b) => a.title.localeCompare(b.title),
@@ -17,9 +16,9 @@ const jdsAdapter = createEntityAdapter<jds>({
 
 /**
  * 2. STATE INTERFACE
- * Expanded to track all filters and sorting states for 2,000+ JDs.
+ * FIX: Added 'export' so other slices can use this for MappingState
  */
-interface JdState {
+export interface JdState {
   selectedJdId: string | null;
   searchQuery: string;
   loading: boolean;
@@ -100,9 +99,9 @@ export default jdsSlice.reducer;
 
 /**
  * 4. SELECTORS (Feature State Pattern)
- * Using a local type to prevent circular dependencies with RootState.
+ * FIX: Added 'export' to the FeatureState type
  */
-type JdsFeatureState = {
+export type JdsFeatureState = {
   jds: ReturnType<typeof jdsSlice.reducer>;
 };
 
@@ -118,7 +117,6 @@ export const {
 
 /**
  * 5. ADVANCED FILTER SELECTOR
- * Requirement 5.1 & 6: Memoized filtering/sorting logic.
  */
 export const selectFilteredJDs = createSelector(
   [
@@ -130,19 +128,15 @@ export const selectFilteredJDs = createSelector(
   (allJds, query, filters, sortBy) => {
     const search = query.toLowerCase().trim();
 
-    // --- STEP 1: FILTERING ---
     const filteredResults = allJds.filter((jd) => {
-      // Search Logic (Title or Skills)
       const matchesSearch =
         !search ||
         jd.title.toLowerCase().includes(search) ||
         jd.skills.some((s) => s.toLowerCase().includes(search));
 
-      // Experience Logic
       const matchesExp =
         jd.min_exp >= filters.minExp && jd.min_exp <= filters.maxExp;
 
-      // Multi-select Skill Logic (AND intersection)
       const matchesSkills =
         filters.selectedSkills.length === 0 ||
         filters.selectedSkills.every((s) => jd.skills.includes(s));
@@ -150,29 +144,18 @@ export const selectFilteredJDs = createSelector(
       return matchesSearch && matchesExp && matchesSkills;
     });
 
-    // --- STEP 2: SORTING ---
     return [...filteredResults].sort((a, b) => {
-      if (sortBy === "title") {
-        return a.title.localeCompare(b.title);
-      }
-
+      if (sortBy === "title") return a.title.localeCompare(b.title);
       if (sortBy === "relevance") {
-        // Priority 1: Direct Search Matches in Title
         if (search) {
           const aBoost = a.title.toLowerCase().includes(search) ? 0 : 1;
           const bBoost = b.title.toLowerCase().includes(search) ? 0 : 1;
           if (aBoost !== bBoost) return aBoost - bBoost;
         }
-
-        // Priority 2: Skill richness (Jobs with more skills listed are more complex)
-        if (b.skills.length !== a.skills.length) {
+        if (b.skills.length !== a.skills.length)
           return b.skills.length - a.skills.length;
-        }
-
-        // Priority 3: Seniority (Experience fallback)
         return b.min_exp - a.min_exp;
       }
-
       return 0;
     });
   },

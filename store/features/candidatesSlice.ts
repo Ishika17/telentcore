@@ -3,37 +3,12 @@ import {
   createEntityAdapter,
   createSelector,
   PayloadAction,
-  EntityState,
 } from "@reduxjs/toolkit";
-import { jds } from "@/generated";
-import { selectSelectedJd } from "./jdsSlice";
+import { selectSelectedJd, JdsFeatureState } from "./jdsSlice";
 
 /**
- * 1. DEFINE RIGID TYPES
- * This interface perfectly matches the 'JdsFeatureState' defined in jdsSlice.
+ * 1. INTERFACES & TYPES
  */
-interface JdsFeatureState {
-  jds: EntityState<jds, string> & {
-    selectedJdId: string | null;
-    searchQuery: string;
-    loading: boolean;
-    filters: {
-      minExp: number;
-      maxExp: number;
-      selectedSkills: string[];
-      status: "all" | "open" | "closed";
-    };
-    sortBy: "date" | "relevance" | "title";
-  };
-}
-
-interface CandidateState {
-  selectedCandidateId: string | null;
-  loading: boolean;
-}
-
-// store/features/candidatesSlice.ts
-
 export interface Candidate {
   id: string;
   name: string;
@@ -43,6 +18,7 @@ export interface Candidate {
   role?: string;
   email?: string;
   description?: string;
+  status?: string;
 }
 
 export interface MatchedCandidate extends Candidate {
@@ -50,21 +26,33 @@ export interface MatchedCandidate extends Candidate {
   matchingSkills: string[];
 }
 
+interface CandidatesState {
+  selectedCandidateId: string | null;
+  loading: boolean;
+  error: string | null;
+}
+
 /**
- * 2. ADAPTER & SLICE
+ * 2. ADAPTER CONFIGURATION
  */
 const candidatesAdapter = createEntityAdapter<Candidate>();
 
+/**
+ * 3. THE SLICE
+ */
 const candidatesSlice = createSlice({
   name: "candidates",
-  initialState: candidatesAdapter.getInitialState<CandidateState>({
+  initialState: candidatesAdapter.getInitialState<CandidatesState>({
     selectedCandidateId: null,
     loading: false,
+    error: null,
   }),
   reducers: {
-    // CHANGE: Update action type to 'Candidate[]'
     setCandidates: (state, action: PayloadAction<Candidate[]>) => {
-      candidatesAdapter.setAll(state, action.payload);
+      const unique = Array.from(
+        new Map(action.payload.map((item) => [item.id, item])).values(),
+      );
+      candidatesAdapter.setAll(state, unique);
     },
     selectCandidate: (state, action: PayloadAction<string | null>) => {
       state.selectedCandidateId = action.payload;
@@ -72,32 +60,57 @@ const candidatesSlice = createSlice({
     setCandidatesLoading: (state, action: PayloadAction<boolean>) => {
       state.loading = action.payload;
     },
+    updateCandidateStatus: (
+      state,
+      action: PayloadAction<{ id: string; status: string }>,
+    ) => {
+      const { id, status } = action.payload;
+      candidatesAdapter.updateOne(state, {
+        id,
+        changes: { status },
+      });
+    },
   },
 });
 
-export const { setCandidates, selectCandidate, setCandidatesLoading } =
-  candidatesSlice.actions;
+export const {
+  setCandidates,
+  selectCandidate,
+  setCandidatesLoading,
+  updateCandidateStatus,
+} = candidatesSlice.actions;
 
 export default candidatesSlice.reducer;
 
 /**
- * 3. SELECTORS (Requirement 5.2: Intelligent Mapping)
+ * 4. FEATURE STATE TYPES
  */
-type CandidatesFeatureState = {
+export type CandidatesFeatureState = {
   candidates: ReturnType<typeof candidatesSlice.reducer>;
 };
 
-// This represents the combined state needed for cross-slice selection
+/**
+ * Combine Candidates + JDs state correctly
+ */
 type MappingState = CandidatesFeatureState & JdsFeatureState;
 
-export const { selectAll: selectAllCandidates } =
-  candidatesAdapter.getSelectors(
-    (state: CandidatesFeatureState) => state.candidates,
-  );
+/**
+ * 5. SELECTORS
+ */
+export const {
+  selectAll: selectAllCandidates,
+  selectEntities: selectCandidateEntities,
+} = candidatesAdapter.getSelectors(
+  (state: CandidatesFeatureState) => state.candidates,
+);
+
+export const selectSelectedCandidate = (state: CandidatesFeatureState) => {
+  const { selectedCandidateId, entities } = state.candidates;
+  return selectedCandidateId ? entities[selectedCandidateId] : null;
+};
 
 /**
- * THE MATCH ENGINE
- * No more 'any' - we pass the MappingState which satisfies both slices.
+ * 6. MATCH ENGINE
  */
 export const selectMatchedCandidates = createSelector(
   [selectAllCandidates, (state: MappingState) => selectSelectedJd(state)],
@@ -110,7 +123,9 @@ export const selectMatchedCandidates = createSelector(
       }));
     }
 
-    const jdSkills = new Set(selectedJd.skills.map((s) => s.toLowerCase()));
+    const jdSkills = new Set(
+      selectedJd.skills.map((s: string) => s.toLowerCase()),
+    );
     const jdMinExp = selectedJd.min_exp;
 
     const mapped = allCandidates.map((candidate) => {
@@ -123,10 +138,8 @@ export const selectMatchedCandidates = createSelector(
           ? matchingSkills.length / selectedJd.skills.length
           : 0;
 
-      // Skill match is 80% of the total score
       let score = skillRatio * 80;
 
-      // Experience match is 20% of the total score
       if (candidate.total_exp >= jdMinExp) {
         score += 20;
       } else if (candidate.total_exp >= jdMinExp - 2) {
@@ -140,16 +153,6 @@ export const selectMatchedCandidates = createSelector(
       };
     });
 
-    // Requirement 5.2: Sort by Match Score (Highest first)
     return [...mapped].sort((a, b) => b.matchScore - a.matchScore);
   },
 );
-
-export const selectSelectedCandidate = (state: CandidatesFeatureState) => {
-  const { selectedCandidateId, entities } = state.candidates;
-  return selectedCandidateId ? entities[selectedCandidateId] : null;
-};
-
-// Also ensure you have the ID selector if your selectors.ts needs it:
-export const selectSelectedCandidateId = (state: CandidatesFeatureState) =>
-  state.candidates.selectedCandidateId;

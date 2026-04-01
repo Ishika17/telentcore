@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { useIsClient } from "@/app/hooks/useIsClient";
 import {
@@ -9,18 +9,24 @@ import {
   setJdSearchQuery,
   setExpRange,
   setSortBy,
-  toggleSkillFilter, // Import this
+  toggleSkillFilter,
 } from "@/store/features/jdsSlice";
 
 const JDPanel = () => {
   const isClient = useIsClient();
   const dispatch = useAppDispatch();
+
+  // Requirement 7: Accessing Normalized State
   const { filters, sortBy, selectedJdId } = useAppSelector(
     (state) => state.jds,
   );
   const filteredJds = useAppSelector(selectFilteredJDs);
   const [searchTerm, setSearchTerm] = useState("");
 
+  /**
+   * Requirement 6: Performance Optimization (Debounce)
+   * Prevents O(N) filtering on every single keystroke.
+   */
   useEffect(() => {
     const delayDebounceFn = setTimeout(() => {
       dispatch(setJdSearchQuery(searchTerm));
@@ -28,47 +34,51 @@ const JDPanel = () => {
     return () => clearTimeout(delayDebounceFn);
   }, [searchTerm, dispatch]);
 
+  if (!isClient) return <div className="h-full bg-slate-50 animate-pulse" />;
+
   return (
-    <div className="flex flex-col h-full bg-slate-50 border-r overflow-hidden">
-      {/* HEADER SECTION */}
-      <div className="shrink-0 bg-white border-b shadow-sm z-10">
-        <div className="p-4 pb-2">
-          <h2 className="font-black text-[11px] uppercase tracking-[0.2em] text-slate-400 mb-4">
+    <div className="flex flex-col h-full bg-slate-50 overflow-hidden">
+      {/* 1. HEADER SECTION: Search & Filters */}
+      <div className="shrink-0 bg-white border-b shadow-sm z-10 p-4 space-y-4">
+        <div>
+          <h2 className="font-black text-[10px] uppercase tracking-[0.2em] text-slate-400 mb-3">
             Job Descriptions
           </h2>
-          <input
-            type="text"
-            placeholder="Search jobs..."
-            className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition-all bg-slate-50 focus:bg-white"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search 2,000+ jobs..."
+              className="w-full pl-9 pr-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition-all bg-slate-50 focus:bg-white"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            <span className="absolute left-3 top-3 text-slate-400 text-xs">
+              🔍
+            </span>
+          </div>
         </div>
 
-        {/* ADVANCED FILTERS */}
-        <div className="px-4 pb-4 space-y-4">
-          {/* Active Skill Filters (Requirement 5.1) */}
-          {filters.selectedSkills.length > 0 && (
-            <div className="flex flex-wrap gap-1.5 py-1">
-              {filters.selectedSkills.map((skill) => (
-                <button
-                  key={skill}
-                  onClick={() => dispatch(toggleSkillFilter(skill))}
-                  className="text-[9px] font-bold bg-blue-600 text-white px-2 py-1 rounded-md flex items-center gap-1 hover:bg-blue-700 transition-colors"
-                >
-                  {skill} <span>×</span>
-                </button>
-              ))}
-            </div>
-          )}
+        {/* ACTIVE FILTERS CHIPS */}
+        {filters.selectedSkills.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 pt-1 border-t border-slate-50 mt-2">
+            {filters.selectedSkills.map((skill) => (
+              <button
+                key={skill}
+                onClick={() => dispatch(toggleSkillFilter(skill))}
+                className="text-[9px] font-bold bg-blue-600 text-white px-2 py-1 rounded-md flex items-center gap-1 hover:bg-blue-700 transition-colors shadow-sm"
+              >
+                {skill} <span className="opacity-60">×</span>
+              </button>
+            ))}
+          </div>
+        )}
 
-          {/* Experience Range Slider */}
+        {/* EXPERIENCE SLIDER & SORTING */}
+        <div className="grid grid-cols-2 gap-4 items-end">
           <div className="space-y-2">
-            <div className="flex justify-between items-center text-[10px] font-bold uppercase tracking-widest text-slate-400">
-              <label>Min Experience</label>
-              <span className="text-blue-600 bg-blue-50 px-2 py-1 rounded-md">
-                {filters.minExp}+ Years
-              </span>
+            <div className="flex justify-between items-center text-[9px] font-black uppercase tracking-widest text-slate-400">
+              <label>Min Exp</label>
+              <span className="text-blue-600 font-bold">{filters.minExp}y</span>
             </div>
             <input
               type="range"
@@ -78,74 +88,94 @@ const JDPanel = () => {
               onChange={(e) =>
                 dispatch(setExpRange({ min: parseInt(e.target.value) }))
               }
-              className="w-full h-1.5 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-blue-600"
+              className="w-full h-1 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-blue-600"
             />
           </div>
 
-          {/* Sort Buttons */}
-          <div className="flex items-center gap-1.5 bg-slate-100 p-1 rounded-lg w-fit">
-            <button
-              onClick={() => dispatch(setSortBy("relevance"))}
-              className={`text-[9px] font-black px-3 py-1.5 rounded-md transition-all ${sortBy === "relevance" ? "bg-white text-slate-900 shadow-sm" : "text-slate-500"}`}
-            >
-              RELEVANCE
-            </button>
-            <button
-              onClick={() => dispatch(setSortBy("title"))}
-              className={`text-[9px] font-black px-3 py-1.5 rounded-md transition-all ${sortBy === "title" ? "bg-white text-slate-900 shadow-sm" : "text-slate-500"}`}
-            >
-              A-Z
-            </button>
+          <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-lg self-center">
+            {(["relevance", "title"] as const).map((mode) => (
+              <button
+                key={mode}
+                onClick={() => dispatch(setSortBy(mode))}
+                className={`flex-1 text-[8px] font-black px-2 py-1.5 rounded-md transition-all uppercase tracking-tighter ${
+                  sortBy === mode
+                    ? "bg-white text-blue-600 shadow-sm"
+                    : "text-slate-500"
+                }`}
+              >
+                {mode === "relevance" ? "Best Match" : "A-Z"}
+              </button>
+            ))}
           </div>
         </div>
       </div>
 
-      {/* LIST SECTION */}
+      {/* 2. LIST SECTION: Results */}
       <div className="flex-1 overflow-y-auto p-3 custom-scrollbar space-y-2">
-        {isClient &&
+        {filteredJds.length > 0 ? (
           filteredJds.map((jd) => {
             const isSelected = selectedJdId === jd.id;
             return (
               <div
                 key={jd.id}
                 onClick={() => dispatch(selectJd(jd.id))}
-                className={`p-4 rounded-xl cursor-pointer transition-all border ${
+                className={`group p-4 rounded-xl cursor-pointer transition-all border ${
                   isSelected
-                    ? "bg-white border-blue-500 shadow-lg ring-1 ring-blue-500"
-                    : "bg-transparent border-transparent hover:bg-white hover:border-slate-200"
+                    ? "bg-white border-blue-500 shadow-md ring-1 ring-blue-500/10"
+                    : "bg-white/40 border-slate-100 hover:bg-white hover:border-slate-200 hover:shadow-sm"
                 }`}
               >
-                <h3
-                  className={`font-bold text-sm mb-1 ${isSelected ? "text-blue-700" : "text-slate-800"}`}
-                >
-                  {jd.title}
-                </h3>
-                <p className="text-[10px] font-bold text-slate-400 uppercase mb-3">
-                  Exp: {jd.min_exp} yrs
-                </p>
+                <div className="flex justify-between items-start mb-1">
+                  <h3
+                    className={`font-bold text-sm leading-tight ${isSelected ? "text-blue-700" : "text-slate-800"}`}
+                  >
+                    {jd.title}
+                  </h3>
+                  <span
+                    className={`text-[9px] font-black px-1.5 py-0.5 rounded ${isSelected ? "bg-blue-50 text-blue-600" : "bg-slate-100 text-slate-400"}`}
+                  >
+                    {jd.min_exp}+Y
+                  </span>
+                </div>
 
-                {/* Requirement 5.1: Multi-select Skills Tag Cloud */}
-                <div className="flex flex-wrap gap-1.5">
-                  {jd.skills.slice(0, 4).map((skill) => (
-                    <span
-                      key={skill}
-                      onClick={(e) => {
-                        e.stopPropagation(); // Prevent selecting the JD when clicking a skill
-                        dispatch(toggleSkillFilter(skill));
-                      }}
-                      className={`text-[9px] px-2 py-1 rounded font-bold transition-colors border ${
-                        filters.selectedSkills.includes(skill)
-                          ? "bg-blue-600 border-blue-600 text-white"
-                          : "bg-slate-50 border-slate-200 text-slate-500 hover:border-blue-400 hover:text-blue-600"
-                      }`}
-                    >
-                      {skill}
+                {/* Requirement 5.1: Multi-select Interaction */}
+                <div className="flex flex-wrap gap-1 mt-3">
+                  {jd.skills.slice(0, 4).map((skill) => {
+                    const isFiltered = filters.selectedSkills.includes(skill);
+                    return (
+                      <span
+                        key={skill}
+                        onClick={(e) => {
+                          e.stopPropagation(); // CRITICAL: Stop parent click (JD selection)
+                          dispatch(toggleSkillFilter(skill));
+                        }}
+                        className={`text-[8px] px-2 py-0.5 rounded-full font-bold transition-all border ${
+                          isFiltered
+                            ? "bg-blue-600 border-blue-600 text-white"
+                            : "bg-slate-50 border-slate-100 text-slate-400 hover:border-blue-400 hover:text-blue-600"
+                        }`}
+                      >
+                        {skill}
+                      </span>
+                    );
+                  })}
+                  {jd.skills.length > 4 && (
+                    <span className="text-[8px] text-slate-300 font-bold self-center ml-1">
+                      +{jd.skills.length - 4}
                     </span>
-                  ))}
+                  )}
                 </div>
               </div>
             );
-          })}
+          })
+        ) : (
+          <div className="py-20 text-center space-y-2">
+            <p className="text-xl">🔎</p>
+            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-300">
+              No jobs matching criteria
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
