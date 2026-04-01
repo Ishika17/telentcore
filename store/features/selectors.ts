@@ -3,7 +3,7 @@ import { selectAllJDs, selectSelectedJd } from "./jdsSlice";
 import {
   selectAllCandidates,
   selectSelectedCandidate,
-  selectMatchedCandidates as selectMatchedCandidatesEngine, // Rename the import
+  selectMatchedCandidates as selectMatchedCandidatesEngine,
 } from "./candidatesSlice";
 
 /**
@@ -18,7 +18,27 @@ interface CandidateWithHistory {
 }
 
 /**
- * 2. SELECTOR: selectCandidateHistory
+ * 2. SELECTOR: selectMatchedCandidates
+ * Exporting the engine so the Talent Pool can display the 60% scores.
+ */
+export const selectMatchedCandidates = selectMatchedCandidatesEngine;
+
+/**
+ * 3. SELECTOR: selectSelectedCandidateWithScore
+ * FIX: This is the missing member!
+ * It finds the selected candidate inside the CALCULATED list so the
+ * Detail Panel sees the 60% instead of 0%.
+ */
+export const selectSelectedCandidateWithScore = createSelector(
+  [selectMatchedCandidates, (state) => state.candidates.selectedCandidateId],
+  (matchedList, selectedId) => {
+    if (!selectedId) return null;
+    return matchedList.find((c) => c.id === selectedId) || null;
+  },
+);
+
+/**
+ * 4. SELECTOR: selectCandidateHistory
  * Fulfills "Clicking candidate shows applied JDs" (Bidirectional Mapping)
  */
 export const selectCandidateHistory = createSelector(
@@ -41,15 +61,7 @@ export const selectCandidateHistory = createSelector(
 );
 
 /**
- * 3. EXPORT THE MATCH ENGINE
- * We export the engine from candidatesSlice under the name 'selectMatchedCandidates'
- * so that CandidatePanel.tsx can find it.
- */
-export const selectMatchedCandidates = selectMatchedCandidatesEngine;
-
-/**
- * 4. RE-EXPORTS
- * Requirement 5.4: Ensure base selectors are available for the Detail Panel
+ * 5. RE-EXPORTS
  */
 export {
   selectAllJDs,

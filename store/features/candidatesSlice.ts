@@ -5,7 +5,7 @@ import {
   PayloadAction,
   EntityState,
 } from "@reduxjs/toolkit";
-import { candidates, jds } from "@/generated";
+import { jds } from "@/generated";
 import { selectSelectedJd } from "./jdsSlice";
 
 /**
@@ -32,7 +32,20 @@ interface CandidateState {
   loading: boolean;
 }
 
-export interface MatchedCandidate extends candidates {
+// store/features/candidatesSlice.ts
+
+export interface Candidate {
+  id: string;
+  name: string;
+  skills: string[];
+  total_exp: number;
+  appliedJdIds: string[];
+  role?: string;
+  email?: string;
+  description?: string;
+}
+
+export interface MatchedCandidate extends Candidate {
   matchScore: number;
   matchingSkills: string[];
 }
@@ -40,7 +53,7 @@ export interface MatchedCandidate extends candidates {
 /**
  * 2. ADAPTER & SLICE
  */
-const candidatesAdapter = createEntityAdapter<candidates>();
+const candidatesAdapter = createEntityAdapter<Candidate>();
 
 const candidatesSlice = createSlice({
   name: "candidates",
@@ -49,7 +62,8 @@ const candidatesSlice = createSlice({
     loading: false,
   }),
   reducers: {
-    setCandidates: (state, action: PayloadAction<candidates[]>) => {
+    // CHANGE: Update action type to 'Candidate[]'
+    setCandidates: (state, action: PayloadAction<Candidate[]>) => {
       candidatesAdapter.setAll(state, action.payload);
     },
     selectCandidate: (state, action: PayloadAction<string | null>) => {
