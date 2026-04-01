@@ -1,61 +1,141 @@
 import {
   createSlice,
   createEntityAdapter,
+  createSelector,
   PayloadAction,
+  EntityState,
 } from "@reduxjs/toolkit";
-import { candidates } from "@/generated";
+import { candidates, jds } from "@/generated";
+import { selectSelectedJd } from "./jdsSlice";
 
-// 1. Initialize the adapter
+/**
+ * 1. DEFINE RIGID TYPES
+ * This interface perfectly matches the 'JdsFeatureState' defined in jdsSlice.
+ */
+interface JdsFeatureState {
+  jds: EntityState<jds, string> & {
+    selectedJdId: string | null;
+    searchQuery: string;
+    loading: boolean;
+    filters: {
+      minExp: number;
+      maxExp: number;
+      selectedSkills: string[];
+      status: "all" | "open" | "closed";
+    };
+    sortBy: "date" | "relevance" | "title";
+  };
+}
+
+interface CandidateState {
+  selectedCandidateId: string | null;
+  loading: boolean;
+}
+
+export interface MatchedCandidate extends candidates {
+  matchScore: number;
+  matchingSkills: string[];
+}
+
+/**
+ * 2. ADAPTER & SLICE
+ */
 const candidatesAdapter = createEntityAdapter<candidates>();
 
-// 2. Create the slice
 const candidatesSlice = createSlice({
   name: "candidates",
-  initialState: candidatesAdapter.getInitialState({
-    selectedCandidateId: null as string | null,
+  initialState: candidatesAdapter.getInitialState<CandidateState>({
+    selectedCandidateId: null,
+    loading: false,
   }),
   reducers: {
-    // This handles the 3,000 candidates coming from the API
-    setCandidates: candidatesAdapter.setAll,
-
-    // Requirement 4.3: Action to select a candidate for the detail view
+    setCandidates: (state, action: PayloadAction<candidates[]>) => {
+      candidatesAdapter.setAll(state, action.payload);
+    },
     selectCandidate: (state, action: PayloadAction<string | null>) => {
       state.selectedCandidateId = action.payload;
+    },
+    setCandidatesLoading: (state, action: PayloadAction<boolean>) => {
+      state.loading = action.payload;
     },
   },
 });
 
-// --- CRITICAL: EXPORT THE ACTIONS ---
-export const { setCandidates, selectCandidate } = candidatesSlice.actions;
+export const { setCandidates, selectCandidate, setCandidatesLoading } =
+  candidatesSlice.actions;
 
 export default candidatesSlice.reducer;
 
-// --- SELECTORS ---
-// Local state type to avoid circular dependency
-type CandidateFeatureState = {
+/**
+ * 3. SELECTORS (Requirement 5.2: Intelligent Mapping)
+ */
+type CandidatesFeatureState = {
   candidates: ReturnType<typeof candidatesSlice.reducer>;
 };
 
-export const {
-  selectAll: selectAllCandidates,
-  selectById: selectCandidateById,
-} = candidatesAdapter.getSelectors(
-  (state: CandidateFeatureState) => state.candidates,
+// This represents the combined state needed for cross-slice selection
+type MappingState = CandidatesFeatureState & JdsFeatureState;
+
+export const { selectAll: selectAllCandidates } =
+  candidatesAdapter.getSelectors(
+    (state: CandidatesFeatureState) => state.candidates,
+  );
+
+/**
+ * THE MATCH ENGINE
+ * No more 'any' - we pass the MappingState which satisfies both slices.
+ */
+export const selectMatchedCandidates = createSelector(
+  [selectAllCandidates, (state: MappingState) => selectSelectedJd(state)],
+  (allCandidates, selectedJd): MatchedCandidate[] => {
+    if (!selectedJd) {
+      return allCandidates.map((c) => ({
+        ...c,
+        matchScore: 0,
+        matchingSkills: [],
+      }));
+    }
+
+    const jdSkills = new Set(selectedJd.skills.map((s) => s.toLowerCase()));
+    const jdMinExp = selectedJd.min_exp;
+
+    const mapped = allCandidates.map((candidate) => {
+      const matchingSkills = candidate.skills.filter((s) =>
+        jdSkills.has(s.toLowerCase()),
+      );
+
+      const skillRatio =
+        selectedJd.skills.length > 0
+          ? matchingSkills.length / selectedJd.skills.length
+          : 0;
+
+      // Skill match is 80% of the total score
+      let score = skillRatio * 80;
+
+      // Experience match is 20% of the total score
+      if (candidate.total_exp >= jdMinExp) {
+        score += 20;
+      } else if (candidate.total_exp >= jdMinExp - 2) {
+        score += 10;
+      }
+
+      return {
+        ...candidate,
+        matchScore: Math.round(score),
+        matchingSkills,
+      };
+    });
+
+    // Requirement 5.2: Sort by Match Score (Highest first)
+    return [...mapped].sort((a, b) => b.matchScore - a.matchScore);
+  },
 );
 
-export const selectSelectedCandidate = (state: CandidateFeatureState) =>
-  state.candidates.selectedCandidateId
-    ? state.candidates.entities[state.candidates.selectedCandidateId]
-    : null;
+export const selectSelectedCandidate = (state: CandidatesFeatureState) => {
+  const { selectedCandidateId, entities } = state.candidates;
+  return selectedCandidateId ? entities[selectedCandidateId] : null;
+};
 
-// --- SELECTORS ---
-
-// Create the adapter selectors
-export const candidateSelectors = candidatesAdapter.getSelectors(
-  (state: CandidateFeatureState) => state.candidates,
-);
-
-// Keep your individual exports if you use them elsewhere
-
-export const selectSelectedCandidateId = (state: CandidateFeatureState) =>
+// Also ensure you have the ID selector if your selectors.ts needs it:
+export const selectSelectedCandidateId = (state: CandidatesFeatureState) =>
   state.candidates.selectedCandidateId;

@@ -2,110 +2,122 @@
 
 import React from "react";
 import { Virtuoso } from "react-virtuoso";
-import { useAppSelector, useAppDispatch } from "@/store/hooks";
-import { useIsClient } from "@/app/hooks/useIsClient"; // 1. Import your new hook
-import { selectCandidate } from "@/store/features/candidatesSlice";
-import { selectMatchedCandidates } from "@/store/features/selectors";
-
-interface Candidate {
-  id: string;
-  name: string;
-  matchScore: number;
-  total_exp: number;
-  skills: string[];
-}
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import {
+  selectMatchedCandidates,
+  selectCandidate,
+} from "@/store/features/candidatesSlice";
+import { useIsClient } from "@/app/hooks/useIsClient";
 
 const CandidatePanel = () => {
-  const isClient = useIsClient(); // 2. Call the hook
+  const isClient = useIsClient();
   const dispatch = useAppDispatch();
-  const scoredCandidates = useAppSelector<Candidate[]>(selectMatchedCandidates);
+
+  // Requirement 5.2: The "Intelligent Mapping" list
+  const candidates = useAppSelector(selectMatchedCandidates);
   const selectedId = useAppSelector(
     (state) => state.candidates.selectedCandidateId,
   );
 
+  if (!isClient) return <div className="h-full bg-slate-50 animate-pulse" />;
+
   return (
-    <div className="h-full flex flex-col border-r bg-white overflow-hidden">
-      {/* Header */}
-      <div className="p-4 bg-white font-bold border-b flex justify-between items-center shrink-0">
-        <span className="text-sm uppercase tracking-wider text-slate-500">
-          Talent Pool
-        </span>
-        <span className="bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full text-[10px] font-bold">
-          {scoredCandidates?.length || 0} Candidates
-        </span>
+    <div className="flex flex-col h-full bg-slate-50 border-r overflow-hidden">
+      {/* HEADER SECTION */}
+      <div className="p-4 bg-white border-b shrink-0 flex justify-between items-center shadow-sm z-10">
+        <div>
+          <h2 className="font-black text-[11px] uppercase tracking-[0.2em] text-slate-400">
+            Talent Pool
+          </h2>
+          <p className="text-[10px] font-bold text-blue-500 uppercase tracking-tight">
+            Ranked by Match Score
+          </p>
+        </div>
+        <div className="text-right">
+          <span className="text-[10px] font-black text-slate-500 bg-slate-100 px-2 py-1 rounded-md">
+            {candidates.length.toLocaleString()} PROFILES
+          </span>
+        </div>
       </div>
 
-      {/* The List Container */}
-      <div className="flex-1 min-h-0 bg-slate-50 custom-scrollbar">
-        {/* 3. Wrap the Virtuoso list in the isClient check */}
-        {isClient && scoredCandidates && scoredCandidates.length > 0 ? (
-          <Virtuoso
-            style={{ height: "100%" }}
-            data={scoredCandidates}
-            totalCount={scoredCandidates.length}
-            itemContent={(index, person) => {
-              const isSelected = selectedId === person.id;
+      {/* VIRTUALIZED LIST SECTION (Requirement 6) */}
+      <div className="flex-1 min-h-0">
+        <Virtuoso
+          style={{ height: "100%" }}
+          data={candidates}
+          // Requirement 6: Smooth scrolling for 3,000+ items
+          increaseViewportBy={200}
+          itemContent={(index, candidate) => {
+            const isSelected = selectedId === candidate.id;
 
-              return (
-                <div className="px-2 py-1">
-                  <div
-                    onClick={() => dispatch(selectCandidate(person.id))}
-                    className={`flex flex-col p-4 rounded-lg cursor-pointer transition-all duration-200 border ${
-                      isSelected
-                        ? "bg-blue-50 border-blue-500 shadow-sm ring-1 ring-blue-500"
-                        : "hover:bg-white hover:shadow-md border-transparent bg-transparent"
-                    }`}
-                  >
-                    <div className="flex justify-between items-start">
-                      <span
-                        className={`font-bold text-sm ${isSelected ? "text-blue-700" : "text-slate-800"}`}
+            return (
+              <div className="px-3 pt-2 pb-1">
+                <div
+                  onClick={() => dispatch(selectCandidate(candidate.id))}
+                  className={`p-4 rounded-xl border cursor-pointer transition-all duration-200 group ${
+                    isSelected
+                      ? "bg-white border-blue-500 shadow-lg ring-1 ring-blue-500"
+                      : "bg-white border-slate-100 hover:border-slate-300 hover:shadow-md"
+                  }`}
+                >
+                  <div className="flex justify-between items-start">
+                    <div className="space-y-0.5">
+                      <h3
+                        className={`font-bold text-sm leading-none ${isSelected ? "text-blue-700" : "text-slate-800"}`}
                       >
-                        {person.name}
-                      </span>
-                      {person.matchScore > 0 && (
-                        <span
-                          className={`text-[10px] font-bold px-2 py-0.5 rounded shrink-0 ${
-                            person.matchScore > 70
-                              ? "bg-green-100 text-green-700"
-                              : "bg-orange-100 text-orange-700"
-                          }`}
-                        >
-                          {person.matchScore}% Match
-                        </span>
-                      )}
+                        {candidate.name}
+                      </h3>
+                      <p className="text-[10px] font-bold text-slate-400 uppercase">
+                        {candidate.total_exp} Years Experience
+                      </p>
                     </div>
 
-                    <span
-                      className={`text-xs mt-1 font-medium ${isSelected ? "text-blue-500" : "text-slate-500"}`}
-                    >
-                      {person.total_exp} Years Experience
-                    </span>
+                    {/* Requirement 5.2: Match Score Badge */}
+                    <div className="flex flex-col items-end">
+                      <div
+                        className={`text-[11px] font-black px-2 py-1 rounded-lg ${
+                          candidate.matchScore > 80
+                            ? "bg-green-500 text-white"
+                            : candidate.matchScore > 50
+                              ? "bg-blue-500 text-white"
+                              : "bg-slate-200 text-slate-600"
+                        }`}
+                      >
+                        {candidate.matchScore}%
+                      </div>
+                    </div>
+                  </div>
 
-                    <div className="flex gap-1 mt-3 overflow-hidden">
-                      {person.skills?.slice(0, 3).map((skill: string) => (
+                  {/* Requirement 5.1 & 5.2: Skill Highlighting */}
+                  <div className="flex flex-wrap gap-1.5 mt-4">
+                    {candidate.skills.slice(0, 4).map((skill) => {
+                      const isMatch = candidate.matchingSkills?.includes(skill);
+                      return (
                         <span
-                          key={`${person.id}-${skill}`}
-                          className={`text-[10px] px-2 py-0.5 rounded-md truncate border ${
-                            isSelected
-                              ? "bg-blue-100 border-blue-200 text-blue-600"
-                              : "bg-slate-100 border-slate-200 text-slate-600"
+                          key={skill}
+                          className={`text-[9px] px-2 py-0.5 rounded-md font-black uppercase tracking-tighter border transition-colors ${
+                            isMatch
+                              ? "bg-blue-600 border-blue-600 text-white"
+                              : "bg-slate-50 border-slate-200 text-slate-400"
                           }`}
                         >
                           {skill}
                         </span>
-                      ))}
-                    </div>
+                      );
+                    })}
+                    {candidate.skills.length > 4 && (
+                      <span className="text-[9px] text-slate-300 font-bold self-center ml-1">
+                        +{candidate.skills.length - 4} MORE
+                      </span>
+                    )}
                   </div>
                 </div>
-              );
-            }}
-          />
-        ) : /* 4. This shows while mounting OR if the list is empty */
-        !isClient ? null : (
-          <div className="p-8 text-center text-slate-400 text-sm">
-            No candidates found.
-          </div>
-        )}
+              </div>
+            );
+          }}
+          // Requirement 13: Styling the scrollbar
+          className="custom-scrollbar"
+        />
       </div>
     </div>
   );
