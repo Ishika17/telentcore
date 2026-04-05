@@ -1,23 +1,13 @@
 import { createSelector } from "@reduxjs/toolkit";
 import { RootState } from "@/store/store";
-import { selectAllJDs, selectSelectedJd } from "./jdsSlice";
+import { selectJdEntities, selectSelectedJd } from "./jdsSlice";
 import {
   selectAllCandidates,
   selectSelectedCandidate,
+  selectSelectedJdIdsForCandidate,
   // We rename it here to avoid the naming conflict
   selectMatchedCandidates as selectMatchedCandidatesEngine,
 } from "./candidatesSlice";
-
-/**
- * 1. REQUIREMENT 5.3: SYSTEM-LEVEL INTERFACE
- */
-interface CandidateWithHistory {
-  id: string;
-  skills: string[];
-  appliedJdIds?: string[];
-  name: string;
-  total_exp: number;
-}
 
 /**
  * 2. SELECTOR: selectMatchedCandidates
@@ -46,44 +36,13 @@ export const selectSelectedCandidateWithScore = createSelector(
  * 4. SELECTOR: selectCandidateHistory
  */
 export const selectCandidateHistory = createSelector(
-  [selectAllJDs, selectSelectedCandidate],
-  (allJds, candidate) => {
-    if (!candidate) return [];
-    const c = candidate as unknown as CandidateWithHistory;
+  [selectJdEntities, selectSelectedCandidate, selectSelectedJdIdsForCandidate],
+  (jdEntities, candidate, selectedJdIdsForCandidate) => {
+    if (!candidate || !selectedJdIdsForCandidate?.length) return [];
 
-    if (c.appliedJdIds && c.appliedJdIds.length > 0) {
-      return allJds.filter((jd) => c.appliedJdIds?.includes(jd.id));
-    }
-
-    // PASTE THE FIXED CODE HERE:
-    return allJds
-      .filter((jd) => {
-        // 1. Force candidate skills into an array to stop the crash
-        const rawSkills = c.skills as unknown as string | string[] | null;
-        const candidateSkillsArray: string[] =
-          typeof rawSkills === "string"
-            ? rawSkills
-                .replace(/[{}]/g, "")
-                .split(",")
-                .map((s: string) => s.trim())
-            : (rawSkills as string[]) || [];
-
-        // 2. Do the same for JD skills just in case Supabase passes strings there too!
-        const rawJdSkills = jd.skills as unknown as string | string[] | null;
-        const jdSkillsArray: string[] =
-          typeof rawJdSkills === "string"
-            ? rawJdSkills
-                .replace(/[{}]/g, "")
-                .split(",")
-                .map((s: string) => s.trim())
-            : (rawJdSkills as string[]) || [];
-
-        // 3. Now run the safe arrays through .some()
-        return candidateSkillsArray.some((skill) =>
-          jdSkillsArray.includes(skill),
-        );
-      })
-      .slice(0, 3);
+    return selectedJdIdsForCandidate
+      .map((jdId) => jdEntities[jdId])
+      .filter(Boolean);
   },
 );
 
@@ -112,7 +71,7 @@ export const selectFilteredCandidates = createSelector(
  * 6. RE-EXPORTS
  */
 export {
-  selectAllJDs,
+  selectJdEntities,
   selectSelectedJd,
   selectAllCandidates,
   selectSelectedCandidate,

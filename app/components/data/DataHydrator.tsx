@@ -5,8 +5,23 @@ import {
   setCandidates,
   setCandidatesLoading,
 } from "@/store/features/candidatesSlice";
-import { setJds } from "@/store/features/jdsSlice"; // 1. Added import for JDs
+import { setJds } from "@/store/features/jdsSlice";
 import { supabase } from "@/utils/supabaseClient";
+
+// ✅ Define the type locally
+interface RawSupabaseCandidate {
+  id: string | number;
+  skills?: string | string[] | null;
+  full_name?: string;
+  total_experience_years?: number;
+  headline?: string;
+  email?: string;
+}
+
+interface RawSupabaseApplication {
+  candidate_id?: string | number | null;
+  jd_id?: string | number | null;
+}
 
 export default function DataHydrator() {
   const dispatch = useAppDispatch();
@@ -15,41 +30,93 @@ export default function DataHydrator() {
     async function loadData() {
       dispatch(setCandidatesLoading(true));
 
-      // 2. FETCH CANDIDATES (Working!)
-      const { data: candidateData, error: candidateError } = await supabase
-        .from("candidates")
-        .select("*");
+      const PAGE_SIZE = 1000;
+      let allCandidates: RawSupabaseCandidate[] = []; // ✅ typed properly
+      let from = 0;
+      let hasMore = true;
 
-      if (candidateError) {
-        console.error("Error fetching candidates:", candidateError.message);
+      while (hasMore) {
+        const { data, error } = await supabase
+          .from("candidates")
+          .select("*")
+          .range(from, from + PAGE_SIZE - 1);
+
+        if (error) {
+          console.error("Error fetching candidates:", error.message);
+          break;
+        }
+
+        if (!data || data.length === 0) break;
+
+        allCandidates = [
+          ...allCandidates,
+          ...(data as unknown as RawSupabaseCandidate[]),
+        ];
+        hasMore = data.length === PAGE_SIZE;
+        from += PAGE_SIZE;
       }
 
-      if (candidateData) {
-        const mappedCandidates = candidateData.map((item) => ({
+      console.log("Total candidates loaded:", allCandidates.length);
+
+      const { data: applicationData, error: applicationError } = await supabase
+        .from("applications")
+        .select("candidate_id, jd_id");
+
+      const safeApplicationData = applicationError ? [] : applicationData;
+
+      if (applicationError) {
+        console.warn(
+          "Skipping applications fetch in DataHydrator:",
+          applicationError.message,
+        );
+      }
+
+      const appliedJdIdsByCandidate = new Map<string, string[]>();
+
+      (safeApplicationData as RawSupabaseApplication[] | null)?.forEach((item) => {
+        if (!item.candidate_id || !item.jd_id) return;
+
+        const candidateId = String(item.candidate_id);
+        const jdId = String(item.jd_id);
+        const existing = appliedJdIdsByCandidate.get(candidateId) ?? [];
+
+        if (!existing.includes(jdId)) {
+          appliedJdIdsByCandidate.set(candidateId, [...existing, jdId]);
+        }
+      });
+
+      const mappedCandidates = allCandidates.map((item) => {
+        // ✅ Parse skills into string[] here too
+        const rawSkills = item.skills;
+        const skillsArray: string[] =
+          typeof rawSkills === "string"
+            ? rawSkills
+                .replace(/[{}]/g, "")
+                .split(",")
+                .map((s) => s.trim())
+            : ((rawSkills as string[]) ?? []);
+
+        return {
           id: String(item.id),
-          name: item.full_name,
-          skills: item.skills,
-          total_exp: item.total_experience_years,
-          role: item.headline,
-          email: item.email,
-          appliedJdIds: [],
-        }));
+          name: item.full_name ?? "Unknown Candidate",
+          skills: skillsArray, // ✅ now always string[]
+          total_exp: item.total_experience_years ?? 0,
+          role: item.headline ?? "No Headline",
+          email: item.email ?? "",
+          appliedJdIds: appliedJdIdsByCandidate.get(String(item.id)) ?? [],
+        };
+      });
 
-        dispatch(setCandidates(mappedCandidates));
-      }
+      dispatch(setCandidates(mappedCandidates));
 
-      // 3. FETCH JOB DESCRIPTIONS (New!)
+      // JDs fetch (unchanged)
       const { data: jdData, error: jdError } = await supabase
-        .from("job_descriptions") // ⚠️ Check if your table is named 'jds' or 'job_descriptions' in Supabase
+        .from("job_descriptions")
         .select("*");
 
-      if (jdError) {
-        console.error("Error fetching JDs:", jdError.message);
-      }
+      if (jdError) console.error("Error fetching JDs:", jdError.message);
 
       if (jdData) {
-        console.log("JD Data Raw:", jdData[0]); // This will log the actual keys to your browser console!
-
         const mappedJds = jdData.map((jd) => {
           const experienceValue =
             jd.min_experience_years ??

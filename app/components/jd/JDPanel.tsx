@@ -11,6 +11,7 @@ import {
   setSortBy,
   toggleSkillFilter,
 } from "@/store/features/jdsSlice";
+import { setCandidateSelectedJd } from "@/store/features/candidatesSlice";
 
 const JDPanel = () => {
   const isClient = useIsClient();
@@ -20,13 +21,29 @@ const JDPanel = () => {
   const { filters, sortBy, selectedJdId } = useAppSelector(
     (state) => state.jds,
   );
+  const selectedCandidateId = useAppSelector(
+    (state) => state.candidates.selectedCandidateId,
+  );
   const filteredJds = useAppSelector(selectFilteredJDs);
+  // useAppSelector does two things:
+
+// 
+  // this is imp line beacuse it giv ethe extact condition of code whch liInstead it asks the selector:
+// “Give me the final JD list that should be displayed.”
   const [searchTerm, setSearchTerm] = useState("");
 
   /**
    * Requirement 6: Performance Optimization (Debounce)
    * Prevents O(N) filtering on every single keystroke.
    */
+//   Why this is done:
+// If user types "react developer" letter by letter, without debounce Redux would update on every keystroke.
+
+// With debounce:
+
+// user types
+// component waits a little
+// only then updates Redux search
   useEffect(() => {
     const delayDebounceFn = setTimeout(() => {
       dispatch(setJdSearchQuery(searchTerm));
@@ -118,7 +135,24 @@ const JDPanel = () => {
             return (
               <div
                 key={jd.id}
-                onClick={() => dispatch(selectJd(jd.id))}
+                onClick={() => {
+                  dispatch(selectJd(jd.id));
+
+                  if (selectedCandidateId) {
+                    dispatch(
+                      setCandidateSelectedJd({
+                        candidateId: selectedCandidateId,
+                        jdId: jd.id,
+                      }),
+                    );
+                  }
+                }}
+                // by thsi id iyt caluculate teh canditae pabel with thsiid and details panel also select that id 
+                // These were originally raw DB rows,
+// then DataHydrator converted them,
+// then Redux stored them,
+// then selector returned them,
+// then JDPanel displays them.
                 className={`group p-4 rounded-xl cursor-pointer transition-all border ${
                   isSelected
                     ? "bg-white border-blue-500 shadow-md ring-1 ring-blue-500/10"

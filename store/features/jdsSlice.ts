@@ -61,12 +61,15 @@ const jdsSlice = createSlice({
     setJds: (state, action: PayloadAction<Jd[]>) => {
       jdsAdapter.setAll(state, action.payload);
     },
+    // setJds is the function that takes the final JD array from DataHydrator and saves it inside Redux jds state using the entity adapter.
     selectJd: (state, action: PayloadAction<string | null>) => {
       state.selectedJdId = action.payload;
     },
     setJdSearchQuery: (state, action: PayloadAction<string>) => {
       state.searchQuery = action.payload;
     },
+    // It updates the searchQuery value inside state.jds.
+    // setJdSearchQuery stores the current search text in Redux so the selector can filter the JD list.
     setExpRange: (
       state,
       action: PayloadAction<{ min?: number; max?: number }>,
@@ -85,6 +88,8 @@ const jdsSlice = createSlice({
         state.filters.selectedSkills.push(skill);
       }
     },
+    // toggleSkillFilter stores selected skills
+// selectFilteredJDs computes the visible list
     setSortBy: (state, action: PayloadAction<JdState["sortBy"]>) => {
       state.sortBy = action.payload;
     },

@@ -10,38 +10,48 @@ import { selectSelectedJd, JdsFeatureState } from "./jdsSlice";
 import { supabase } from "@/lib/supabaseClient";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
+interface RawSupabaseCandidate {
+  id: string | number;
+  skills?: string | string[] | null;
+  full_name?: string;
+  total_experience_years?: number;
+  headline?: string;
+  email?: string;
+}
+
 export const fetchCandidatesFromSupabase = createAsyncThunk(
   "candidates/fetchFromSupabase",
   async (_, { rejectWithValue }) => {
-    const { data, error } = await supabase.from("candidates").select("*");
+    const PAGE_SIZE = 1000;
+    let allData: RawSupabaseCandidate[] = [];
+    let from = 0;
+    let hasMore = true;
 
-    if (error) {
-      return rejectWithValue(error.message);
+    while (hasMore) {
+      const { data, error } = await supabase
+        .from("candidates")
+        .select("*")
+        .range(from, from + PAGE_SIZE - 1);
+
+
+      if (error) return rejectWithValue(error.message);
+      if (!data || data.length === 0) break;
+
+      allData = [...allData, ...(data as unknown as RawSupabaseCandidate[])];
+      hasMore = data.length === PAGE_SIZE;
+      from += PAGE_SIZE;
     }
 
-    // 1. Define what the raw item from Supabase actually looks like
-    interface RawSupabaseCandidate {
-      id: string | number;
-      skills?: string | string[] | null;
-      full_name?: string;
-      total_experience_years?: number;
-      headline?: string;
-      email?: string;
-    }
+    console.log("TOTAL fetched:", allData.length); // 👈 debug
 
-    // 2. Map the Supabase columns to match your Candidate interface
-    const mappedCandidates: Candidate[] = (
-      data as unknown as RawSupabaseCandidate[]
-    ).map((item) => {
+    const mappedCandidates: Candidate[] = allData.map((item) => {
       const rawSkills = item.skills;
-
-      // Safely parse skills array from Supabase table payload
       const skillsArray: string[] =
         typeof rawSkills === "string"
           ? rawSkills
               .replace(/[{}]/g, "")
               .split(",")
-              .map((s: string) => s.trim())
+              .map((s) => s.trim())
           : (rawSkills as string[]) || [];
 
       return {
@@ -55,7 +65,6 @@ export const fetchCandidatesFromSupabase = createAsyncThunk(
       };
     });
 
-    // 3. Return it so the 'value is read' and the error clears!
     return mappedCandidates;
   },
 );
@@ -82,6 +91,7 @@ export interface MatchedCandidate extends Candidate {
 
 interface CandidatesState {
   selectedCandidateId: string | null;
+  selectedJdIdsByCandidate: Record<string, string[]>;
   loading: boolean;
   error: string | null;
 }
@@ -98,6 +108,7 @@ const candidatesSlice = createSlice({
   name: "candidates",
   initialState: candidatesAdapter.getInitialState<CandidatesState>({
     selectedCandidateId: null,
+    selectedJdIdsByCandidate: {},
     loading: false,
     error: null,
   }),
@@ -110,6 +121,17 @@ const candidatesSlice = createSlice({
     },
     selectCandidate: (state, action: PayloadAction<string | null>) => {
       state.selectedCandidateId = action.payload;
+    },
+    setCandidateSelectedJd: (
+      state,
+      action: PayloadAction<{ candidateId: string; jdId: string }>,
+    ) => {
+      const { candidateId, jdId } = action.payload;
+      const existing = state.selectedJdIdsByCandidate[candidateId] ?? [];
+
+      if (!existing.includes(jdId)) {
+        state.selectedJdIdsByCandidate[candidateId] = [...existing, jdId];
+      }
     },
     setCandidatesLoading: (state, action: PayloadAction<boolean>) => {
       state.loading = action.payload;
@@ -149,6 +171,7 @@ const candidatesSlice = createSlice({
 export const {
   setCandidates,
   selectCandidate,
+  setCandidateSelectedJd,
   setCandidatesLoading,
   updateCandidateStatus,
 } = candidatesSlice.actions;
@@ -179,15 +202,22 @@ export const selectSelectedCandidate = (state: CandidatesFeatureState) => {
   return selectedCandidateId ? entities[selectedCandidateId] : null;
 };
 
+export const selectSelectedJdIdsForCandidate = (state: CandidatesFeatureState) => {
+  const { selectedCandidateId, selectedJdIdsByCandidate } = state.candidates;
+  if (!selectedCandidateId) return null;
+  return selectedJdIdsByCandidate[selectedCandidateId] ?? [];
+};
+
 /**
  * 6. MATCH ENGINE
  */
 export const selectMatchedCandidates = createSelector(
   [
-    selectAllCandidates,
+    selectAllCandidates,   
     (state: MappingState) => selectSelectedJd(state),
     (state: MappingState) => state.jds.filters.selectedSkills, // 👈 add this
   ],
+  
   (allCandidates, selectedJd, selectedSkills): MatchedCandidate[] => {
     if (!selectedJd) {
       return allCandidates.map((c) => ({
@@ -202,6 +232,8 @@ export const selectMatchedCandidates = createSelector(
       selectedSkills.length > 0 ? selectedSkills : selectedJd.skills;
 
     const jdSkills = new Set(activeSkills.map((s: string) => s.toLowerCase()));
+    console.log("Active JD Skills for Matching:", activeSkills); 
+    console.log("jdSkills" , jdSkills)// 👈 debug
     const jdMinExp = selectedJd.min_exp;
 
     // ---> PASTE THE CODE HERE <---
